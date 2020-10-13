@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- <meta name="description" content="My website"> -->
-    <title>Document</title>
-    <!-- <link rel="shortcut icon" href="images/...png" type="image/png"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet"> -->
+    <meta name="description" content="My website">
+    <title>Share Page</title>
+    <link rel="shortcut icon" href="images/logo-icon.svg" type="image/svg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
     <div class="wrapper">
-        
+
         <div class="content">
 
             <header class="header">
-                <div class="container">
+                <div class="container-header">
                     <div class="header__inner">
-                        <img class="logo" src="" alt="#">
+                        <a class="logo" href="#" >
+                            <img src="images/logo.svg" alt="#">
+                        </a>
+                        <div class="search">
+                            <form class="search__form">
+                                <button class="search__btn" type="submit"></button>
+                                <input class="search__input" type="text" placeholder="Search for images, news, gossips.." required>
+                                <div class="search__explore">
+                                    <span>Explore</span>
+                                    <img src="images/icon-arrow-down.svg" alt="#">
+                                </div>
+                            </form>                            
+                        </div>
                         <nav class="menu">
                             <ul class="menu__list">
-                                <li><a class="menu__item" href="#"></a></li>
-                                <li><a class="menu__item" href="#"></a></li>
-                                <li><a class="menu__item" href="#"></a></li>
+                                <li><a class="menu__item" href="#">Community</a></li>
+                                <li><a class="menu__item" href="#">Topics</a></li>
                             </ul>
                         </nav>
+                        <a class="submit-photo-btn header__btn" href="#">Submit a photo</a>
+                        <a class="login" href="#">Login</a>
+                        <a class="join-free header__btn" href="#">Join free</a>
                         <div class="menu__btn"></div>
                     </div>
                 </div>
@@ -49,13 +65,14 @@
                 </div>
             </div>
         </footer>
-        
-    </div>  
+
+    </div>
 
 
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

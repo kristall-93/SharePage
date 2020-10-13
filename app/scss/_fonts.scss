@@ -1,17 +1,29 @@
-// @font-face {
-//     font-family: 'Gilroy', sans-serif;
-//     src: url('../fonts/Gilroy-Regular.eot');
-//     src: url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
-//         url('../fonts/Gilroy-Regular.woff') format('woff'),
-//         url('../fonts/Gilroy-Regular.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+@font-face {
+	font-family: 'Segoe UI', sans-serif;
+	src: url('../fonts/SegoeUI.eot');
+	src: url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI.woff') format('woff'),
+		url('../fonts/SegoeUI.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
-// @font-face {
-//     font-family: 'Galien', sans-serif;
-//     src: url('../fonts/Galien-Regular.otf') format('otf'),
-//         url('../fonts/Galien-Regular.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+@font-face {
+	font-family: 'Segoe UI-SemiBold', sans-serif;
+	src: url('../fonts/SegoeUI-SemiBold.eot');
+	src: url('../fonts/SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI-SemiBold.woff') format('woff'),
+		url('../fonts/SegoeUI-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI-Bold', sans-serif;
+	src: url('../fonts/SegoeUI-Bold.eot');
+	src: url('../fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI-Bold.woff') format('woff'),
+		url('../fonts/SegoeUI-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
