@@ -20,40 +20,695 @@
             <header class="header">
                 <div class="container-header">
                     <div class="header__inner">
-                        <a class="logo" href="#" >
+                        <a class="logo" href="#">
                             <img src="images/logo.svg" alt="#">
                         </a>
                         <div class="search">
                             <form class="search__form">
                                 <button class="search__btn" type="submit"></button>
-                                <input class="search__input" type="text" placeholder="Search for images, news, gossips.." required>
+                                <input class="search__input" type="text"
+                                    placeholder="Search for images, news, gossips.." required>
                                 <div class="search__explore">
                                     <span>Explore</span>
                                     <img src="images/icon-arrow-down.svg" alt="#">
                                 </div>
-                            </form>                            
+                            </form>
                         </div>
-                        <nav class="menu">
-                            <ul class="menu__list">
-                                <li><a class="menu__item" href="#">Community</a></li>
-                                <li><a class="menu__item" href="#">Topics</a></li>
-                            </ul>
-                        </nav>
+                        <a class="header__link" href="#">Community</a>
+                        <a class="header__link" href="#">Topics</a>
                         <a class="submit-photo-btn header__btn" href="#">Submit a photo</a>
-                        <a class="login" href="#">Login</a>
+                        <a class="login header__link" href="#">Login</a>
                         <a class="join-free header__btn" href="#">Join free</a>
-                        <div class="menu__btn"></div>
+                        <div class="user__menu">
+                            <div class="menu__btn"></div>
+                            <div class="menu__dropdown">
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search__explore-dropdown">
+                        <div class="search__explore-category">
+                            <a class="explore-category__title">
+                                World
+                            </a>
+                            <ul>
+                                <li><a class="explore-category__item" href="#">Africa</a></li>
+                                <li><a class="explore-category__item" href="#">Americas</a></li>
+                                <li><a class="explore-category__item" href="#">Asia</a></li>
+                                <li><a class="explore-category__item" href="#">Australia</a></li>
+                                <li><a class="explore-category__item" href="#">China</a></li>
+                                <li><a class="explore-category__item" href="#">Europe</a></li>
+                                <li><a class="explore-category__item" href="#">Middle East</a></li>
+                            </ul>
+                        </div>
+                        <div class="search__explore-category">
+                            <a class="explore-category__title">
+                                Politics
+                            </a>
+                            <ul>
+                                <li><a class="explore-category__item" href="#">Elections 2020</a></li>
+                                <li><a class="explore-category__item" href="#">Debates</a></li>
+                                <li><a class="explore-category__item" href="#">Known Facts</a></li>
+                            </ul>
+                        </div>
+                        <div class="search__explore-category">
+                            <a class="explore-category__title">
+                                Business
+                            </a>
+                            <ul>
+                                <li><a class="explore-category__item" href="#">Stock Markets</a></li>
+                                <li><a class="explore-category__item" href="#">Techonologies</a></li>
+                                <li><a class="explore-category__item" href="#">Media</a></li>
+                                <li><a class="explore-category__item" href="#">Videos</a></li>
+                                <li><a class="explore-category__item" href="#">Success Stories</a></li>
+                            </ul>
+                        </div>
+                        <div class="search__explore-category">
+                            <a class="explore-category__title">
+                                Television
+                            </a>
+                            <ul>
+                                <li><a class="explore-category__item" href="#">Stars</a></li>
+                                <li><a class="explore-category__item" href="#">TV Reality</a></li>
+                                <li><a class="explore-category__item" href="#">Binge Series</a></li>
+                                <li><a class="explore-category__item" href="#">Netflix</a></li>
+                                <li><a class="explore-category__item" href="#">HBO:GO</a></li>
+                                <li><a class="explore-category__item" href="#">Culture</a></li>
+                                <li><a class="explore-category__item" href="#">Media</a></li>
+                            </ul>
+                        </div>
+                        <div class="search__explore-category">
+                            <a class="explore-category__title">
+                                Health
+                            </a>
+                            <ul>
+                                <li><a class="explore-category__item" href="#">Food</a></li>
+                                <li><a class="explore-category__item" href="#">Fitness</a></li>
+                                <li><a class="explore-category__item" href="#">Wellness</a></li>
+                                <li><a class="explore-category__item" href="#">Vital Signs</a></li>
+                                <li><a class="explore-category__item" href="#">Sport</a></li>
+                                <li><a class="explore-category__item" href="#">Habits</a></li>
+                            </ul>
+                        </div>
+                        <div class="search__explore-category">
+                            <a class="explore-category__title">
+                                Tech
+                            </a>
+                            <ul>
+                                <li><a class="explore-category__item" href="#">Programming</a></li>
+                                <li><a class="explore-category__item" href="#">Apple</a></li>
+                                <li><a class="explore-category__item" href="#">Samsung</a></li>
+                                <li><a class="explore-category__item" href="#">AI - Robots</a></li>
+                                <li><a class="explore-category__item" href="#">Smart Homes</a></li>
+                                <li><a class="explore-category__item" href="#">Tesla</a></li>
+                                <li><a class="explore-category__item" href="#">Silicon Valley East</a></li>
+                            </ul>
+                        </div>
+                        <div class="search__explore-category">
+                            <a class="explore-category__title">
+                                Weather
+                            </a>
+                            <ul>
+                                <li><a class="explore-category__item" href="#">Climate Changes</a></li>
+                                <li><a class="explore-category__item" href="#">Weather Tracker</a></li>
+                                <li><a class="explore-category__item" href="#">Wildfires</a></li>
+                                <li><a class="explore-category__item" href="#">Wildlife Protection</a></li>
+                                <li><a class="explore-category__item" href="#">Endangered Species</a></li>
+                            </ul>
+                        </div>
+                        <div class="search__explore-category">
+                            <a class="explore-category__title">
+                                Travel
+                            </a>
+                            <ul>
+                                <li><a class="explore-category__item" href="#">COVID-19</a></li>
+                                <li><a class="explore-category__item" href="#">Destinations</a></li>
+                                <li><a class="explore-category__item" href="#">Summer</a></li>
+                                <li><a class="explore-category__item" href="#">Accomodation</a></li>
+                                <li><a class="explore-category__item" href="#">Tourism</a></li>
+                                <li><a class="explore-category__item" href="#">News</a></li>
+                            </ul>
+                        </div>
+                        <div class="search__explore-category">
+                            <a class="explore-category__title">
+                                World
+                            </a>
+                            <ul>
+                                <li><a class="explore-category__item" href="#">Football</a></li>
+                                <li><a class="explore-category__item" href="#">Rugby</a></li>
+                                <li><a class="explore-category__item" href="#">Volleyball</a></li>
+                                <li><a class="explore-category__item" href="#">Basketball NBA</a></li>
+                                <li><a class="explore-category__item" href="#">Formula One</a></li>
+                                <li><a class="explore-category__item" href="#">NASCAR</a></li>
+                                <li><a class="explore-category__item" href="#">Cricket</a></li>
+                            </ul>
+                        </div>
+                        <div class="search__explore-category">
+                            <a class="explore-category__title">
+                                Features
+                            </a>
+                            <ul>
+                                <li><a class="explore-category__item" href="#">Call To Earth</a></li>
+                                <li><a class="explore-category__item" href="#">Freedom Project</a></li>
+                                <li><a class="explore-category__item" href="#">Inside Africa</a></li>
+                                <li><a class="explore-category__item" href="#">All Features</a></li>
+                                <li><a class="explore-category__item" href="#">Impact On Rivers</a></li>
+                            </ul>
+                        </div>
+                        <div class="search__explore-category">
+                            <a class="explore-category__title">
+                                More
+                            </a>
+                            <ul>
+                                <li><a class="explore-category__item" href="#">Photos</a></li>
+                                <li><a class="explore-category__item" href="#">Investigations</a></li>
+                                <li><a class="explore-category__item" href="#">Criminal</a></li>
+                                <li><a class="explore-category__item" href="#">Cartels</a></li>
+                                <li><a class="explore-category__item" href="#">Organ Donors</a></li>
+                                <li><a class="explore-category__item" href="#">Children of Africa</a></li>
+                            </ul>
+                        </div>
+                        <div class="search__explore-category">
+                            <a class="explore-category__title">
+                                Style
+                            </a>
+                            <ul>
+                                <li><a class="explore-category__item" href="#">Arts</a></li>
+                                <li><a class="explore-category__item" href="#">Design</a></li>
+                                <li><a class="explore-category__item" href="#">Fashion</a></li>
+                                <li><a class="explore-category__item" href="#">Luxury</a></li>
+                                <li><a class="explore-category__item" href="#">Beauty</a></li>
+                                <li><a class="explore-category__item" href="#">Paris</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </header>
 
-            <section class="section">
+            <section class="top top--homepage">
                 <div class="container">
-                    <div class="section__inner">
+                    <div class="top__inner">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li><a class="menu__item" href="#">Home</a></li>
+                                <li><a class="menu__item" href="#">World</a></li>
+                                <li><a class="menu__item" href="#">News</a></li>
+                                <li><a class="menu__item" href="#">Music</a></li>
+                                <li><a class="menu__item" href="#">Movies</a></li>
+                                <li><a class="menu__item" href="#">Gossips</a></li>
+                                <li><a class="menu__item" href="#">Confirmed</a></li>
+                                <li><a class="menu__item" href="#">gallery</a></li>
+                                <li><a class="menu__item" href="#">exclusives</a></li>
+                                <li><a class="menu__item" href="#">ShareStart</a></li>
+                            </ul>
+                        </nav>
+                        <div class="top__news">
+                            <div class="top__news-item">
+                                <a class="top__news-item-title" href="#">
+                                    NFL Players Talk About Playing Conditions
+                                </a>
+                                <img src="images/top-news-item-1.svg" alt="#">
+                            </div>
+                            <div class="top__news-item">
+                                <a class="top__news-item-title" href="#">
+                                    Self-Confessed Competitive Celebrities
+                                </a>
+                                <img src="images/top-news-item-2.png" alt="#">
+                            </div>
+                            <div class="top__news-item">
+                                <a class="top__news-item-title" href="#">
+                                    Meghan Markle Still Down To Earth
+                                </a>
+                                <img src="images/top-news-item-3.png" alt="#">
+                            </div>
+                            <div class="top__news-item">
+                                <a class="top__news-item-title" href="#">
+                                    Pewdiepie And The Love With Minecraft
+                                </a>
+                                <img src="images/top-news-item-1.svg" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recommended">
+                <div class="container">
+                    <div class="recommended__inner">
+
+                        <div class="tab__content">
+
+                            <div class="tab-item active-tab" id="1"
+                                style="background-image: url(images/recommended-bg.jpg);">
+                                <div class="reporter">
+                                    <img src="images/reporter-img.png" alt="#">
+                                    <div class="reporter___box">
+                                        <span class="reporter__name">
+                                            Jonathan Smith
+                                        </span>
+                                        <span class="reporter__status">
+                                            Reporter
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="tab-item__category">
+                                    TV
+                                </div>
+                                <div class="tab-item__title">
+                                    Self-Confessed Competitive Celebrities
+                                </div>
+                                <a class="tab-item__link-more" href="#">
+                                    <span>See More </span>
+                                    <img src="images/icon-arrow-right.svg" alt="#">
+                                </a>
+                            </div>
+
+                            <div class="tab-item" id="2" style="background-image: url(images/recommended-bg.jpg);">
+                                <div class="reporter">
+                                    <img src="images/reporter-img.png" alt="#">
+                                    <div class="reporter___box">
+                                        <span class="reporter__name">
+                                            Jonathan Smith
+                                        </span>
+                                        <span class="reporter__status">
+                                            Reporter
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="tab-item__category">
+                                    SPORT
+                                </div>
+                                <div class="tab-item__title">
+                                    Self-Confessed Competitive Celebrities
+                                </div>
+                                <a class="tab-item__link-more" href="#">
+                                    <span>See More </span>
+                                    <img src="images/icon-arrow-right.svg" alt="#">
+                                </a>
+                            </div>
+
+                            <div class="tab-item" id="3" style="background-image: url(images/recommended-bg.jpg);">
+                                <div class="reporter">
+                                    <img src="images/reporter-img.png" alt="#">
+                                    <div class="reporter___box">
+                                        <span class="reporter__name">
+                                            Jonathan Smith
+                                        </span>
+                                        <span class="reporter__status">
+                                            Reporter
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="tab-item__category">
+                                    MOVIES
+                                </div>
+                                <div class="tab-item__title">
+                                    Self-Confessed Competitive Celebrities
+                                </div>
+                                <a class="tab-item__link-more" href="#">
+                                    <span>See More </span>
+                                    <img src="images/icon-arrow-right.svg" alt="#">
+                                </a>
+                            </div>
+
+                            <div class="tab-item" id="4" style="background-image: url(images/recommended-bg.jpg);">
+                                <div class="reporter">
+                                    <img src="images/reporter-img.png" alt="#">
+                                    <div class="reporter___box">
+                                        <span class="reporter__name">
+                                            Jonathan Smith
+                                        </span>
+                                        <span class="reporter__status">
+                                            Reporter
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="tab-item__category">
+                                    TV
+                                </div>
+                                <div class="tab-item__title">
+                                    Self-Confessed Competitive Celebrities
+                                </div>
+                                <a class="tab-item__link-more" href="#">
+                                    <span>See More </span>
+                                    <img src="images/icon-arrow-right.svg" alt="#">
+                                </a>
+                            </div>
+
+                            <div class="tab-item" id="5" style="background-image: url(images/recommended-bg.jpg);">
+                                <div class="reporter">
+                                    <img src="images/reporter-img.png" alt="#">
+                                    <div class="reporter___box">
+                                        <span class="reporter__name">
+                                            Jonathan Smith
+                                        </span>
+                                        <span class="reporter__status">
+                                            Reporter
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="tab-item__category">
+                                    SPORT
+                                </div>
+                                <div class="tab-item__title">
+                                    Self-Confessed Competitive Celebrities
+                                </div>
+                                <a class="tab-item__link-more" href="#">
+                                    <span>See More </span>
+                                    <img src="images/icon-arrow-right.svg" alt="#">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="tabs">
+                            <h5 class="tabs__title">
+                                Recommended for you
+                            </h5>
+                            <div class="tab active" data-id="1">
+                                <h6 class="tab__category tab__category--tv">TV</h6>
+                                <p class="tab__text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod…
+                                </p>
+                            </div>
+                            <div class="tab" data-id="2">
+                                <h6 class="tab__category tab__category--sport">SPORT</h6>
+                                <p class="tab__text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod…
+                                </p>
+                            </div>
+                            <div class="tab" data-id="3">
+                                <h6 class="tab__category tab__category--movies">MOVIES</h6>
+                                <p class="tab__text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod…
+                                </p>
+                            </div>
+                            <div class="tab" data-id="4">
+                                <h6 class="tab__category tab__category--tv">TV</h6>
+                                <p class="tab__text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod…
+                                </p>
+                            </div>
+                            <div class="tab" data-id="5">
+                                <h6 class="tab__category tab__category--movies">MOVIES</h6>
+                                <p class="tab__text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod…
+                                </p>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
             </section>
+
+            <section class="adventisment">
+                <div class="container">
+                    <div class="adventisment__inner" style="background-image: url(images/adventisment-bg.png);">
+                        <a class="adventisment__placeholder" href="#">Adventisment placeholder</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <div class="container">
+                    <div class="gallery__inner">
+                        <h3 class="gallery__title section__title">
+                            IMage gallery
+                        </h3>
+                        <div class="gallery__content">
+
+                            <div class="gallery__slider" id="gallery__slider">
+
+                                <div class="gallery__slider-item hot-trending"
+                                    style="background-image: url(images/slider-item-1.jpg);">
+                                    <span class="hot-trending__label">Hot Trending</span>
+                                    <div class="reporter slider-item__reporter">
+                                        <img src="images/reporter-img.png" alt="#">
+                                        <div class="reporter___box">
+                                            <span class="reporter__name">
+                                                Jonathan Smith
+                                            </span>
+                                            <span class="reporter__status">
+                                                Reporter
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <h4 class="slider-item__title">
+                                        KATE UPTON'S BODY DOWN <br>
+                                        TO HARD WORK AND <br>
+                                        DEDICATION
+                                    </h4>
+                                    <a class="slider-item__open-gallery" href="#">
+                                        <img src="images/icon-open-gallery.svg" alt="#">
+                                        <span class="open-gallery__text">Open Gallery</span>
+                                        <span class="open-gallery__count">15</span>
+                                    </a>
+                                </div>
+
+                                <div class="gallery__slider-item  hot-trending"
+                                    style="background-image: url(images/slider-item-2.jpg);">
+                                    <span class="hot-trending__label">Hot Trending</span>
+                                    <div class="reporter slider-item__reporter">
+                                        <img src="images/reporter-img.png" alt="#">
+                                        <div class="reporter___box">
+                                            <span class="reporter__name">
+                                                Jonathan Smith
+                                            </span>
+                                            <span class="reporter__status">
+                                                Reporter
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <h4 class="slider-item__title">
+                                        KATE UPTON'S BODY DOWN <br>
+                                        TO HARD WORK AND <br>
+                                        DEDICATION
+                                    </h4>
+                                    <a class="slider-item__open-gallery" href="#">
+                                        <img src="images/icon-open-gallery.svg" alt="#">
+                                        <span class="open-gallery__text">Open Gallery</span>
+                                        <span class="open-gallery__count">15</span>
+                                    </a>
+                                </div>
+
+                                <div class="gallery__slider-item hot-trending"
+                                    style="background-image: url(images/slider-item-1.jpg);">
+                                    <span class="hot-trending__label">Hot Trending</span>
+                                    <div class="reporter slider-item__reporter">
+                                        <img src="images/reporter-img.png" alt="#">
+                                        <div class="reporter___box">
+                                            <span class="reporter__name">
+                                                Jonathan Smith
+                                            </span>
+                                            <span class="reporter__status">
+                                                Reporter
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <h4 class="slider-item__title">
+                                        KATE UPTON'S BODY DOWN <br>
+                                        TO HARD WORK AND <br>
+                                        DEDICATION
+                                    </h4>
+                                    <a class="slider-item__open-gallery" href="#">
+                                        <img src="images/icon-open-gallery.svg" alt="#">
+                                        <span class="open-gallery__text">Open Gallery</span>
+                                        <span class="open-gallery__count">15</span>
+                                    </a>
+                                </div>
+
+                                <div class="gallery__slider-item  hot-trending"
+                                    style="background-image: url(images/slider-item-2.jpg);">
+                                    <span class="hot-trending__label">Hot Trending</span>
+                                    <div class="reporter slider-item__reporter">
+                                        <img src="images/reporter-img.png" alt="#">
+                                        <div class="reporter___box">
+                                            <span class="reporter__name">
+                                                Jonathan Smith
+                                            </span>
+                                            <span class="reporter__status">
+                                                Reporter
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <h4 class="slider-item__title">
+                                        KATE UPTON'S BODY DOWN <br>
+                                        TO HARD WORK AND <br>
+                                        DEDICATION
+                                    </h4>
+                                    <a class="slider-item__open-gallery" href="#">
+                                        <img src="images/icon-open-gallery.svg" alt="#">
+                                        <span class="open-gallery__text">Open Gallery</span>
+                                        <span class="open-gallery__count">15</span>
+                                    </a>
+                                </div>
+
+                                <div class="gallery__slider-item hot-trending"
+                                    style="background-image: url(images/slider-item-1.jpg);">
+                                    <span class="hot-trending__label">Hot Trending</span>
+                                    <div class="reporter slider-item__reporter">
+                                        <img src="images/reporter-img.png" alt="#">
+                                        <div class="reporter___box">
+                                            <span class="reporter__name">
+                                                Jonathan Smith
+                                            </span>
+                                            <span class="reporter__status">
+                                                Reporter
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <h4 class="slider-item__title">
+                                        KATE UPTON'S BODY DOWN <br>
+                                        TO HARD WORK AND <br>
+                                        DEDICATION
+                                    </h4>
+                                    <a class="slider-item__open-gallery" href="#">
+                                        <img src="images/icon-open-gallery.svg" alt="#">
+                                        <span class="open-gallery__text">Open Gallery</span>
+                                        <span class="open-gallery__count">15</span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="gallery__preview-wrapper">
+
+                                <a class="gallery__preview" href="#"
+                                    style="background-image: url(images/preview-1.png);">
+                                    <h6 class="preview__title">
+                                        Kanye Has Car Dealers Doing Swift Business
+                                    </h6>
+                                    <div class="preview__open-gallery">
+                                        <img src="images/icon-open-gallery.svg" alt="#">
+                                        <span>Open Gallery</span>
+                                    </div>
+                                </a>
+
+                                <a class="gallery__preview" href="#"
+                                    style="background-image: url(images/preview-2.jpg);">
+                                    <h6 class="preview__title">
+                                        Kanye Has Car Dealers Doing Swift Business
+                                    </h6>
+                                    <div class="preview__open-gallery">
+                                        <img src="images/icon-open-gallery.svg" alt="#">
+                                        <span>Open Gallery</span>
+                                    </div>
+                                </a>
+
+                                <a class="gallery__preview" href="#"
+                                    style="background-image: url(images/preview-3.jpg);">
+                                    <h6 class="preview__title">
+                                        Kanye Has Car Dealers Doing Swift Business
+                                    </h6>
+                                    <div class="preview__open-gallery">
+                                        <img src="images/icon-open-gallery.svg" alt="#">
+                                        <span>Open Gallery</span>
+                                    </div>
+                                </a>
+
+                                <a class="gallery__preview gallery__preview-last" href="#"
+                                    style="background-image: url(images/preview-4.jpg);">
+                                    <span>+5</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="latest">
+                <div class="container">
+                    <div class="latest__inner">
+                        <h3 class="latest__title section__title">
+                            LATEST NEWS TODAY
+                        </h3>
+                        <div class="latest__content">
+
+                            <a class="latest__item latest__item--main" href="#">
+                                <div class="latest__item-top">
+                                    <div class="latest__item-info">
+                                        <span class="latest__item-category
+                                        latest__item-category--movies">
+                                            MOVIES
+                                        </span>
+                                        <div class="latest__item-title">
+                                            Kanye Has Car Dealers Doing Swift Business
+                                        </div>
+                                        <div class="latest__item-text">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod
+                                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                                            At
+                                            vero eos et accusam et…
+                                        </div>
+                                    </div>
+                                    <img src="images/latest-news-1.jpg" alt="#">
+                                </div>
+                                <div class="latest__item-bottom">
+                                    <div class="latest__item-author">
+                                        <img class="latest__item-author-img" src="images/latest-news-author-1.jpg" alt="#">
+                                        <span>Sofia Tarkowsky</span>
+                                    </div>
+                                    <div class="latest__item-begin">
+                                        Kanye has such a strong influence on the...
+                                    </div>
+                                    <div class="latest__item-comments">
+                                        <img src="images/icon-comments.svg" alt="#">
+                                        <span>312</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="latest__item latest__item--popular" href="#"
+                                style="background-image: url(images/latest-news-2.jpg);">
+                                <p class="latest__item-popular-label">
+                                    Popular
+                                </p>
+                                <span class="latest__item-category">
+                                    RAP MUSIC
+                                </span>
+                                <div class="latest__item-title">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy…
+                                </div>
+                                <div class="latest__item-author">
+                                    <img class="latest__item-author-img" src="images/latest-news-author-2.png" alt="#">
+                                    <div class="latest__item-author-box">
+                                        <span>Jonathan Smith</span>
+                                        <div class="latest__item-author-bottom">
+                                            <span>Sept 21</span>
+                                            <div class="latest__item-comments">
+                                                <img src="images/icon-comments.svg" alt="#">
+                                                <span>16</span>
+                                            </div>
+                                            <div class="latest__item-like">
+                                                <img src="images/icon-heart.svg" alt="#">
+                                                <span>321</span>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>   
+                            </a>
+
+                            <a class="latest__item latest__item--popular" href="#">
+                                
+                            </a>
+
+
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
 
 
         </div>

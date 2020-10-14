@@ -1,34 +1,52 @@
-// $(document).ready(function () {
+$(document).ready(function () {
 
-    // // Слайдер : 
-    // $('.clients_slider').slick({
-    //     // dots: true,
-    //     // infinite: false,
-    //     slidesToShow: 5,
-    //     slidesToScroll: 1,
-    //     prevArrow: '<button class="arrow_prev_client"></button>',
-    //     nextArrow: '<button class="arrow_next_client"><img src="images/arrow-next-client.svg" alt=""></button>',
-    //     responsive: [{
-    //         breakpoint: 1760,
-    //         settings: {
-    //             slidesToShow: 4,
-    //         }
-    //     },
-    //     {
-    //         breakpoint: 1220,
-    //         settings: {
-    //             slidesToShow: 3,
-    //         }
-    //     },
-    //     ]
-    // });
-    // если надо переключать доп. кнопкой :
-    // $('.slider_next').click(function () {
-    //     $("#slider").slick('slickNext');
-    // });
+    // Открытие search__explore-dropdown :
+    $('.search__explore').on('click', function () {
+        if ($('.search__explore-dropdown').hasClass('active')) {
+            $(".search__explore-dropdown").removeClass('active').fadeOut();
+        }
+        else {            
+            $(".search__explore-dropdown").fadeIn().addClass('active');            
+        }
+    });
+    // Закрытие search__explore-dropdown при клике в стороне :    
+    $(document).mouseup(function (e) {
+        var container__dropdown = $(".search__explore-dropdown");
+        var container__search__explore = $(".search__explore");
+        if (!container__dropdown.is(e.target) && container__dropdown.has(e.target).length === 0 && !container__search__explore.is(e.target) && container__search__explore.has(e.target).length === 0) {
+            if ($('.search__explore-dropdown').hasClass('active')) {
+                $('.search__explore-dropdown').removeClass('active').fadeOut();
+            }
+        }
+    });
+
+     // переключение вкладок recommended :
+     $('.recommended__inner .tab').on('click', function (event) {
+        var id = $(this).attr('data-id');
+        $('.recommended__inner').find('.tab-item').removeClass('active-tab').hide();
+        $('.recommended__inner .tabs').find('.tab').removeClass('active');
+        $(this).addClass('active');
+        $('#' + id).addClass('active-tab').fadeIn();
+        return false;
+    });
+
+    // Слайдер секции IMAGE GALLERY : 
+    $('.gallery__slider').slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        prevArrow: '<button class="slider__arrow-prev"><img src="images/slider-arrow-prev.svg" alt=""></button>',
+        nextArrow: '<button class="slider__arrow-next"><img src="images/slider-arrow-next.svg" alt=""></button>',        
+    });   
+    $('.gallery__slider').click(function () {
+        $("#gallery__slider").slick('slickNext');
+    });
+
+    
 
 
-    // закрытие попап-уведомлений (своих, не fancybox) :
+    // закрытие попап-уведомлений :
     // $('.notification_close').on('click', function () {
     //     $('.notify').removeClass('notify_active');
     // });
@@ -61,37 +79,9 @@
 
     //         }
     //     }
-    // });
-
-    // появление sidebar :
-    // $(".user").click(function () {
-    //     $(".sidebar").removeClass('hidden');
-    //     $(".sidebar").addClass('active');
-    //     $("body, html").css('overflow', 'hidden');
-    //     return false;
-    // });
-    // $(document).mouseup(function (e) {
-    //     var container = $(".sidebar");
-    //     // if the target of the click isn't the container nor a descendant of the container
-    //     if (!container.is(e.target) && container.has(e.target).length === 0) {
-    //         if ($('.sidebar').hasClass('active')) {
-    //             $(".sidebar").removeClass('active');
-    //             $(".sidebar").addClass('hidden');
-    //         }
-    //         $("body, html").css('overflow-y', 'auto');
-    //     }
-    // });
+    // });   
     
-    
-    // переключение вкладок:
-    // $('.settings__tabs .tab').on('click', function (event) {
-    //     var id = $(this).attr('data-id');
-    //     $('.settings__tabs').find('.tab-item').removeClass('active-tab').hide();
-    //     $('.settings__tabs .tabs').find('.tab').removeClass('active');
-    //     $(this).addClass('active');
-    //     $('#' + id).addClass('active-tab').fadeIn();
-    //     return false;
-    // });
+   
 
 
     // переключение 2х-шагового входа:
@@ -132,4 +122,4 @@
     // });
 
 
-// });
+});
