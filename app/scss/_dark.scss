@@ -1,0 +1,109 @@
+// start dark mode :
+
+.dark {
+    .header {
+        background-color: #201f24;
+        box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.16);
+    }
+    .search__form {
+        background: #302f34;
+        border: 1px solid #48474d;
+        box-shadow: none;
+    }
+    .search__explore {
+        border: 1px solid #48474d;
+    }
+    .search__input {
+        border-left: 1px solid #48474d;
+        color: #fff;
+    }
+    .search__btn {
+        background-image: url(../images/icon-search-dark.svg);
+    }
+    .search__explore-dropdown {
+        color: $grey;
+        background-color: #201f24;
+        border: 1px solid #48474d;
+        &::before {
+            border-color: transparent transparent #48474d transparent;
+        }
+    }
+    .login {
+        border-left: 1px solid #48474d;
+    }
+    .tabs {
+        background-color: #201f24;
+        &__title {
+            color: #fff;
+        }
+    }
+    .tab {
+        border-top: 1px solid rgba($color: #000000, $alpha: 0.16);
+        &.active {
+            background-color: #302f34;
+            .tab__text {
+                color: #fff;
+            }
+            &::before {
+                content: url(../images/tab-active-arrow-dark.svg);
+            }
+        }
+    }
+    .recommended,
+    .adventisment,
+    .gallery,
+    .latest,
+    .join,
+    .breaking {
+        background-color: #201f24;
+    }
+    .section__title {
+        color: #fff;
+    }
+    .recommended__inner {
+        box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.16);
+    }
+    .latest__item {
+        box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.16);
+        background-color: #302f34;
+        &-title,
+        &--small-title,
+        &--instagram-title {
+            color: #fff;
+        }
+    }
+    .latest__item-author span,
+    .trending__title,
+    .trending__item-title,
+    .join__title,
+    .breaking__item-title {
+        color: #fff;
+    }
+    .join__inner,
+    .breaking__list {
+        box-shadow: 0 21px 55px rgba($color: #000000, $alpha: 0.16);
+        background-color: #302f34;
+    }
+    .join__item {
+        border: 10px solid #302f34;
+    }
+    .join__text,
+    .breaking__text {
+        color: #9da1a4;
+    }
+    .breaking__item + .breaking__item {
+        border-top: 1px solid #1e1e20;
+    }
+    .footer,
+    .notification {
+        background-color: #302f34;
+    }
+    .latest__item-bottom,
+    .footer__bottom {
+        border-top: 1px solid rgba($color: #000000, $alpha: 0.16);
+    }
+    .footer__item-title,
+    .notification__title {
+        color: #fff;
+    }
+}

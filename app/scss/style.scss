@@ -1241,112 +1241,75 @@
 
 // end main page
 
-// start dark mode of main page
 
-.dark {
-    .header {
-        background-color: #201f24;
-        box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.16);
+// start notification
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 19px;
+    max-width: 584px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 21px 55px rgba($color: #b1bdda, $alpha: 0.16);
+    border-radius: 13px;
+    background-color: #fff;
+    &__img {
+        position: relative;
+        width: 120px;
+        min-width: 120px;
+        height: 171px;
+        border-radius: 13px;
+        margin-right: 20px;
+        img {
+            position: absolute;
+            left: -83px;
+            top: -61px;
+        }
     }
-    .search__form {
-        background: #302f34;
-        border: 1px solid #48474d;
-        box-shadow: none;
+    &__title {
+        font-family: "Segoe UI-Bold", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 8px;
     }
-    .search__explore {
-        border: 1px solid #48474d;
-    }
-    .search__input {
-        border-left: 1px solid #48474d;
-        color: #fff;
-    }
-    .search__btn {
-        background-image: url(../images/icon-search-dark.svg);
-    }
-    .search__explore-dropdown {
+    &__text {
         color: $grey;
-        background-color: #201f24;
-        border: 1px solid #48474d;
-        &::before {
-            border-color: transparent transparent #48474d transparent;
-        }
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 400;
+        margin-bottom: 8px;
     }
-    .login {
-        border-left: 1px solid #48474d;
-    }
-    .tabs {
-        background-color: #201f24;
-        &__title {
-            color: #fff;
-        }
-    }
-    .tab {
-        border-top: 1px solid rgba($color: #000000, $alpha: 0.16);
-        &.active {
-            background-color: #302f34;
-            .tab__text {
-                color: #fff;
-            }
-            &::before {
-                content: url(../images/tab-active-arrow-dark.svg);
-            }
-        }
-    }
-    .recommended,
-    .adventisment,
-    .gallery,
-    .latest,
-    .join,
-    .breaking {
-        background-color: #201f24;
-    }
-    .section__title {
+    &__btn {
+        background-color: $green;
+        text-align: center;
         color: #fff;
+        border-radius: 34px;
+        max-width: 406px;
+        width: 100%;
+        padding: 11px;
+        font-size: 20px;
+        line-height: 27px;
     }
-    .recommended__inner {
-        box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.16);
-    }
-    .latest__item {
-        box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.16);
-        background-color: #302f34;
-        &-title,
-        &--small-title,
-        &--instagram-title {
-            color: #fff;
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 19px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.7;
         }
-    }
-    .latest__item-author span,
-    .trending__title,
-    .trending__item-title,
-    .join__title,
-    .breaking__item-title{
-        color: #fff;
-    }
-    .join__inner,
-    .breaking__list{
-        box-shadow: 0 21px 55px rgba($color: #000000, $alpha: 0.16);
-        background-color: #302f34;
-    }
-    .join__item{
-        border: 10px solid #302F34;
-    }
-    .join__text,
-    .breaking__text{
-        color: #9DA1A4;
-    }
-    .breaking__item+.breaking__item {
-        border-top: 1px solid #1E1E20;
-    }
-    .footer {
-        background-color: #302f34;
-    }
-    .latest__item-bottom ,
-    .footer__bottom {
-        border-top: 1px solid rgba($color: #000000, $alpha: 0.16);
-    }
-    .footer__item-title {
-        color: #fff;
     }
 }
+
+// start dark color mode:
+
+@import "_dark";
+
+// start madia:
 
 @import "_media";

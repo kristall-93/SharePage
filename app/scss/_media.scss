@@ -1,6 +1,41 @@
-// @media (max-width: 1400px) {
-//     .promo__img {
-//         right: -140px;
-//         max-width: 650px;
-//     }
-// }
+@media (max-width: 630px) {
+    .notification {
+        max-width: 352px;
+        &__img {
+            width: 73px;
+            min-width: 73px;
+            height: 103px;
+            margin-right: 12px;
+            img {
+                left: -106px;
+                top: -103px;
+                transform: scale(0.6);
+            }
+        }
+        &__title {
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 4px;
+        }
+        &__text {
+            font-size: 10px;
+            line-height: 14px;
+        }
+        &__btn {
+            max-width: 245px;
+            font-size: 12px;
+            line-height: 16px;
+            padding: 6px;
+        }
+        &__close {
+            width: 10px;
+            height: 10px;
+            top: 1px;
+            right: 11px;
+            img {
+                width: 10px;
+            height: 10px;
+            }
+        }
+    }
+}

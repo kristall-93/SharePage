@@ -72,7 +72,6 @@ $(document).ready(function () {
         nextArrow: '<button class="popup__slider__arrow-next"><img src="images/gallery-arrow.svg" alt=""></button>',
     });
 
-
     $('.slider-item__open-gallery').on('click', function () {    
         $('.popup-gallery').addClass('active');        
     });
@@ -82,10 +81,11 @@ $(document).ready(function () {
     });
 
 
-    // закрытие попап-уведомлений :
-    // $('.notification_close').on('click', function () {
-    //     $('.notify').removeClass('notify_active');
-    // });
+    // закрытие попап-уведомления 'notification' :
+
+    $('.notification__close').on('click', function () {
+        $('.notification').fadeOut();
+    });
 
     // появление мобильного меню :
     // $('.menu_btn').on('click', function () {
