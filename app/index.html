@@ -7,12 +7,12 @@
     <meta name="description" content="My website">
     <title>Share Page</title>
     <link rel="shortcut icon" href="images/logo-icon.svg" type="image/svg">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="dark">
     <div class="wrapper">
 
         <div class="content">
@@ -458,7 +458,8 @@
                                         TO HARD WORK AND <br>
                                         DEDICATION
                                     </h4>
-                                    <a class="slider-item__open-gallery" href="#">
+                                    <a class="slider-item__open-gallery" data-fancybox data-src="#popup-gallery"
+                                        href="javascript:;" data-touch='false'>
                                         <img src="images/icon-open-gallery.svg" alt="#">
                                         <span class="open-gallery__text">Open Gallery</span>
                                         <span class="open-gallery__count">15</span>
@@ -484,7 +485,8 @@
                                         TO HARD WORK AND <br>
                                         DEDICATION
                                     </h4>
-                                    <a class="slider-item__open-gallery" href="#">
+                                    <a class="slider-item__open-gallery" data-fancybox data-src="#popup-gallery"
+                                        href="javascript:;" data-touch='false'>
                                         <img src="images/icon-open-gallery.svg" alt="#">
                                         <span class="open-gallery__text">Open Gallery</span>
                                         <span class="open-gallery__count">15</span>
@@ -510,7 +512,8 @@
                                         TO HARD WORK AND <br>
                                         DEDICATION
                                     </h4>
-                                    <a class="slider-item__open-gallery" href="#">
+                                    <a class="slider-item__open-gallery" data-fancybox data-src="#popup-gallery"
+                                        href="javascript:;" data-touch='false'>
                                         <img src="images/icon-open-gallery.svg" alt="#">
                                         <span class="open-gallery__text">Open Gallery</span>
                                         <span class="open-gallery__count">15</span>
@@ -536,7 +539,8 @@
                                         TO HARD WORK AND <br>
                                         DEDICATION
                                     </h4>
-                                    <a class="slider-item__open-gallery" href="#">
+                                    <a class="slider-item__open-gallery" data-fancybox data-src="#popup-gallery"
+                                        href="javascript:;" data-touch='false'>
                                         <img src="images/icon-open-gallery.svg" alt="#">
                                         <span class="open-gallery__text">Open Gallery</span>
                                         <span class="open-gallery__count">15</span>
@@ -562,7 +566,8 @@
                                         TO HARD WORK AND <br>
                                         DEDICATION
                                     </h4>
-                                    <a class="slider-item__open-gallery" href="#">
+                                    <a class="slider-item__open-gallery" data-fancybox data-src="#popup-gallery"
+                                        href="javascript:;" data-touch='false'>
                                         <img src="images/icon-open-gallery.svg" alt="#">
                                         <span class="open-gallery__text">Open Gallery</span>
                                         <span class="open-gallery__count">15</span>
@@ -573,8 +578,8 @@
 
                             <div class="gallery__preview-wrapper">
 
-                                <a class="gallery__preview" href="#"
-                                    style="background-image: url(images/preview-1.png);">
+                                <a class="gallery__preview" data-fancybox data-src="#popup-gallery" href="javascript:;"
+                                    data-touch='false' style="background-image: url(images/preview-1.png);">
                                     <h6 class="preview__title">
                                         Kanye Has Car Dealers Doing Swift Business
                                     </h6>
@@ -584,8 +589,8 @@
                                     </div>
                                 </a>
 
-                                <a class="gallery__preview" href="#"
-                                    style="background-image: url(images/preview-2.jpg);">
+                                <a class="gallery__preview" data-fancybox data-src="#popup-gallery" href="javascript:;"
+                                    data-touch='false' style="background-image: url(images/preview-2.jpg);">
                                     <h6 class="preview__title">
                                         Kanye Has Car Dealers Doing Swift Business
                                     </h6>
@@ -595,8 +600,8 @@
                                     </div>
                                 </a>
 
-                                <a class="gallery__preview" href="#"
-                                    style="background-image: url(images/preview-3.jpg);">
+                                <a class="gallery__preview" data-fancybox data-src="#popup-gallery" href="javascript:;"
+                                    data-touch='false' style="background-image: url(images/preview-3.jpg);">
                                     <h6 class="preview__title">
                                         Kanye Has Car Dealers Doing Swift Business
                                     </h6>
@@ -630,7 +635,7 @@
                                 <div class="latest__item-top">
                                     <div class="latest__item-info">
                                         <span class="latest__item-category
-                                        latest__item-category--movies">
+                                       category-movies">
                                             MOVIES
                                         </span>
                                         <div class="latest__item-title">
@@ -644,7 +649,7 @@
                                             vero eos et accusam et…
                                         </div>
                                     </div>
-                                    <img src="images/latest-news-1.jpg" alt="#">
+                                    <img src="images/latest-news-1.png" alt="#">
                                 </div>
                                 <div class="latest__item-bottom">
                                     <div class="latest__item-author">
@@ -765,7 +770,9 @@
                             </a>
 
                             <a class="latest__item latest__item--instagram" href="#">
-                                <img src="images/latest-news-3.jpg" alt="#">
+                                <div class="latest__item--instagram-img"
+                                    style="background-image: url(images/latest-news-3.jpg);">
+                                </div>
                                 <h6 class="latest__item--instagram-title">
                                     Instagram Star Lauren Drain Enjoys Las Vegas
                                 </h6>
@@ -779,8 +786,7 @@
                             </a>
 
                             <a class="latest__item latest__item--small" href="#">
-                                <span
-                                    class="latest__item-category latest__item-category-tv latest__item--small-category">
+                                <span class="latest__item-category category-tv latest__item--small-category">
                                     TV
                                 </span>
                                 <h6 class="latest__item--small-title">
@@ -795,8 +801,7 @@
                             </a>
 
                             <a class="latest__item latest__item--small" href="#">
-                                <span
-                                    class="latest__item-category latest__item-category-holywood latest__item--small-category">
+                                <span class="latest__item-category category-holywood latest__item--small-category">
                                     HOLYWOOD
                                 </span>
                                 <h6 class="latest__item--small-title">
@@ -855,11 +860,11 @@
                             Join the community of 1,200+ members and share.
                         </h3>
                         <div class="join__box">
-                            <div class="join__item"  style="background-image: url(images/join-item-1.jpg);">
+                            <div class="join__item" style="background-image: url(images/join-item-1.jpg);">
                             </div>
-                            <div class="join__item"  style="background-image: url(images/join-item-2.jpg);">
+                            <div class="join__item" style="background-image: url(images/join-item-2.jpg);">
                             </div>
-                            <div class="join__item"  style="background-image: url(images/join-item-3.jpg);">
+                            <div class="join__item" style="background-image: url(images/join-item-3.jpg);">
                             </div>
                             <a class="join__item join__item-link" href="#">
                                 <img src="images/icon-join.svg" alt="#">
@@ -873,7 +878,7 @@
                         </a>
                         <a class="join__btn join__btn-signup" href="#">
                             Sign up now
-                        </a>                        
+                        </a>
                     </div>
                 </div>
             </section>
@@ -881,24 +886,107 @@
             <section class="breaking">
                 <div class="container">
                     <div class="breaking__inner">
-                        <h2 class="breaking__title">
+                        <h2 class="breaking__title section__title">
                             breaking news
                         </h2>
                         <div class="breaking__content">
                             <div class="breaking__list">
 
                                 <div class="breaking__item">
-                                    <img src="" alt="#">
+                                    <img class="breaking__img" src="images/breaking-1.jpg" alt="#">
                                     <div class="breaking__info">
-                                        <span class="breaking__category">
+                                        <span class="breaking__category category-youtube">
                                             YOUTUBE
                                         </span>
-                                        <a class="breaking__title" href="#">
+                                        <a class="breaking__item-title" href="#">
                                             Instagram Star Logan Paul Challenges
                                             Boxing Champion Floyd Mayweather
                                         </a>
                                         <p class="breaking__text">
-                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. vero eos et accusam et…
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                            voluptua. vero eos et accusam et…
+                                        </p>
+                                        <div class="breaking__bottom">
+                                            <div class="breaking__time">
+                                                Oct 15, 2020 - 12:52 AM
+                                            </div>
+                                            <div class="breaking__comments latest__item-comments">
+                                                <img src="images/icon-comments.svg" alt="#">
+                                                <span>312</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="breaking__item">
+                                    <img class="breaking__img" src="images/breaking-2.jpg" alt="#">
+                                    <div class="breaking__info">
+                                        <span class="breaking__category category-tv">
+                                            TV
+                                        </span>
+                                        <a class="breaking__item-title" href="#">
+                                            Glee Start Enjoys Summer Vacation On
+                                            Mykonos Island With Their Partners
+                                        </a>
+                                        <p class="breaking__text">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                            voluptua. vero eos et accusam et…
+                                        </p>
+                                        <div class="breaking__bottom">
+                                            <div class="breaking__time">
+                                                Oct 15, 2020 - 12:52 AM
+                                            </div>
+                                            <div class="breaking__comments latest__item-comments">
+                                                <img src="images/icon-comments.svg" alt="#">
+                                                <span>312</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="breaking__item">
+                                    <img class="breaking__img" src="images/breaking-3.jpg" alt="#">
+                                    <div class="breaking__info">
+                                        <span class="breaking__category category-movies">
+                                            MOVIES
+                                        </span>
+                                        <a class="breaking__item-title" href="#">
+                                            Chris Hemsworth Topless Body Could Be
+                                            Yours With This Advice
+                                        </a>
+                                        <p class="breaking__text">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                            voluptua. vero eos et accusam et…
+                                        </p>
+                                        <div class="breaking__bottom">
+                                            <div class="breaking__time">
+                                                Oct 15, 2020 - 12:52 AM
+                                            </div>
+                                            <div class="breaking__comments latest__item-comments">
+                                                <img src="images/icon-comments.svg" alt="#">
+                                                <span>312</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="breaking__item">
+                                    <img class="breaking__img" src="images/breaking-4.jpg" alt="#">
+                                    <div class="breaking__info">
+                                        <span class="breaking__category category-music">
+                                            MUSIC
+                                        </span>
+                                        <a class="breaking__item-title" href="#">
+                                            Elizabeth Olsen Is Not Interested In A
+                                            Scarlet Witch Solo Movie
+                                        </a>
+                                        <p class="breaking__text">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                            voluptua. vero eos et accusam et…
                                         </p>
                                         <div class="breaking__bottom">
                                             <div class="breaking__time">
@@ -913,20 +1001,22 @@
                                 </div>
 
                             </div>
-                            <div class="breaking__fans">
 
+                            <div class="breaking__fans">
+                                <h6 class="breaking__fans-title">
+                                    FANS SHARING PICTURES
+                                </h6>
+                                <img class="breaking__fans-img" src="images/breaking-fans-1.jpg" alt="#">
+                                <img class="breaking__fans-img" src="images/breaking-fans-2.jpg" alt="#">
+                                <img class="breaking__fans-img" src="images/breaking-fans-3.jpg" alt="#">
+                                <img class="breaking__fans-img" src="images/breaking-fans-4.jpg" alt="#">
+                                <img class="breaking__fans-img" src="images/breaking-fans-5.jpg" alt="#">
                             </div>
+
                         </div>
                     </div>
                 </div>
             </section>
-
-
-
-
-
-
-
 
 
         </div>
@@ -934,11 +1024,492 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
+                    <div class="footer__top">
+
+                        <div class="footer__item footer__item-logo">
+                            <a class="logo" href="#">
+                                <img src="images/logo.svg" alt="#">
+                            </a>
+                            <p class="footer__item-text">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. vero eos et accusam
+                                et…
+                            </p>
+                        </div>
+
+                        <div class="footer__item">
+                            <h6 class="footer__item-title">
+                                Our Services
+                            </h6>
+                            <ul>
+                                <li>
+                                    <a class="footer__item-link" href="#">
+                                        Share Content
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__item-link" href="#">
+                                        Latest Stories
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__item-link" href="#">
+                                        Premium Features
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__item-link" href="#">
+                                        Gossips
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__item">
+                            <h6 class="footer__item-title">
+                                About
+                            </h6>
+                            <ul>
+                                <li>
+                                    <a class="footer__item-link" href="#">
+                                        Our Story
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__item-link" href="#">
+                                        General Info
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__item-link" href="#">
+                                        Customer Support
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__item-link" href="#">
+                                        Guidelines
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__item footer__contacts">
+                            <h6 class="footer__item-title">
+                                Contact Us
+                            </h6>
+                            <ul>
+                                <li>
+                                    <p class="footer__item-link">
+                                        Address: Novi Sad, Serbia
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="footer__item-link">
+                                        Street: Proleterska 44, 25221
+                                    </p>
+                                </li>
+                                <li>
+                                    <a class="footer__item-link" href="tel:+3816621362121">
+                                        Phone: +381 66 213 621 21
+                                    </a>
+                                </li>
+                                <li>
+                                    <p class="footer__item-link">
+                                        Fax: +381 853 386
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__item footer__gallery">
+                            <h6 class="footer__item-title">
+                                Gallery
+                            </h6>
+                            <div class="footer__gallery-box">
+                                <img class="footer__gallery-img" src="images/footer-img-1.jpg" alt="#">
+                                <img class="footer__gallery-img" src="images/footer-img-2.jpg" alt="#">
+                                <img class="footer__gallery-img" src="images/footer-img-3.jpg" alt="#">
+                                <img class="footer__gallery-img" src="images/footer-img-4.jpg" alt="#">
+                                <img class="footer__gallery-img" src="images/footer-img-5.jpg" alt="#">
+                                <img class="footer__gallery-img" src="images/footer-img-6.jpg" alt="#">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer__bottom">
+                        <a href="#">All Rights Reserved - SharePage 2020</a>
+                    </div>
 
                 </div>
             </div>
         </footer>
 
+    </div>
+
+
+    <div class="popup-gallery" id="popup-gallery">
+        <div class="popup-gallery__inner">
+
+            <div class="popup__slider-main" id="slider-main">
+
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-1.jpg);"
+                    id="slider-main__item">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number" id="slider-main__number">1/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-2.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">2/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-3.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">3/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-4.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">4/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-5.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">5/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-6.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">6/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-7.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">7/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-8.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">8/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-9.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">9/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-10.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">10/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-11.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">11/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup__slider-nav">
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-1.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-2.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-3.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-4.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-5.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-6.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-7.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-8.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-9.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-10.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-11.jpg);">
+                </div>
+            </div>
+
+            <div class="gallery__bottom">
+                <div class="gallery__bottom-line">
+                    <span class="gallery__get-updated">
+                        GET<span>UPDATED</span>
+                    </span>
+                    <form class="gallery__form">
+                        <input type="text" placeholder="Enter E-mail address for Kate Upton updates" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <a class="gallery__reseive" href="#">
+                        Receive E-mail Alerts When Fans Share Content
+                    </a>
+                </div>
+                <div class="gallery__bottom-bg gallery__bottom-bg--right">
+                    <img src="images/gallery-bottom-bg.svg" alt="#">
+                </div>
+                <div class="gallery__bottom-bg gallery__bottom-bg--left">
+                    <img src="images/gallery-bottom-bg.svg" alt="#">
+                </div>
+            </div>
+
+        </div>
     </div>
 
 

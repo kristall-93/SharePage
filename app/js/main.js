@@ -5,8 +5,8 @@ $(document).ready(function () {
         if ($('.search__explore-dropdown').hasClass('active')) {
             $(".search__explore-dropdown").removeClass('active').fadeOut();
         }
-        else {            
-            $(".search__explore-dropdown").fadeIn().addClass('active');            
+        else {
+            $(".search__explore-dropdown").fadeIn().addClass('active');
         }
     });
     // Закрытие search__explore-dropdown при клике в стороне :    
@@ -20,8 +20,8 @@ $(document).ready(function () {
         }
     });
 
-     // переключение вкладок recommended :
-     $('.recommended__inner .tab').on('click', function (event) {
+    // переключение вкладок recommended :
+    $('.recommended__inner .tab').on('click', function (event) {
         var id = $(this).attr('data-id');
         $('.recommended__inner').find('.tab-item').removeClass('active-tab').hide();
         $('.recommended__inner .tabs').find('.tab').removeClass('active');
@@ -37,13 +37,49 @@ $(document).ready(function () {
         slidesToScroll: 1,
         infinite: false,
         prevArrow: '<button class="slider__arrow-prev"><img src="images/slider-arrow-prev.svg" alt=""></button>',
-        nextArrow: '<button class="slider__arrow-next"><img src="images/slider-arrow-next.svg" alt=""></button>',        
-    });   
-    $('.gallery__slider').click(function () {
-        $("#gallery__slider").slick('slickNext');
+        nextArrow: '<button class="slider__arrow-next"><img src="images/slider-arrow-next.svg" alt=""></button>',
     });
 
-    
+    // переключение слайдов нажатием на слайд :
+
+    // $('.gallery__slider').click(function () {
+    //     $("#gallery__slider").slick('slickNext');
+    // });
+
+
+    // Слайдеры в popup-gallery :
+
+    $('.popup__slider-main').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        // infinite: false,
+        touchThreshold: 10,
+        asNavFor: '.popup__slider-nav'
+    });
+    $('.popup__slider-nav').slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        asNavFor: '.popup__slider-main',
+        // infinite: false,
+        // centerMode: true,
+        focusOnSelect: true,
+        swipeToSlide: true,
+        waitForAnimate: false,
+        variableWidth: true,
+        prevArrow: '<button class="popup__slider__arrow-prev"><img src="images/gallery-arrow.svg" alt=""></button>',
+        nextArrow: '<button class="popup__slider__arrow-next"><img src="images/gallery-arrow.svg" alt=""></button>',
+    });
+
+
+    $('.slider-item__open-gallery').on('click', function () {    
+        $('.popup-gallery').addClass('active');        
+    });
+
+    $('.gallery__preview').on('click', function () {    
+        $('.popup-gallery').addClass('active');        
+    });
 
 
     // закрытие попап-уведомлений :
@@ -80,8 +116,8 @@ $(document).ready(function () {
     //         }
     //     }
     // });   
-    
-   
+
+
 
 
     // переключение 2х-шагового входа:
@@ -99,7 +135,7 @@ $(document).ready(function () {
     //         document.getElementById("two_step_verify_text").textContent = 'Two-step verification on';
     //     }
     // });
-    
+
 
     // "звездный рейтинг" изменяемый:
     // $("#rateYo").rateYo({
