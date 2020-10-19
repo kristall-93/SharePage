@@ -15,17 +15,29 @@
     padding: 37px 42px;
     border-radius: 18px;
     &-item {
-        max-width: 363px;
+        // max-width: 363px;
         width: 100%;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        img {
+            margin-left: 8px;
+        }
+        &:nth-child(1) {
+            max-width: 322px;
+        }
         & + & {
+            max-width: 363px;
             margin-left: 41px;
             padding-left: 41px;
             border-left: 2px solid #55a630;
         }
         &-title {
-            width: 212px;
+            width: 193px;
+            font-family: "Segoe UI-Bold", sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
         }
     }
 }
@@ -149,6 +161,7 @@
     &.active {
         position: relative;
         background-color: rgba($color: #e6e9ee, $alpha: 0.34);
+        border-right: 5px solid $green;
         .tab__text {
             color: $black;
         }
@@ -167,9 +180,7 @@
 // start adventisment
 
 .adventisment {
-    // margin-bottom: 45px;
     padding-top: 45px;
-
     &__inner {
         min-height: 160px;
         background-repeat: no-repeat;
@@ -212,6 +223,8 @@
         width: 100%;
         height: 680px;
         margin-right: 14px;
+        border-radius: 18px;
+        // overflow: hidden;
         &-item {
             position: relative;
             height: 680px;
@@ -253,7 +266,7 @@
     &__preview {
         max-width: 341px;
         width: 50%;
-        min-height: 332px;
+        height: 332px;
         border-radius: 18px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -324,9 +337,8 @@
 .slider-item {
     &__reporter {
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 76px;
         text-align: center;
-        margin-bottom: 76px;
         color: #ffffff;
         img {
             margin: 0 auto 11px;
@@ -1240,7 +1252,6 @@
 }
 
 // end main page
-
 
 // start notification
 
