@@ -6,6 +6,8 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -483,6 +485,91 @@ body.login--on{
     line-height: 47px;
     text-transform: uppercase;
 }
+
+// start footer
+
+.footer {
+    color: $grey;
+    background-color: #fff;
+    &__inner {
+        margin-left: -35px;
+        margin-right: -35px;
+        padding-top: 112px;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+    &__item {
+        max-width: 210px;
+        & + & {
+            margin-left: 25px;
+        }
+        &.footer__item-logo {
+            max-width: 358px;
+        }
+        &.footer__contacts {
+            max-width: 258px;
+        }
+        &.footer__gallery {
+            max-width: 265px;
+        }
+        &-title {
+            font-family: "Segoe UI-Bold", sans-serif;
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 46px;
+            color: $black;
+            margin-bottom: 20px;
+        }
+        &-link {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            margin-bottom: 13px;
+            display: block;
+        }
+        &-text {
+            height: 80px;
+            overflow: hidden;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+        }
+        .logo {
+            width: 212px;
+            height: 50px;
+            margin-bottom: 18px;
+            margin-right: 0;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &__gallery {
+        &-box {
+            max-width: 265px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &-img {
+            margin-bottom: 8px;
+            border-radius: 13px;
+        }
+    }
+    &__bottom {
+        border-top: 1px solid #e6e9ee;
+        padding-top: 45px;
+        padding-bottom: 54px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 27px;
+    }
+}
+
 
 // kind of category:
 
