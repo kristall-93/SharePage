@@ -1220,7 +1220,7 @@
 
 // end main page
 
-// start notification
+// start popup notification
 
 .notification {
     position: fixed;
@@ -1280,6 +1280,271 @@
         cursor: pointer;
         &:hover {
             opacity: 0.7;
+        }
+    }
+}
+
+// start login-page
+
+.login-page .header {
+    display: none;
+}
+
+.login {
+    &__inner {
+        display: flex;
+    }
+    &__gallery {
+        min-width: 682px;
+        max-width: 682px;
+        // width: 100%;
+        height: 100vh;
+        min-height: 992px;
+        overflow-y: scroll;
+        scrollbar-width: 50px;
+        padding: 24px 24px 0;
+        display: flex;
+        justify-content: space-between;
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+        &-col {
+            max-width: 48%;
+            width: 100%;
+        }
+        &-item {
+            margin-bottom: 30px;
+            &.latest__item--popular {
+                width: 100%;
+                min-height: 423px;
+                padding: 31px 25px;
+                position: relative;
+                &.login__gallery-item--smallest {
+                    min-height: 211px;
+                    padding: 49px 44px 49px 36px;
+                    .latest__item-title {
+                        height: 94px;
+                        overflow: hidden;
+                        font-size: 22px;
+                        line-height: 30px;
+                        margin-bottom: 0;
+                    }
+                }
+                &.login__gallery-item--small {
+                    min-height: 275px;
+                    padding: 81px 44px 81px 36px;
+                    .latest__item-title {
+                        height: 94px;
+                        overflow: hidden;
+                        font-size: 22px;
+                        line-height: 30px;
+                        margin-bottom: 0;
+                    }
+                }
+                &.login__gallery-item--medium {
+                    min-height: 322px;
+                    .latest__item-title {
+                        height: 70px;
+                        overflow: hidden;
+                    }
+                }
+                .latest__item-popular-label {
+                    position: absolute;
+                    top: 21px;
+                    left: 21px;
+                    width: 99px;
+                    height: 34px;
+                    padding: 8px;
+                    font-size: 13px;
+                    line-height: 17px;
+                    &.movies-label {
+                        background: #4493ff;
+                    }
+                    &.tv-label {
+                        background: $green;
+                    }
+                    &.yellow-label {
+                        background: #e8b118;
+                    }
+                }
+                .latest__item-title {
+                    height: 100px;
+                    overflow: hidden;
+                    margin-bottom: 0;
+                }
+                .latest__item-category {
+                    font-size: 13px;
+                    line-height: 17px;
+                    margin-top: auto;
+                    margin-bottom: 2px;
+                }
+                .latest__item-author {
+                    margin-top: 30px;
+                    &-img {
+                        width: 51px;
+                        height: 51px;
+                    }
+                    &-box {
+                        font-size: 17px;
+                        line-height: 22px;
+                    }
+                    .author-bottom-white span {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    &__form {
+        max-width: 671px;
+        margin: 162px auto;
+        &-wrapper {
+            max-width: 1238px;
+            width: 100%;
+            padding: 0 35px;
+        }
+    }
+    &__title {
+        font-family: "Segoe UI-Bold", sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 67px;
+        margin-bottom: 9px;
+    }
+    &__text {
+        height: 68px;
+        overflow: hidden;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 43px;
+    }
+    &__input {
+        width: 100%;
+        height: 87px;
+        margin-bottom: 18px;
+        border: 1px solid #e6e9ee;
+        border-radius: 10px;
+        padding: 16px 50px;
+        box-shadow: 0 22px 51px rgba($color: #b1bdda, $alpha: 0.16);
+        &::placeholder {
+            font-size: 24px;
+            line-height: 32px;
+            color: $grey;
+        }
+        &-mail-wrapper {
+            position: relative;
+            background-color: #fff;
+            margin-bottom: 18px;
+            border-radius: 10px;
+        }
+        &-mail {
+            position: relative;
+            z-index: 1;
+            background-color: transparent;
+            margin-bottom: 0;
+        }
+        &-placeholder {
+            position: absolute;
+            top: 0;
+            font-size: 24px;
+            line-height: 32px;
+            padding: 16px 50px;
+            p {
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 24px;
+                color: #b3b3b3;
+            }
+        }
+        &-pass-wrapper {
+            position: relative;
+        }
+        &-pass {
+            padding: 16px 88px 16px 50px;
+            position: relative;
+            &-eye {
+                position: absolute;
+                right: 50px;
+                top: 33px;
+            }
+        }
+    }
+    &__btn {
+        width: 100%;
+        height: 87px;
+        font-size: 26px;
+        line-height: 35px;
+        color: #fff;
+        border-radius: 44px;
+        background: $green;
+        border: none;
+        margin-bottom: 18px;
+    }
+    &__register {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: $grey;
+    }
+}
+.forgot-password-link {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: $green;
+    display: block;
+    margin-bottom: 44px;
+}
+.register-link {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: $green;
+}
+
+// start signup-page
+
+.agree-line {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 38px;
+    &__check-btn {
+        width: 42px;
+        min-width: 42px;
+        height: 42px;
+        margin-right: 15px;
+        border-radius: 9px;
+        background: #fff;
+        border: 1px solid #e6e9ee;
+        box-shadow: 0 22px 51px rgba($color: #b1bdda, $alpha: 0.16);
+
+    }
+    .jq-checkbox {
+        &.focused {
+            border: 1px solid #e6e9ee;
+        }
+        &.checked .jq-checkbox__div {
+            width: 28px;
+            height: 28px;
+            margin: 7px auto;
+            transform: none;
+            border: none;
+            background-image: url(../images/checkbox-1.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            // background-position: -70px -48px;
+        }
+    }
+    &__label {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: $grey;
+        a {
+            color: $green;
         }
     }
 }

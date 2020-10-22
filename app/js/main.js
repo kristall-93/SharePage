@@ -6,15 +6,14 @@ $(document).ready(function () {
         if ($('.search__explore-dropdown').hasClass('active')) {
             $('.search__explore-dropdown').removeClass('active').fadeOut();
             $('.search__explore-dropdown-bg').removeClass('active').fadeOut();
-            $('.wrapper').css('position', 'static');
-            // $(".wrapper").removeClass('hidden');   
+            $('.wrapper').css('heigth', '100%');
+            $('.wrapper').css('overflow-y', 'auto');
         }
         else {
             $('.search__explore-dropdown').fadeIn().addClass('active');
             $('.search__explore-dropdown-bg').fadeIn().addClass('active');
-            $('.wrapper').css('position', 'fixed');
-            // $(".wrapper").addClass('hidden');
-
+            $('.wrapper').css('height', '100vh');
+            $('.wrapper').css('overflow', 'hidden');
         }
     });
     // Закрытие search__explore-dropdown при клике в стороне :        
@@ -25,8 +24,8 @@ $(document).ready(function () {
             if ($('.search__explore-dropdown').hasClass('active')) {
                 $('.search__explore-dropdown').removeClass('active').fadeOut();
                 $('.search__explore-dropdown-bg').removeClass('active').fadeOut();
-                $('.wrapper').css('position', 'static');
-                // $(".wrapper").removeClass('hidden');   
+                $('.wrapper').css('heigth', '100%');
+                $('.wrapper').css('overflow-y', 'auto');
             }
         }
     });
@@ -34,10 +33,9 @@ $(document).ready(function () {
     $('.search__explore-close').on('click', function () {
         $('.search__explore-dropdown').removeClass('active').fadeOut();
         $('.search__explore-dropdown-bg').removeClass('active').fadeOut();
-        $('.wrapper').css('position', 'static');
-        // $(".wrapper").removeClass('hidden');
+        $('.wrapper').css('heigth', '100%');
+        $('.wrapper').css('overflow-y', 'auto');
     });
-
 
     // Открытие user-menu__dropdown :
 
@@ -45,47 +43,39 @@ $(document).ready(function () {
         if ($('.user-menu__dropdown').hasClass('active')) {
             $(".user-menu__dropdown").removeClass('active').fadeOut();
             $('body, html').css('overflow-y', 'auto');
+            $('.wrapper').css('overflow-y', 'auto');
         }
         else {
             $(".user-menu__dropdown").fadeIn().addClass('active');
             $('body, html').css('overflow', 'hidden');
+            $('.wrapper').css('overflow', 'hidden');
+
 
         }
     });
     // Закрытие user-menu__dropdown при клике в стороне :    
-     $(document).mouseup(function (e) {
+    $(document).mouseup(function (e) {
         var container__user__menu = $('.user-menu');
         if (!container__user__menu.is(e.target) && container__user__menu.has(e.target).length === 0) {
             if ($('.user-menu__dropdown').hasClass('active')) {
                 $('.user-menu__dropdown').removeClass('active').fadeOut();
                 $('body, html').css('overflow-y', 'auto');
+                $('.wrapper').css('overflow-y', 'auto');
             }
         }
     });
-    // $(document).mouseup(function (e) {
-    //     var container__dropdown = $('.user-menu__dropdown');
-    //     var container__menu__btn = $('.menu__btn');
-    //     var container__user__menu__box = $('.user-menu__box');
-    //     if (!container__dropdown.is(e.target) && container__dropdown.has(e.target).length === 0 && !container__menu__btn.is(e.target) && container__menu__btn.has(e.target).length === 0 && !container__user__menu__box.is(e.target) && container__user__menu__box.has(e.target).length === 0) {
-    //         if ($('.user-menu__dropdown').hasClass('active')) {
-    //             $('.user-menu__dropdown').removeClass('active').fadeOut();
-    //             $('body, html').css('overflow-y', 'auto');
-    //         }
-    //     }
-    // });
-   
-    
+
     // Переключение светлой и темной темы:
 
     $('.btn-dark-mode').on('click', function () {
         $('body').addClass('dark');
-        $('.btn-light-mode').removeClass('active'); 
-        $('.btn-dark-mode').addClass('active');        
+        $('.btn-light-mode').removeClass('active');
+        $('.btn-dark-mode').addClass('active');
     });
     $('.btn-light-mode').on('click', function () {
         $('body').removeClass('dark');
-        $('.btn-dark-mode').removeClass('active');        
-        $('.btn-light-mode').addClass('active'); 
+        $('.btn-dark-mode').removeClass('active');
+        $('.btn-light-mode').addClass('active');
     });
 
     // переключение вкладок recommended :
@@ -108,10 +98,10 @@ $(document).ready(function () {
         infinite: false,
         prevArrow: '<button class="slider__arrow-prev"><img src="images/slider-arrow-prev.svg" alt=""></button>',
         nextArrow: '<button class="slider__arrow-next"><img src="images/slider-arrow-next.svg" alt=""></button>',
-    });    
+    });
 
     // Слайдеры в popup-gallery :
-    
+
     $('.popup__slider-main').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -150,35 +140,31 @@ $(document).ready(function () {
         $('.notification').fadeOut();
     });
 
-    // появление мобильного меню :
-    // $('.menu_btn').on('click', function () {
-    //     $('.header_line').slideToggle();
-    //     if ($('.menu_btn').hasClass('closed')) {
-    //         $(".menu_btn").removeClass('closed');
-    //         $(".menu_btn").addClass('opened');
-    //         $("body, html").css('overflow', 'hidden');
-    //     }
-    //     else {
-    //         $(".menu_btn").removeClass('opened');
-    //         $(".menu_btn").addClass('closed');
-    //         $("body, html").css('overflow-y', 'auto');
-    //     }
+    // Placeholder login__input-mail на login-page
 
-    // });
-    // Закрытие меню при клике не на области меню и кнопки 
-    // $(document).mouseup(function (e) {
-    //     var container_menu = $(".header_line");
-    //     var container_menu_btn = $(".menu_btn");
-    //     // if the target of the click isn't the container nor a descendant of the container
-    //     if (!container_menu.is(e.target) && container_menu.has(e.target).length === 0 && !container_menu_btn.is(e.target) && container_menu_btn.has(e.target).length === 0) {
-    //         if ($('.header_line').css('display', 'block')) {
-    //             $('.header_line').css('display', 'none');
-    //             $(".menu_btn").removeClass('opened');
-    //             $(".menu_btn").addClass('closed');
+    $(document).on('input', '#login__input-mail', function () {
 
-    //         }
-    //     }
-    // });   
+        if ($('#login__input-mail').val()) {
+            $('#login__input-placeholder').hide();
+        } else {
+            $('#login__input-placeholder').show();
+        }
+
+    });
+
+    $('.agree-line__check-btn').styler();
+
+    // Изменение текста заголовка на signup-page :
+
+    $(window).resize(function() {
+        if ( $(window).width() < 660 ) {
+            document.getElementById("signup__title").textContent = 'Create your free account';
+        }
+        else {
+            document.getElementById("signup__title").textContent = 'Create new account for free';
+        }
+    });
+
 
 
 
@@ -199,26 +185,6 @@ $(document).ready(function () {
     //     }
     // });
 
-
-    // "звездный рейтинг" изменяемый:
-    // $("#rateYo").rateYo({
-    //     starWidth: "39px",
-    //     spacing: "9px",
-    //     normalFill: "#E3E6F1",
-    //     ratedFill: "#F2EC2F",
-    //     starSvg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>'
-    // });
-
-    // "звездный рейтинг" не изменяемый:
-    // $("#writer_rating").rateYo({
-    //     starWidth: "23px",
-    //     spacing: "5px",
-    //     rating: 4.1,
-    //     readOnly: true,
-    //     normalFill: "#D6DAE7",
-    //     ratedFill: "#F2EC2F",
-    //     starSvg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>'
-    // });
 
 
 });
