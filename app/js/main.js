@@ -140,19 +140,51 @@ $(document).ready(function () {
         $('.notification').fadeOut();
     });
 
-    // Placeholder login__input-mail на login-page
+    // Placeholder login__input-mail на login-page :
 
     $(document).on('input', '#login__input-mail', function () {
-
         if ($('#login__input-mail').val()) {
             $('#login__input-placeholder').hide();
         } else {
             $('#login__input-placeholder').show();
         }
-
     });
 
-    $('.agree-line__check-btn').styler();
+    // Input Placeholders on user-profile page :
+    
+    $(document).on('input', '#input-username', function () {
+        if ($('#input-username').val()) {
+            $('#input-username-placeholder').hide();
+        } else {
+            $('#input-username-placeholder').show();
+        }
+    });
+    $(document).on('input', '#input-name', function () {
+        if ($('#input-name').val()) {
+            $('#input-name-placeholder').hide();
+        } else {
+            $('#input-name-placeholder').show();
+        }
+    });
+    $(document).on('input', '#input-address', function () {
+        if ($('#input-address').val()) {
+            $('#input-address-placeholder').hide();
+        } else {
+            $('#input-address-placeholder').show();
+        }
+    });
+    $(document).on('input', '#input-birth', function () {
+        if ($('#input-birth').val()) {
+            $('#input-birth-placeholder').hide();
+        } else {
+            $('#input-birth-placeholder').show();
+        }
+    });
+
+
+
+
+    $('.agree-line__check-btn, .results__select').styler();
 
     // Изменение текста заголовка на signup-page :
 

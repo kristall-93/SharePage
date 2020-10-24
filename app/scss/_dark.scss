@@ -11,13 +11,13 @@
     .user-menu__box {
         color: #9da1a4;
     }
-    .menu__btn{
+    .menu__btn {
         background: #323137;
         border: none;
-        &-white{
+        &-white {
             display: block;
         }
-        &-dark{
+        &-dark {
             display: none;
         }
     }
@@ -52,7 +52,7 @@
         &::before {
             border-color: transparent transparent #48474d transparent;
         }
-        .search__btn{
+        .search__btn {
             background: url(../images/icon-search-white.svg);
         }
     }
@@ -151,6 +151,124 @@
         }
         .item-img-black {
             display: none;
+        }
+    }
+
+    // login-page,
+    // signup-page :
+
+    &.login-page {
+        background: #201f24;
+    }
+    .login {
+        &__gallery {
+            background: #323137;
+        }
+        &__title {
+            color: #fff;
+        }
+        &__text {
+            color: $grey;
+        }
+        &__input {
+            background: #323137;
+            border: none;
+            box-shadow: none;
+            color: #fff;
+            &-mail-wrapper {
+                background: #323137;
+            }
+            &-mail {
+                background: transparent;
+            }
+            &-placeholder {
+                color: #fff;
+                p {
+                    color: #b3b3b3;
+                }
+            }
+            &::placeholder {
+                color: $grey;
+            }
+            &-pass-eye {
+                &.pass-eye--grey {
+                    display: block;
+                }
+                &.pass-eye--black {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    // user-profile page :
+
+    &.user-profile {
+        background-color: #201f24;
+    }
+    .profile__inner {
+        background-color: #323137;
+        box-shadow: none;
+    }
+    .profile__img-load {
+        background: #49484e;
+        box-shadow: none;
+        .icon-white {
+            display: block;
+        }
+        .icon-black {
+            display: none;
+        }
+    }
+    .choose-notif__title,
+    .profile__title,
+    .profile__name {
+        color: #fff;
+    }
+    .profile__settings {
+        .login__input,
+        .login__input-mail-wrapper {
+            background: #49484e;
+        }
+        .login__input-mail {
+            background: transparent;
+        }
+        .agree-line__check-btn {
+            background-color: #49484e;
+            border: none;
+            box-shadow: none;
+        }
+        .agree-line .jq-checkbox.checked .jq-checkbox__div {
+            background-image: url(../images/checkbox-dark.svg);
+        }
+    }
+
+    // start search-results page:
+
+    &.search-results {
+        background-color: #201f24;
+    }
+    .results {
+        &__title,
+        &__item-title,
+        &__item-author-name {
+            color: #fff;
+        }
+        &__item {
+            background: #302F34;
+        box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.16);
+            
+        }
+        .jq-selectbox__select,
+        .jq-selectbox__dropdown {
+            background: #302F34;
+        }
+        .jq-selectbox__select-text,
+        .jq-selectbox li{
+            color: #9DA1A4;            
+        }
+        .jq-selectbox__trigger-arrow{
+            background-image: url(../images/icon-arrow-down.svg);
         }
     }
 }

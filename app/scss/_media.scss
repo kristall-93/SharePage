@@ -141,6 +141,12 @@
 }
 
 @media (max-width: 1500px) {
+    .profile__inner {
+        padding: 98px 75px;
+    }
+    .profile__box {
+        margin-right: 40px;
+    }
     .login__gallery-item.latest__item.latest__item--popular {
         width: 100%;
         .latest__item-author-img {
@@ -207,6 +213,73 @@
 }
 
 @media (max-width: 1300px) {
+    .results {
+        margin-top: 164px;
+        &__title {
+            font-size: 34px;
+            line-height: 46px;
+            margin-right: 14px;
+        }
+        &__select {
+            display: none;
+        }
+        &__inner {
+            height: calc(100vh - 224px);
+        }
+        &__item {
+            max-width: 226px;
+            min-height: 307px;
+            padding: 12px 9px;
+            &-img {
+                width: 208px;
+                height: 145px;
+                margin-bottom: 7px;
+            }
+            &-category {
+                font-size: 13px;
+                line-height: 17px;
+                height: 26px;
+                padding: 5px;
+                &.category-movies {
+                    width: 82px;
+                }
+                &.category-music {
+                    width: 71px;
+                }
+                &.category-sport {
+                    width: 66px;
+                }
+                &.category-youtube {
+                    width: 89px;
+                }
+            }
+            &-veiws {
+                width: 49px;
+                font-size: 10px;
+                line-height: 14px;
+                height: 26px;
+            }
+            &-text {
+                height: 144px;
+            }
+        }
+    }
+    .profile {
+        margin-top: 151px;
+        margin-bottom: 45px;
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__box {
+            margin: 0 auto 50px;
+        }
+        &__settings {
+            margin: 0 auto;
+        }
+    }
+    .dark .login__gallery {
+        background: #201f24;
+    }
     .login-page .header {
         display: block;
     }
@@ -235,7 +308,6 @@
             max-width: 100%;
         }
     }
-
     .popup__slider-nav {
         background-color: transparent;
         padding: 26px 18px;
@@ -472,6 +544,18 @@
 }
 
 @media (max-width: 1120px) {
+    .profile__settings-inner {
+        flex-wrap: wrap;
+    }
+    .profile__settings-col {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .profile__save-btn {
+        max-width: 476px;
+        display: block;
+        margin: 40px auto 0;
+    }
     .gallery__slider,
     .gallery__slider-item {
         height: 301px;
@@ -694,6 +778,15 @@
 }
 
 @media (max-width: 850px) {
+    .profile__inner {
+        padding: 41px;
+    }
+    .profile__box {
+        margin: 0 auto 23px;
+    }
+    .profile__save-btn {
+        margin: 23px auto 0;
+    }
     .login__gallery-item.latest__item.latest__item--popular {
         min-height: 423px;
         width: 100%;
@@ -1275,6 +1368,187 @@
 }
 
 @media (max-width: 660px) {
+    .results {
+        margin-top: 87px;
+        &__inner {
+            height: calc(100vh - 136px);
+            margin-right: -10px;
+        }
+        &__title {
+            font-size: 18px;
+            line-height: 27px;
+            margin-right: 22px;
+            margin-right: 0;
+        }
+        &__item {
+            max-width: 173px;
+            min-height: 235px;
+            padding: 9px 7px;
+            margin: 0 8px 15px 0;
+            &.results__item--text {
+                .results__item-title {
+                    font-size: 15px;
+                    line-height: 20px;
+                    height: 62px;
+                    margin-bottom: 0;
+                }
+            }
+            &-img {
+                width: 159px;
+                height: 111px;
+                margin-bottom: 5px;
+            }
+            &-category {
+                font-size: 9px;
+                line-height: 12px;
+                height: 19px;
+                padding: 4px;
+                &.category-movies {
+                    width: 63px;
+                }
+                &.category-music {
+                    width: 54px;
+                }
+                &.category-sport {
+                    width: 51px;
+                }
+                &.category-youtube {
+                    width: 67px;
+                }
+            }
+            &-veiws {
+                width: 38px;
+                font-size: 7px;
+                line-height: 10px;
+                height: 19px;
+                img {
+                    width: 8px;
+                    height: 6px;
+                    margin-right: 3px;
+                }
+            }
+            &-title {
+                height: 24px;
+                font-size: 9px;
+                line-height: 12px;
+            }
+            &-text {
+                height: 72px;
+                font-size: 10px;
+                line-height: 15px;
+                margin-bottom: 28px;
+            }
+
+            &-author {
+                font-size: 6px;
+                line-height: 8px;
+                &-name {
+                    margin-bottom: 3px;
+                }
+                &-img {
+                    width: 23px;
+                    height: 23px;
+                    margin-right: 9px;
+                }
+            }
+            &-comments,
+            &-likes {
+                font-size: 7px;
+                line-height: 10px;
+                img {
+                    width: 7px;
+                    height: 6px;
+                }
+            }
+            &-comments {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .dark .profile__inner {
+        padding: 10px 9px 19px;
+    }
+    .profile {
+        margin-top: 78px;
+        margin-bottom: 52px;
+        &__inner {
+            padding: 0 9px 19px;
+        }
+        &__box {
+            margin: 0 auto 17px;
+        }
+        &__img {
+            width: 148px;
+            height: 148px;
+            &-load {
+                height: 50px;
+                width: 50px;
+            }
+            &-box {
+                width: 148px;
+                height: 148px;
+                margin: 0 auto 11px;
+            }
+        }
+        &__name {
+            font-size: 28px;
+            line-height: 37px;
+        }
+        &__member {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        &__settings {
+            .agree-line {
+                margin-top: 10px;
+                &__check-btn {
+                    margin-right: 8px;
+                    width: 24px;
+                    min-width: 24px;
+                    height: 24px;
+                }
+                .jq-checkbox.checked .jq-checkbox__div {
+                    width: 16px;
+                    height: 16px;
+                    margin: 4px auto;
+                }
+            }
+            .login__input-mail-wrapper {
+                margin-bottom: 21px;
+            }
+            .login__input {
+                height: 55px;
+                margin-bottom: 21px;
+                &-placeholder {
+                    padding: 9px 35px;
+                    font-size: 16px;
+                    line-height: 21px;
+                    P {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+                }
+                &-pass-eye {
+                    top: 22px;
+                }
+            }
+            &-col {
+                max-width: 100%;
+            }
+        }
+        &__save-btn {
+            margin: 16px auto 0;
+            height: 55px;
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+    .choose-notif__title {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
     .agree-line__check-btn {
         width: 29px;
         min-width: 29px;
@@ -2013,22 +2287,20 @@
     }
 }
 
+// Scale :
+
 @media (min-width: 1300px) and (max-width: 2000px) {
+    // homepage:
+
     .homepage .container {
         padding: 0 70px;
         transform: scale(0.8);
         max-width: initial;
         padding: 0;
     }
-    // .homepage .page-content .container {
-    //     transform-origin: top;
-    // }
     .homepage section .container {
         transform-origin: top;
     }
-    // .homepage .page-content {
-    //     margin-bottom: -70px;
-    // }
     .homepage .top--homepage {
         margin-bottom: -125px;
     }
@@ -2056,17 +2328,11 @@
     .top__news {
         justify-content: center;
     }
-    // .top__news-item:nth-child(1),
-    // .top__news-item+.top__news-item {
-    //     max-width: 100%;
-    // }
     .gallery__slider {
-        // max-width: 910px;
         max-width: 58%;
         width: 100%;
     }
     .gallery__preview {
-        /* max-width: 341px; */
         max-width: 49%;
     }
     .latest__item.latest__item--main {
@@ -2074,5 +2340,59 @@
     }
     .breaking__list {
         max-width: 100%;
+    }
+
+    // login-page,
+    // signup-page:
+
+    .login-page .container-full {
+        padding: 0 70px;
+        transform: scale(0.8);
+        max-width: initial;
+        padding: 0;
+    }
+    .login-page .login-content .container-full {
+        transform-origin: top;
+    }
+    .login-page .login-content {
+        // min-height: 898px;
+        height: 100vh;
+    }
+    .login__gallery {
+        height: 125vh;
+        min-height: 1120px;
+    }
+
+    // user-profile page :
+
+    .user-profile .container {
+        padding: 0 70px;
+        transform: scale(0.8);
+        max-width: initial;
+        padding: 0;
+    }
+    .user-profile .profile .container {
+        transform-origin: top;
+    }
+    .user-profile {
+        margin-bottom: -120px;
+    }
+
+    // search-results page :
+
+    .search-results .container {
+        padding: 0 70px;
+        transform: scale(0.8);
+        max-width: initial;
+        padding: 0;
+    }
+    .search-results .results .container {
+        transform-origin: top;
+    }
+    // .search-results {
+        // margin-bottom: -120px;
+    // }
+    .results__inner{
+        height: calc(100vh);
     }
 }
