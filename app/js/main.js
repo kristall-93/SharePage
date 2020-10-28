@@ -142,7 +142,7 @@ $(document).ready(function () {
 
     // Стилизация элементов форм :
     
-    $('.agree-line__check-btn, .results__select').styler();
+    $('.agree-line__check-btn, .results__select, .discussions__select').styler();
 
     // Изменение текста заголовка на signup-page :
 
@@ -166,22 +166,31 @@ $(document).ready(function () {
         nextArrow: '<button class="breaking-news__arrow-next"><img src="images/slider-arrow-right.svg" alt="№"></button>',
     });
 
+    // Слайдер на news-gallery page в top: 
 
-    // переключение 2х-шагового входа:
-    // $(".two_step_verify_btn").click(function () {
-    //     if ($('.two_step_verify_btn').hasClass('active')) {
-    //         $(".two_step_verify_btn").removeClass('active');
-    //         document.getElementById("two_step_verify_btn").textContent = 'TURN ON';
-    //         $(".two_step_verify").removeClass('active');
-    //         document.getElementById("two_step_verify_text").textContent = 'Two-step verification off';
-    //     }
-    //     else {
-    //         $(".two_step_verify_btn").addClass('active');
-    //         document.getElementById("two_step_verify_btn").textContent = 'TURN OFF';
-    //         $(".two_step_verify").addClass('active');
-    //         document.getElementById("two_step_verify_text").textContent = 'Two-step verification on';
-    //     }
+    $('.top-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button class="top-slider__arrow-prev"><img src="images/slider-arrow-right.svg" alt="№"></button>',
+        nextArrow: '<button class="top-slider__arrow-next"><img src="images/slider-arrow-right.svg" alt="№"></button>',
+    });
+    // Открытие popup-gallery на news-gallery page:
+    $('.gallery-mix__btn-fullscreen').on('click', function () {
+        $('.popup-gallery').addClass('active');
+    });
+
+
+    // Отметка "liked" в discussions на news-gallery page:
+    // $('.discussions__box-like').on('click', function () {
+    //     $('.discussions__item').addClass('discussions__item--liked');
     // });
+    // Снятие отметки "liked" в discussions на news-gallery page:
+    // $('.discussions__box-you-liked').on('click', function () {
+    //     $('.discussions__item').removeClass('discussions__item--liked');
+    // });
+
+
+    
 
 
 

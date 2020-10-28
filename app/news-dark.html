@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="My website">
+    <title>Share Page</title>
+    <link rel="shortcut icon" href="images/logo-icon.svg" type="image/svg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="news dark login--on">
+    <!-- class="dark" -->
+    <!-- class="login--on" -->
+
+    <div class="wrapper">
+
+        <div class="content">
+
+            <header class="header">
+                <div class="container-header">
+                    <div class="header__inner">
+                        <a class="logo" href="#">
+                            <img src="images/logo.svg" alt="#">
+                        </a>
+                        <div class="search">
+                            <form class="search__form">
+                                <button class="search__btn" type="submit"></button>
+                                <input class="search__input" type="text"
+                                    placeholder="Search for images, news, gossips.." required>
+                                <div class="search__explore">
+                                    <span>Explore</span>
+                                    <img src="images/icon-arrow-down.svg" alt="#">
+                                </div>
+                            </form>
+                        </div>
+                        <a class="header__link" href="#">Community</a>
+                        <a class="header__link" href="#">Topics</a>
+                        <a class="submit-photo-btn header__btn" href="#">
+                            <span>Submit a photo</span>
+                            <img src="images/icon-load.svg" alt="#">
+                        </a>
+                        <div class="header__dash"></div>
+                        <a class="login header__link" href="#">Login</a>
+                        <a class="join-free header__btn" href="#">Join free</a>
+                        <div class="user-menu">
+                            <div class="user-menu__box">
+                                <img src="images/user-img.jpg" alt="#">
+                                <span>Nathaniel H.</span>
+                            </div>
+                            <div class="menu__btn">
+                                <img class="menu__btn-dark" src="images/icon-menu-btn.svg" alt="#">
+                                <img class="menu__btn-white" src="images/icon-menu-btn-white.svg" alt="#">
+                            </div>
+                            <div class="user-menu__dropdown">
+                                <div class="menu__dropdown-btn-line">
+                                    <div class="btn-light-mode btn-color-mode">
+                                        <img class="sun-black" src="images/icon-sun-black.svg" alt="#">
+                                        <img class="sun-grey" src="images/icon-sun-grey.svg" alt="#">
+                                    </div>
+                                    <div class="btn-dark-mode active btn-color-mode">
+                                        <img class="moon-dark" src="images/icon-moon.svg" alt="#">
+                                        <img class="moon-white" src="images/icon-moon-white.svg" alt="#">
+                                    </div>
+                                </div>
+                                <ul class="user-menu__list">
+                                    <li>
+                                        <a class="user-menu__item" href="#">
+                                            <div class="user-menu__item-img">
+                                                <img class="item-img-black" src="images/icon-user.svg" alt="#">
+                                                <img class="item-img-grey" src="images/icon-user-grey.svg" alt="#">
+                                            </div>
+                                            <span>My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="user-menu__item" href="#">
+                                            <div class="user-menu__item-img">
+                                                <img class="item-img-black" src="images/icon-load-black.svg" alt="#">
+                                                <img class="item-img-grey" src="images/icon-load-grey.svg" alt="#">
+                                            </div>
+                                            <span>Shared Content</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="user-menu__item" href="#">
+                                            <div class="user-menu__item-img">
+                                                <img class="item-img-black" src="images/icon-box.svg" alt="#">
+                                                <img class="item-img-grey" src="images/icon-box-grey.svg" alt="#">
+                                            </div>
+                                            <span>Content Review</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="user-menu__item" href="#">
+                                            <div class="user-menu__item-img">
+                                                <img class="item-img-black" src="images/icon-logout.svg" alt="#">
+                                                <img class="item-img-grey" src="images/icon-logout-grey.svg" alt="#">
+                                            </div>
+                                            <span>Log Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="search__explore-dropdown-bg"></div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="page-content">
+
+                <section class="top top--news">
+                    <div class="container">
+                        <div class="top__inner">
+                            <nav class="menu">
+                                <ul class="menu__list" id="menu__list-news">
+                                    <li><a class="menu__item" href="#">#trending</a></li>
+                                    <li><a class="menu__item" href="#">#hollywood</a></li>
+                                    <li><a class="menu__item" href="#">#POPULAR</a></li>
+                                    <li><a class="menu__item" href="#">#politics</a></li>
+                                    <li><a class="menu__item" href="#">#business</a></li>
+                                    <li><a class="menu__item" href="#">#reality</a></li>
+                                    <li><a class="menu__item" href="#">#leaked</a></li>
+                                    <li><a class="menu__item" href="#">#sport</a></li>
+                                    <li><a class="menu__item" href="#">#movies</a></li>
+                                    <li><a class="menu__item" href="#">#tvshows</a></li>
+                                    <li><a class="menu__item" href="#">#industry</a></li>
+                                    <li><a class="menu__item" href="#">#trend</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="breaking-news">
+                    <div class="container">
+                        <h1 class="breaking-news__title">
+                            Breaking news
+                        </h1>
+                        <div class="breaking-news__inner">
+
+                            <div class="breaking-news__item breaking-news__item--small">
+                                <div class="breaking-news__item-box">
+                                    <h6 class="breaking-news__item-title">
+                                        Selena Gomez
+                                        Visits NYC Gym
+                                    </h6>
+                                    <p class="breaking-news__item-text">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. vero
+                                        eos et accusam et…
+                                    </p>
+                                    <a class="breaking-news__item-more" href="#">
+                                        <span>Read More</span>
+                                        <img src="images/icon-arrow-right-green.svg" alt="#">
+                                    </a>
+                                </div>
+                                <img class="breaking-news__item-img" src="images/breaking-news-1.jpg" alt="#">
+                            </div>
+
+                            <div class="breaking-news__item breaking-news__item--main breaking-news__item--wide">
+                                <div class="breaking-news__item-img" style="background-image: url(images/breaking-news-2.jpg);">
+                                </div>
+                                <div class="breaking-news__item-top">
+                                    <p class="breaking-news__label-hot">
+                                        hot topic
+                                    </p>
+                                    <a class="breaking-news__share-link" href="#">
+                                        <img src="images/icon-share-black.svg" alt="#">
+                                    </a>
+                                </div>
+                                <a class="breaking-news__item-title" href="#">
+                                    David Beckham Invested Over
+                                    220 Milions In Miami Fc Team
+                                </a>
+                                <p class="breaking-news__item-text">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                    praising pain was born and I will give you a complete account of the system, and
+                                    expound the actual teachings of the great explorer of the truth, the master-builder
+                                    of human happiness. No one…
+                                </p>
+                                <div class="breaking-news__slider">
+                                    <div class="breaking-news__slider-item">
+                                        <div class="breaking-news__slider-box">
+                                            <img src="images/breaking-news__slider-1.jpg" alt="#">
+                                            <div class="breaking-news__slider-info">
+                                                <p class="breaking-news__slider-name">
+                                                    Beyonce's Paris Show
+                                                </p>
+                                                <p class="breaking-news__slider-date">
+                                                    20 March, 2020
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="breaking-news__slider-item">
+                                        <div class="breaking-news__slider-box">
+                                            <img src="images/breaking-news__slider-1.jpg" alt="#">
+                                            <div class="breaking-news__slider-info">
+                                                <p class="breaking-news__slider-name">
+                                                    Beyonce's Paris Show
+                                                </p>
+                                                <p class="breaking-news__slider-date">
+                                                    20 March, 2020
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="breaking-news__slider-item">
+                                        <div class="breaking-news__slider-box">
+                                            <img src="images/breaking-news__slider-1.jpg" alt="#">
+                                            <div class="breaking-news__slider-info">
+                                                <p class="breaking-news__slider-name">
+                                                    Beyonce's Paris Show
+                                                </p>
+                                                <p class="breaking-news__slider-date">
+                                                    20 March, 2020
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="breaking-news__item breaking-news__item--purchase">
+                                <img class="breaking-news__item-img" src="images/breaking-news-3.png" alt="#">
+                                <div class="breaking-news__item-box">
+                                    <h6 class="breaking-news__item-title">
+                                        Purchase Our Premium Package Using Bitcoin
+                                    </h6>
+                                    <a class="breaking-news__purchase-btn" href="#">
+                                        Purchase Now
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="breaking-news__item breaking-news__item--article">
+                                <div class="breaking-news__item-box">
+                                    <img class="breaking-news__item-img" src="images/breaking-news-4.jpg" alt="#">
+                                    <div class="breaking-news__item-info">
+                                        <h6 class="breaking-news__item-title">
+                                            2020 Year Has
+                                            Been Great
+                                            To This People
+                                        </h6>
+                                        <p class="breaking-news__item-date">June 26, 2020
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="breaking-news__item-text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. vero
+                                    eos et accusam et…
+                                </p>
+                                <a class="breaking-news__item-more" href="#">
+                                    <span>Read More</span>
+                                    <img src="images/icon-arrow-right-green.svg" alt="#">
+                                </a>
+                            </div>
+
+                            <div class="breaking-news__item breaking-news__item--list">
+                                <a class="breaking-news__link" href="#">
+                                    <img src="images/breaking-news-link-1.jpg" alt="#">
+                                    <span class="breaking-news__link-title">But I Must Explain To You How All This
+                                        Mistaken…</span>
+                                </a>
+                                <div class="breaking-news__link-border"></div>
+                                <a class="breaking-news__link" href="#">
+                                    <img src="images/breaking-news-link-2.jpg" alt="#">
+                                    <span class="breaking-news__link-title">Lorem Ipsum Dolor Sit Amet,
+                                        Consetetur</span>
+                                </a>
+                                <div class="breaking-news__link-border"></div>
+                                <a class="breaking-news__link" href="#">
+                                    <img src="images/breaking-news-link-3.jpg" alt="#">
+                                    <span class="breaking-news__link-title">Quiere La Boca Exhausta Vid, Kiwi, Piña
+                                        Y…</span>
+                                </a>
+                                <div class="breaking-news__link-border"></div>
+                                <a class="breaking-news__link" href="#">
+                                    <img src="images/breaking-news-link-4.jpg" alt="#">
+                                    <span class="breaking-news__link-title">The Quick, Brown Fox Jumps Over A Lazy Dog.
+                                        Djs…</span>
+                                </a>
+                            </div>
+
+                            <div class="breaking-news__item breaking-news__item--getupdated">
+                                <div class="breaking-news__getupdated-title">
+                                    GET<span>UPDATED</span>
+                                </div>
+                                <form class="breaking-news__form">
+                                    <input type="text" placeholder="Enter E-mail Address" required>
+                                    <button type="submit">Submit</button>
+                                </form>
+                            </div>
+
+                            <div class="breaking-news__item breaking-news__item--wide breaking-news__item--placeholder">
+                                <div class="breaking-news__placeholder-inner">
+                                    <a class="breaking-news__placeholder" href="#">
+                                        Adventisment placeholder
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="breaking-news__item breaking-news__item--tags">
+                                <h6 class="breaking-news__tags-title">
+                                    find news by tags
+                                </h6>
+                                <div class="breaking-news__tags-list">
+                                    <a class="breaking-news__tags-link" href="#">Fbd Fashion</a>
+                                    <a class="breaking-news__tags-link" href="#">Amanda Seyfried</a>
+                                    <a class="breaking-news__tags-link" href="#">Seyfried</a>
+                                    <a class="breaking-news__tags-link" href="#">Fashion</a>
+                                    <a class="breaking-news__tags-link" href="#">Gallery</a>
+                                    <a class="breaking-news__tags-link" href="#">Amanda</a>
+                                    <a class="breaking-news__tags-link" href="#">Seyfried Fbd</a>
+                                    <a class="breaking-news__tags-link" href="#">Fdb</a>
+                                    <a class="breaking-news__tags-link" href="#">Hollywood</a>
+                                </div>
+                            </div>
+
+                            <div class="breaking-news__item breaking-news__item--article breaking-news__item--article-second">
+                                <div class="breaking-news__item-box">
+                                    <img class="breaking-news__item-img" src="images/breaking-news-4.jpg" alt="#">
+                                    <div class="breaking-news__item-info">
+                                        <h6 class="breaking-news__item-title">
+                                            2020 Year Has
+                                            Been Great
+                                            To This People
+                                        </h6>
+                                        <p class="breaking-news__item-date">June 26, 2020
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="breaking-news__item-text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. vero
+                                    eos et accusam et…
+                                </p>
+                                <a class="breaking-news__item-more" href="#">
+                                    <span>Read More</span>
+                                    <img src="images/icon-arrow-right-green.svg" alt="#">
+                                </a>
+                            </div>
+
+                            <div class="breaking-news__item breaking-news__item--wide breaking-news__item--newsline">
+                                <div class="breaking-news__newsline-item">
+                                    <p class="breaking-news__item-label label-movies">
+                                        MOVIES
+                                    </p>
+                                    <a class="breaking-news__newsline-title" href="#">
+                                        Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed…
+                                    </a>
+                                    <p class="breaking-news__newsline-text">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. vero
+                                        eos et accusam et…
+                                    </p>
+                                    <div class="breaking-news__newsline-bottom">
+                                        <p class="breaking-news__newsline-date">
+                                            Oct 15, 2020 - 12:52 AM
+                                        </p>
+                                        <div class="breaking-news__newsline-comments">
+                                            <img src="images/icon-comments.svg" alt="#">
+                                            <span>312</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="breaking-news__newsline-item">
+                                    <p class="breaking-news__item-label label-youtube">
+                                        YOUTUBE
+                                    </p>
+                                    <a class="breaking-news__newsline-title" href="#">
+                                        Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem…
+                                    </a>
+                                    <p class="breaking-news__newsline-text">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. vero
+                                        eos et accusam et…
+                                    </p>
+                                    <div class="breaking-news__newsline-bottom">
+                                        <p class="breaking-news__newsline-date">
+                                            Oct 15, 2020 - 12:52 AM
+                                        </p>
+                                        <div class="breaking-news__newsline-comments">
+                                            <img src="images/icon-comments.svg" alt="#">
+                                            <span>312</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="breaking-news__newsline-item">
+                                    <p class="breaking-news__item-label label-sport">
+                                        SPORT
+                                    </p>
+                                    <a class="breaking-news__newsline-title" href="#">
+                                        Instagram Star Logan Paul Challenges
+                                        Boxing Champion Floyd Mayweather
+                                    </a>
+                                    <p class="breaking-news__newsline-text">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. vero
+                                        eos et accusam et…
+                                    </p>
+                                    <div class="breaking-news__newsline-bottom">
+                                        <p class="breaking-news__newsline-date">
+                                            Oct 15, 2020 - 12:52 AM
+                                        </p>
+                                        <div class="breaking-news__newsline-comments">
+                                            <img src="images/icon-comments.svg" alt="#">
+                                            <span>312</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="breaking-news__newsline-item">
+                                    <p class="breaking-news__item-label label-tv">
+                                        TV REALITY
+                                    </p>
+                                    <a class="breaking-news__newsline-title" href="#">
+                                        But I Must Explain To You How All This Mistaken Idea Of Denouncing…
+                                    </a>
+                                    <p class="breaking-news__newsline-text">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. vero
+                                        eos et accusam et…
+                                    </p>
+                                    <div class="breaking-news__newsline-bottom">
+                                        <p class="breaking-news__newsline-date">
+                                            Oct 15, 2020 - 12:52 AM
+                                        </p>
+                                        <div class="breaking-news__newsline-comments">
+                                            <img src="images/icon-comments.svg" alt="#">
+                                            <span>312</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="breaking-news__item breaking-news__item--list  breaking-news__item--list-second">
+                                <a class="breaking-news__link" href="#">
+                                    <img src="images/breaking-news-link-4.jpg" alt="#">
+                                    <span class="breaking-news__link-title">
+                                        The Quick, Brown Fox Jumps Over A Lazy Dog.
+                                        Djs…
+                                    </span>
+                                </a>
+                                <div class="breaking-news__link-border"></div>
+                                <a class="breaking-news__link" href="#">
+                                    <img src="images/breaking-news-link-3.jpg" alt="#">
+                                    <span class="breaking-news__link-title">
+                                        Quiere La Boca Exhausta Vid, Kiwi, Piña
+                                        Y…
+                                    </span>
+                                </a>
+                                <div class="breaking-news__link-border"></div>
+                                <a class="breaking-news__link" href="#">
+                                    <img src="images/breaking-news-link-1.jpg" alt="#">
+                                    <span class="breaking-news__link-title">
+                                        But I Must Explain To You How All This
+                                        Mistaken…
+                                    </span>
+                                </a>
+                                <div class="breaking-news__link-border"></div>
+                                <a class="breaking-news__link" href="#">
+                                    <img src="images/breaking-news-link-2.jpg" alt="#">
+                                    <span class="breaking-news__link-title">
+                                        Lorem Ipsum Dolor Sit Amet,
+                                        Consetetu
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="breaking-news__item breaking-news__item--small">
+                                <div class="breaking-news__item-box">
+                                    <h6 class="breaking-news__item-title">
+                                        Selena Gomez
+                                        Visits NYC Gym
+                                    </h6>
+                                    <p class="breaking-news__item-text">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. vero
+                                        eos et accusam et…
+                                    </p>
+                                    <a class="breaking-news__item-more" href="#">
+                                        <span>Read More</span>
+                                        <img src="images/icon-arrow-right-green.svg" alt="#">
+                                    </a>
+                                </div>
+                                <img class="breaking-news__item-img" src="images/breaking-news-1.jpg" alt="#">
+                            </div>
+
+                            <div class="breaking-news__item breaking-news__item--list breaking-news__item--list-third">
+                                <a class="breaking-news__link" href="#">
+                                    <img src="images/breaking-news-link-4.jpg" alt="#">
+                                    <span class="breaking-news__link-title">
+                                        The Quick, Brown Fox Jumps Over A Lazy Dog.
+                                        Djs…
+                                    </span>
+                                </a>
+                                <div class="breaking-news__link-border"></div>
+                                <a class="breaking-news__link" href="#">
+                                    <img src="images/breaking-news-link-3.jpg" alt="#">
+                                    <span class="breaking-news__link-title">
+                                        Quiere La Boca Exhausta Vid, Kiwi, Piña
+                                        Y…
+                                    </span>
+                                </a>
+                                <div class="breaking-news__link-border"></div>
+                                <a class="breaking-news__link" href="#">
+                                    <img src="images/breaking-news-link-1.jpg" alt="#">
+                                    <span class="breaking-news__link-title">
+                                        But I Must Explain To You How All This
+                                        Mistaken…
+                                    </span>
+                                </a>
+                                <div class="breaking-news__link-border"></div>
+                                <a class="breaking-news__link" href="#">
+                                    <img src="images/breaking-news-link-2.jpg" alt="#">
+                                    <span class="breaking-news__link-title">
+                                        Lorem Ipsum Dolor Sit Amet,
+                                        Consetetu
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="breaking-news__item breaking-news__item--getupdated
+                            breaking-news__item--join">
+                                <div class="breaking-news__getupdated-title">
+                                    JOIN<span>COMMUNITY</span>
+                                </div>
+                                <form class="breaking-news__form">
+                                    <input type="text" placeholder="Enter E-mail Address" required>
+                                    <button type="submit">SIGN UP</button>
+                                </form>
+                            </div>
+
+                            <div class="breaking-news__item breaking-news__item--most">
+                                <h6 class="breaking-news__most-title">
+                                    Most Watched
+                                </h6>
+                                <ul class="breaking-news__most-list">
+                                    <li class="breaking-news__most-item">
+                                        <span>1</span>
+                                        <p>Who really decides the
+                                            US elections?</p>
+                                    </li>
+                                    <li class="breaking-news__most-item">
+                                        <span>2</span>
+                                        <p>We can't let her down
+                                            again we have to find her</p>
+                                    </li>
+                                    <li class="breaking-news__most-item">
+                                        <span>3</span>
+                                        <p>Trump makes surprise
+                                            visit to supporters</p>
+                                    </li>
+                                    <li class="breaking-news__most-item">
+                                        <span>4</span>
+                                        <p>On board the Royal
+                                            Navy's new aircraft
+                                            carrier</p>
+                                    </li>
+                                    <li class="breaking-news__most-item">
+                                        <span>5</span>
+                                        <p>But I must explain to you how all this…</p>
+                                    </li>
+                                    <li class="breaking-news__most-item">
+                                        <span>6</span>
+                                        <p>Lorem ipsum dolor sit amet, consetetur…</p>
+                                    </li>
+                                    <li class="breaking-news__most-item">
+                                        <span>7</span>
+                                        <p>Sed ut perspiciatis unde omnis iste…</p>
+                                    </li>
+                                    <li class="breaking-news__most-item">
+                                        <span>8</span>
+                                        <p>The quick, brown fox jumps over a lazy dog. DJs…</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="breaking-news__item breaking-news__item--advertisement">
+                                <h6 class="breaking-news__tags-title breaking-news__advertisement-title">
+                                    advertisement
+                                </h6>
+                                <div class="breaking-news__advertisement-inner"
+                                    style="background-image: url(images/breaking-adver.jpg);">
+                                    <a class="breaking-news__placeholder" href="#">
+                                        Adventisment placeholder
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="search-categories">
+                    <div class="container">
+                        <h3 class="search-categories__title section__title">
+                            Search by categories
+                        </h3>
+                        <div class="search-categories__inner">
+                            <div class="search__explore-list">
+                                <div class="search__explore-category">
+                                    <a class="explore-category__title">
+                                        World
+                                    </a>
+                                    <ul>
+                                        <li><a class="explore-category__item" href="#">Africa</a></li>
+                                        <li><a class="explore-category__item" href="#">Americas</a></li>
+                                        <li><a class="explore-category__item" href="#">Asia</a></li>
+                                        <li><a class="explore-category__item" href="#">Australia</a></li>
+                                        <li><a class="explore-category__item" href="#">China</a></li>
+                                        <li><a class="explore-category__item" href="#">Europe</a></li>
+                                        <li><a class="explore-category__item" href="#">Middle East</a></li>
+                                    </ul>
+                                </div>
+                                <div class="search__explore-category">
+                                    <a class="explore-category__title">
+                                        Politics
+                                    </a>
+                                    <ul>
+                                        <li><a class="explore-category__item" href="#">Elections 2020</a></li>
+                                        <li><a class="explore-category__item" href="#">Debates</a></li>
+                                        <li><a class="explore-category__item" href="#">Known Facts</a></li>
+                                    </ul>
+                                </div>
+                                <div class="search__explore-category">
+                                    <a class="explore-category__title">
+                                        Business
+                                    </a>
+                                    <ul>
+                                        <li><a class="explore-category__item" href="#">Stock Markets</a></li>
+                                        <li><a class="explore-category__item" href="#">Techonologies</a></li>
+                                        <li><a class="explore-category__item" href="#">Media</a></li>
+                                        <li><a class="explore-category__item" href="#">Videos</a></li>
+                                        <li><a class="explore-category__item" href="#">Success Stories</a></li>
+                                    </ul>
+                                </div>
+                                <div class="search__explore-category">
+                                    <a class="explore-category__title">
+                                        Television
+                                    </a>
+                                    <ul>
+                                        <li><a class="explore-category__item" href="#">Stars</a></li>
+                                        <li><a class="explore-category__item" href="#">TV Reality</a></li>
+                                        <li><a class="explore-category__item" href="#">Binge Series</a></li>
+                                        <li><a class="explore-category__item" href="#">Netflix</a></li>
+                                        <li><a class="explore-category__item" href="#">HBO:GO</a></li>
+                                        <li><a class="explore-category__item" href="#">Culture</a></li>
+                                        <li><a class="explore-category__item" href="#">Media</a></li>
+                                    </ul>
+                                </div>
+                                <div class="search__explore-category">
+                                    <a class="explore-category__title">
+                                        Health
+                                    </a>
+                                    <ul>
+                                        <li><a class="explore-category__item" href="#">Food</a></li>
+                                        <li><a class="explore-category__item" href="#">Fitness</a></li>
+                                        <li><a class="explore-category__item" href="#">Wellness</a></li>
+                                        <li><a class="explore-category__item" href="#">Vital Signs</a></li>
+                                        <li><a class="explore-category__item" href="#">Sport</a></li>
+                                        <li><a class="explore-category__item" href="#">Habits</a></li>
+                                    </ul>
+                                </div>
+                                <div class="search__explore-category">
+                                    <a class="explore-category__title">
+                                        Tech
+                                    </a>
+                                    <ul>
+                                        <li><a class="explore-category__item" href="#">Programming</a></li>
+                                        <li><a class="explore-category__item" href="#">Apple</a></li>
+                                        <li><a class="explore-category__item" href="#">Samsung</a></li>
+                                        <li><a class="explore-category__item" href="#">AI - Robots</a></li>
+                                        <li><a class="explore-category__item" href="#">Smart Homes</a></li>
+                                        <li><a class="explore-category__item" href="#">Tesla</a></li>
+                                        <li><a class="explore-category__item" href="#">Silicon Valley East</a></li>
+                                    </ul>
+                                </div>
+                                <div class="search__explore-category">
+                                    <a class="explore-category__title">
+                                        Weather
+                                    </a>
+                                    <ul>
+                                        <li><a class="explore-category__item" href="#">Climate Changes</a></li>
+                                        <li><a class="explore-category__item" href="#">Weather Tracker</a></li>
+                                        <li><a class="explore-category__item" href="#">Wildfires</a></li>
+                                        <li><a class="explore-category__item" href="#">Wildlife Protection</a></li>
+                                        <li><a class="explore-category__item" href="#">Endangered Species</a></li>
+                                    </ul>
+                                </div>
+                                <div class="search__explore-category">
+                                    <a class="explore-category__title">
+                                        Travel
+                                    </a>
+                                    <ul>
+                                        <li><a class="explore-category__item" href="#">COVID-19</a></li>
+                                        <li><a class="explore-category__item" href="#">Destinations</a></li>
+                                        <li><a class="explore-category__item" href="#">Summer</a></li>
+                                        <li><a class="explore-category__item" href="#">Accomodation</a></li>
+                                        <li><a class="explore-category__item" href="#">Tourism</a></li>
+                                        <li><a class="explore-category__item" href="#">News</a></li>
+                                    </ul>
+                                </div>
+                                <div class="search__explore-category">
+                                    <a class="explore-category__title">
+                                        World
+                                    </a>
+                                    <ul>
+                                        <li><a class="explore-category__item" href="#">Football</a></li>
+                                        <li><a class="explore-category__item" href="#">Rugby</a></li>
+                                        <li><a class="explore-category__item" href="#">Volleyball</a></li>
+                                        <li><a class="explore-category__item" href="#">Basketball NBA</a></li>
+                                        <li><a class="explore-category__item" href="#">Formula One</a></li>
+                                        <li><a class="explore-category__item" href="#">NASCAR</a></li>
+                                        <li><a class="explore-category__item" href="#">Cricket</a></li>
+                                    </ul>
+                                </div>
+                                <div class="search__explore-category">
+                                    <a class="explore-category__title">
+                                        Features
+                                    </a>
+                                    <ul>
+                                        <li><a class="explore-category__item" href="#">Call To Earth</a></li>
+                                        <li><a class="explore-category__item" href="#">Freedom Project</a></li>
+                                        <li><a class="explore-category__item" href="#">Inside Africa</a></li>
+                                        <li><a class="explore-category__item" href="#">All Features</a></li>
+                                        <li><a class="explore-category__item" href="#">Impact On Rivers</a></li>
+                                    </ul>
+                                </div>
+                                <div class="search__explore-category">
+                                    <a class="explore-category__title">
+                                        More
+                                    </a>
+                                    <ul>
+                                        <li><a class="explore-category__item" href="#">Photos</a></li>
+                                        <li><a class="explore-category__item" href="#">Investigations</a></li>
+                                        <li><a class="explore-category__item" href="#">Criminal</a></li>
+                                        <li><a class="explore-category__item" href="#">Cartels</a></li>
+                                        <li><a class="explore-category__item" href="#">Organ Donors</a></li>
+                                        <li><a class="explore-category__item" href="#">Children of Africa</a></li>
+                                    </ul>
+                                </div>
+                                <div class="search__explore-category">
+                                    <a class="explore-category__title">
+                                        Style
+                                    </a>
+                                    <ul>
+                                        <li><a class="explore-category__item" href="#">Arts</a></li>
+                                        <li><a class="explore-category__item" href="#">Design</a></li>
+                                        <li><a class="explore-category__item" href="#">Fashion</a></li>
+                                        <li><a class="explore-category__item" href="#">Luxury</a></li>
+                                        <li><a class="explore-category__item" href="#">Beauty</a></li>
+                                        <li><a class="explore-category__item" href="#">Paris</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+            </div>
+
+
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__top">
+
+                        <div class="footer__item footer__item-logo">
+                            <a class="logo" href="#">
+                                <img src="images/logo.svg" alt="#">
+                            </a>
+                            <p class="footer__item-text">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. vero eos et accusam
+                                et…
+                            </p>
+                        </div>
+
+                        <div class="footer__item">
+                            <h6 class="footer__item-title">
+                                Our Services
+                            </h6>
+                            <ul>
+                                <li>
+                                    <a class="footer__item-link" href="#">
+                                        Share Content
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__item-link" href="#">
+                                        Latest Stories
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__item-link" href="#">
+                                        Premium Features
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__item-link" href="#">
+                                        Gossips
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__item">
+                            <h6 class="footer__item-title">
+                                About
+                            </h6>
+                            <ul>
+                                <li>
+                                    <a class="footer__item-link" href="#">
+                                        Our Story
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__item-link" href="#">
+                                        General Info
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__item-link" href="#">
+                                        Customer Support
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__item-link" href="#">
+                                        Guidelines
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__item footer__contacts">
+                            <h6 class="footer__item-title">
+                                Contact Us
+                            </h6>
+                            <ul>
+                                <li>
+                                    <p class="footer__item-link">
+                                        Address: Novi Sad, Serbia
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="footer__item-link">
+                                        Street: Proleterska 44, 25221
+                                    </p>
+                                </li>
+                                <li>
+                                    <a class="footer__item-link" href="tel:+3816621362121">
+                                        Phone: +381 66 213 621 21
+                                    </a>
+                                </li>
+                                <li>
+                                    <p class="footer__item-link">
+                                        Fax: +381 853 386
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__item footer__gallery">
+                            <h6 class="footer__item-title">
+                                Gallery
+                            </h6>
+                            <div class="footer__gallery-box">
+                                <img class="footer__gallery-img" src="images/footer-img-1.jpg" alt="#">
+                                <img class="footer__gallery-img" src="images/footer-img-2.jpg" alt="#">
+                                <img class="footer__gallery-img" src="images/footer-img-3.jpg" alt="#">
+                                <img class="footer__gallery-img" src="images/footer-img-4.jpg" alt="#">
+                                <img class="footer__gallery-img" src="images/footer-img-5.jpg" alt="#">
+                                <img class="footer__gallery-img" src="images/footer-img-6.jpg" alt="#">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer__bottom">
+                        <a href="#">All Rights Reserved - SharePage 2020</a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="search__explore-dropdown">
+        <div class="search__explore-dropdown-line">
+            <form class="search__form">
+                <button class="search__btn" type="submit"></button>
+                <input class="search__input" type="text" placeholder="Search for images, news, gossips.." required>
+            </form>
+            <div class="search__explore-close">
+                <img class="explore-close--in-white" src="images/popup-close.svg" alt="#">
+                <img class="explore-close--in-dark" src="images/icon-close-notify.svg" alt="#">
+
+            </div>
+        </div>
+        <div class="search__explore-list">
+            <div class="search__explore-category">
+                <a class="explore-category__title">
+                    World
+                </a>
+                <ul>
+                    <li><a class="explore-category__item" href="#">Africa</a></li>
+                    <li><a class="explore-category__item" href="#">Americas</a></li>
+                    <li><a class="explore-category__item" href="#">Asia</a></li>
+                    <li><a class="explore-category__item" href="#">Australia</a></li>
+                    <li><a class="explore-category__item" href="#">China</a></li>
+                    <li><a class="explore-category__item" href="#">Europe</a></li>
+                    <li><a class="explore-category__item" href="#">Middle East</a></li>
+                </ul>
+            </div>
+            <div class="search__explore-category">
+                <a class="explore-category__title">
+                    Politics
+                </a>
+                <ul>
+                    <li><a class="explore-category__item" href="#">Elections 2020</a></li>
+                    <li><a class="explore-category__item" href="#">Debates</a></li>
+                    <li><a class="explore-category__item" href="#">Known Facts</a></li>
+                </ul>
+            </div>
+            <div class="search__explore-category">
+                <a class="explore-category__title">
+                    Business
+                </a>
+                <ul>
+                    <li><a class="explore-category__item" href="#">Stock Markets</a></li>
+                    <li><a class="explore-category__item" href="#">Techonologies</a></li>
+                    <li><a class="explore-category__item" href="#">Media</a></li>
+                    <li><a class="explore-category__item" href="#">Videos</a></li>
+                    <li><a class="explore-category__item" href="#">Success Stories</a></li>
+                </ul>
+            </div>
+            <div class="search__explore-category">
+                <a class="explore-category__title">
+                    Television
+                </a>
+                <ul>
+                    <li><a class="explore-category__item" href="#">Stars</a></li>
+                    <li><a class="explore-category__item" href="#">TV Reality</a></li>
+                    <li><a class="explore-category__item" href="#">Binge Series</a></li>
+                    <li><a class="explore-category__item" href="#">Netflix</a></li>
+                    <li><a class="explore-category__item" href="#">HBO:GO</a></li>
+                    <li><a class="explore-category__item" href="#">Culture</a></li>
+                    <li><a class="explore-category__item" href="#">Media</a></li>
+                </ul>
+            </div>
+            <div class="search__explore-category">
+                <a class="explore-category__title">
+                    Health
+                </a>
+                <ul>
+                    <li><a class="explore-category__item" href="#">Food</a></li>
+                    <li><a class="explore-category__item" href="#">Fitness</a></li>
+                    <li><a class="explore-category__item" href="#">Wellness</a></li>
+                    <li><a class="explore-category__item" href="#">Vital Signs</a></li>
+                    <li><a class="explore-category__item" href="#">Sport</a></li>
+                    <li><a class="explore-category__item" href="#">Habits</a></li>
+                </ul>
+            </div>
+            <div class="search__explore-category">
+                <a class="explore-category__title">
+                    Tech
+                </a>
+                <ul>
+                    <li><a class="explore-category__item" href="#">Programming</a></li>
+                    <li><a class="explore-category__item" href="#">Apple</a></li>
+                    <li><a class="explore-category__item" href="#">Samsung</a></li>
+                    <li><a class="explore-category__item" href="#">AI - Robots</a></li>
+                    <li><a class="explore-category__item" href="#">Smart Homes</a></li>
+                    <li><a class="explore-category__item" href="#">Tesla</a></li>
+                    <li><a class="explore-category__item" href="#">Silicon Valley East</a></li>
+                </ul>
+            </div>
+            <div class="search__explore-category">
+                <a class="explore-category__title">
+                    Weather
+                </a>
+                <ul>
+                    <li><a class="explore-category__item" href="#">Climate Changes</a></li>
+                    <li><a class="explore-category__item" href="#">Weather Tracker</a></li>
+                    <li><a class="explore-category__item" href="#">Wildfires</a></li>
+                    <li><a class="explore-category__item" href="#">Wildlife Protection</a></li>
+                    <li><a class="explore-category__item" href="#">Endangered Species</a></li>
+                </ul>
+            </div>
+            <div class="search__explore-category">
+                <a class="explore-category__title">
+                    Travel
+                </a>
+                <ul>
+                    <li><a class="explore-category__item" href="#">COVID-19</a></li>
+                    <li><a class="explore-category__item" href="#">Destinations</a></li>
+                    <li><a class="explore-category__item" href="#">Summer</a></li>
+                    <li><a class="explore-category__item" href="#">Accomodation</a></li>
+                    <li><a class="explore-category__item" href="#">Tourism</a></li>
+                    <li><a class="explore-category__item" href="#">News</a></li>
+                </ul>
+            </div>
+            <div class="search__explore-category">
+                <a class="explore-category__title">
+                    World
+                </a>
+                <ul>
+                    <li><a class="explore-category__item" href="#">Football</a></li>
+                    <li><a class="explore-category__item" href="#">Rugby</a></li>
+                    <li><a class="explore-category__item" href="#">Volleyball</a></li>
+                    <li><a class="explore-category__item" href="#">Basketball NBA</a></li>
+                    <li><a class="explore-category__item" href="#">Formula One</a></li>
+                    <li><a class="explore-category__item" href="#">NASCAR</a></li>
+                    <li><a class="explore-category__item" href="#">Cricket</a></li>
+                </ul>
+            </div>
+            <div class="search__explore-category">
+                <a class="explore-category__title">
+                    Features
+                </a>
+                <ul>
+                    <li><a class="explore-category__item" href="#">Call To Earth</a></li>
+                    <li><a class="explore-category__item" href="#">Freedom Project</a></li>
+                    <li><a class="explore-category__item" href="#">Inside Africa</a></li>
+                    <li><a class="explore-category__item" href="#">All Features</a></li>
+                    <li><a class="explore-category__item" href="#">Impact On Rivers</a></li>
+                </ul>
+            </div>
+            <div class="search__explore-category">
+                <a class="explore-category__title">
+                    More
+                </a>
+                <ul>
+                    <li><a class="explore-category__item" href="#">Photos</a></li>
+                    <li><a class="explore-category__item" href="#">Investigations</a></li>
+                    <li><a class="explore-category__item" href="#">Criminal</a></li>
+                    <li><a class="explore-category__item" href="#">Cartels</a></li>
+                    <li><a class="explore-category__item" href="#">Organ Donors</a></li>
+                    <li><a class="explore-category__item" href="#">Children of Africa</a></li>
+                </ul>
+            </div>
+            <div class="search__explore-category">
+                <a class="explore-category__title">
+                    Style
+                </a>
+                <ul>
+                    <li><a class="explore-category__item" href="#">Arts</a></li>
+                    <li><a class="explore-category__item" href="#">Design</a></li>
+                    <li><a class="explore-category__item" href="#">Fashion</a></li>
+                    <li><a class="explore-category__item" href="#">Luxury</a></li>
+                    <li><a class="explore-category__item" href="#">Beauty</a></li>
+                    <li><a class="explore-category__item" href="#">Paris</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-gallery" id="popup-gallery">
+        <div class="popup-gallery__inner">
+
+            <div class="popup__slider-main" id="slider-main">
+
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-1.jpg);"
+                    id="slider-main__item">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number" id="slider-main__number">1/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-2.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">2/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-3.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">3/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-4.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">4/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-5.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">5/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-6.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">6/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-7.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">7/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-8.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">8/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-9.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">9/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-10.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">10/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main__item" style="background-image: url(images/slider-popup-11.jpg);">
+                    <div class="slider-main__line">
+                        <div class="slider-main__left">
+                            <p class="slider-main__uploaded-by">
+                                Uploaded By: Ashton T.
+                            </p>
+                            <div class="slider-main__left-line">
+                                <span class="slider-main__number">11/34</span>
+                                <span class="slider-main__fans">
+                                    <span>Fans Share: </span>
+                                    Kate Upton's Body Down To..
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slider-main__right">
+                            <a class="slider-main__dislike slider-main__btn" href="#">
+                                <img src="images/icon-dislike.svg" alt="#">
+                                <span>I Hate This</span>
+                                <span class="slider-main__like-count">54</span>
+                            </a>
+                            <a class="slider-main__like slider-main__btn" href="#">
+                                <img src="images/icon-like.svg" alt="#">
+                                <span>I Love This</span>
+                                <span class="slider-main__like-count">123</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup__slider-nav">
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-1.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-2.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-3.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-4.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-5.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-6.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-7.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-8.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-9.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-10.jpg);">
+                </div>
+                <div class="slider-nav__item" style="background-image: url(images/slider-popup-11.jpg);">
+                </div>
+            </div>
+
+            <div class="gallery__bottom">
+                <div class="gallery__bottom-line">
+                    <span class="gallery__get-updated">
+                        GET<span>UPDATED</span>
+                    </span>
+                    <form class="gallery__form">
+                        <input type="text" placeholder="Enter E-mail address for Kate Upton updates" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <a class="gallery__reseive" href="#">
+                        Receive E-mail Alerts When Fans Share Content
+                    </a>
+                </div>
+                <div class="gallery__bottom-bg gallery__bottom-bg--right">
+                    <img src="images/gallery-bottom-bg.svg" alt="#">
+                </div>
+                <div class="gallery__bottom-bg gallery__bottom-bg--left">
+                    <img src="images/gallery-bottom-bg.svg" alt="#">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
