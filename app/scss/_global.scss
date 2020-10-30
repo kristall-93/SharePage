@@ -475,6 +475,7 @@ body.login--on {
     padding-top: 133px;
     background-color: #55a630;
     color: #ffffff;
+    box-shadow: 0 22px 51px rgba($color: #b1bdda, $alpha: 0.16);
 }
 
 .menu {
@@ -509,6 +510,7 @@ body.login--on {
 .footer {
     color: $grey;
     background-color: #fff;
+    box-shadow: 0 22px 51px rgba(#B1BDDA, 0.16);
     &__inner {
         margin-left: -35px;
         margin-right: -35px;
@@ -595,6 +597,9 @@ body.login--on {
         color: #4493ff;
     }
     &-tv {
+        color: $green;
+    }
+    &-sport {
         color: $green;
     }
     &-holywood {

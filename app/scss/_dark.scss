@@ -257,10 +257,10 @@
     // start news page
 
     &.news {
-        background: #201F24;
+        background: #201f24;
     }
-    .breaking-news__item{
-        background-color: #302F34;
+    .breaking-news__item {
+        background-color: #302f34;
         box-shadow: none;
     }
     .breaking-news__item-title,
@@ -268,24 +268,104 @@
     .breaking-news__tags-title,
     .breaking-news__newsline-title,
     .breaking-news__item.breaking-news__item--most,
-    .breaking-news__slider-name{
+    .breaking-news__slider-name {
         color: #fff;
     }
-    .breaking-news__newsline-text{
+    .breaking-news__newsline-text {
         color: $grey;
     }
-    .search-categories__inner{
+    .search-categories__inner {
         background-color: #323137;
         color: #fff;
         box-shadow: none;
     }
-    .breaking-news__tags-link{
-        background: #49484E;
+    .breaking-news__tags-link {
+        background: #49484e;
         color: #fff;
     }
     .breaking-news__slider .slick-arrow,
     .breaking-news__share-link,
-    .breaking-news__item-img{
+    .breaking-news__item-img {
+        box-shadow: none;
+    }
+
+    // start news-gallery mix page
+
+    .top-slider__item {
+        background-color: #201f24;
+    }
+    .top-slider__title,
+    .top-slider__line,
+    .discussions__box-author,
+    .share-gallery__title,
+    .share-gallery__text,
+    .discussions__leave-title,
+    .discussions__leave-name,
+    .discussions__select .jq-selectbox__select-text {
+        color: #fff;
+    }
+    .top-slider .slick-arrow {
+        background-color: #323137;
+        box-shadow: none;
+        img {
+            content: url(../images/slider-arrow-right-white.svg);
+        }
+    }
+    .gallery-mix,
+    .photo,
+    .discussions,
+    .news-latest {
+        background: #201f24;
+    }
+    .discussions__total,
+    .discussions__select .jq-selectbox__select,
+    .discussions__select .jq-selectbox__dropdown,
+    .discussions__select .jq-selectbox__dropdown li,
+    .discussions__select .jq-selectbox__dropdown li.selected {
+        background: #323137;
+        color: #fff;
+    }
+    .discussions__select .jq-selectbox__trigger-arrow {
+        background-image: url(../images/icon-arrow-down-white.svg);
+    }
+    .discussions__list,
+    .share-gallery,
+    .news-latest__aside {
+        background-color: #323137;
+        box-shadow: none;
+    }
+    .discussions__box-text {
+        color: $grey;
+    }
+    .discussions__item,
+    .share-gallery__title {
+        border-bottom: 1px solid rgba($color: #e6e9ee, $alpha: 0.16);
+    }
+    .share-gallery__link {
+        background: #49484e;
+        color: rgba($color: #ffffff, $alpha: 0.45);
+    }
+    .share-gallery__btn {
+        img {
+            content: url(../images/icon-copy-white.svg);
+        }
+    }
+    .discussions__leave-form textarea {
+        border: none;
+    }
+
+    // start news-single page
+    
+    &.news-single {
+        .breaking-news__link-border {
+            background-color: rgba(#e6e9ee, 0.14);
+        }
+        .breaking-news__item--placeholder{
+            background-color: $black;
+        }
+    }
+    .news-single__content {
+        background-color: #323137;
         box-shadow: none;
     }
 }

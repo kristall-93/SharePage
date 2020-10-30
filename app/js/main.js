@@ -171,6 +171,7 @@ $(document).ready(function () {
     $('.top-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        // fade: true,
         prevArrow: '<button class="top-slider__arrow-prev"><img src="images/slider-arrow-right.svg" alt="№"></button>',
         nextArrow: '<button class="top-slider__arrow-next"><img src="images/slider-arrow-right.svg" alt="№"></button>',
     });
