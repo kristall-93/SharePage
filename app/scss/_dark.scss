@@ -355,12 +355,12 @@
     }
 
     // start news-single page
-    
+
     &.news-single {
         .breaking-news__link-border {
             background-color: rgba(#e6e9ee, 0.14);
         }
-        .breaking-news__item--placeholder{
+        .breaking-news__item--placeholder {
             background-color: $black;
         }
     }
@@ -368,4 +368,40 @@
         background-color: #323137;
         box-shadow: none;
     }
+
+    // start support page
+
+    .help{
+        &__form {
+            background-color: #323137;
+        }
+        &__btn{
+            background-image: url(../images/icon-search-white.svg);
+        }
+        &__input{
+            color: #fff;
+        }
+    }
+    .support-content{
+        background-color: #201F24;
+    }
+    .support__item{
+        background-color: #323137;
+        box-shadow: none;
+        &-title{
+            color: #fff;
+        }
+        .icon-dark{
+            display: block;
+        }
+        .icon-ligth{
+            display: none;
+        }
+    }
+
+
+
+
+    //
+    ///
 }
