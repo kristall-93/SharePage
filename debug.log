@@ -3,3 +3,5 @@
 [1020/085958.296:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
 [1024/102340.737:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
 [1025/173925.464:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1031/092225.532:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1101/131638.893:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\kriss\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\a39fc68f-1fca-4d70-b0a8-b93d81e7f2d5: Системе не удается найти указанный путь. (0x3)

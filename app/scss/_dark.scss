@@ -371,36 +371,75 @@
 
     // start support page
 
-    .help{
+    .help {
         &__form {
             background-color: #323137;
         }
-        &__btn{
+        &__btn {
             background-image: url(../images/icon-search-white.svg);
         }
-        &__input{
+        &__input {
             color: #fff;
         }
     }
-    .support-content{
-        background-color: #201F24;
+    .support-content {
+        background-color: #201f24;
     }
-    .support__item{
+    .support__item {
         background-color: #323137;
         box-shadow: none;
-        &-title{
+        &-title {
             color: #fff;
         }
-        .icon-dark{
+        .icon-dark {
             display: block;
         }
-        .icon-ligth{
+        .icon-ligth {
             display: none;
         }
     }
 
+    // start choose-content page
 
+    &.choose-content {
+        background-color: #201f24;
+    }
+    .choose__inner {
+        background-color: #323137;
+        box-shadow: none;
+    }
+    .choose__text {
+        color: #fff;
+    }
+    .choose__item-text {
+        color: $grey;
+    }
+    .choose__item {
+        &:nth-child(1) {
+            .choose__item-img {
+                content: url(../images/icon-image-grey.svg);
+            }
+        }
+        &:nth-child(2) {
+            .choose__item-img {
+                content: url(../images/icon-text-grey.svg);
+            }
+        }
+    }
 
+    // start upload-content page
+
+    .upload__box {
+        background-color: transparent;
+        color: #fff;
+    }
+
+    // start upload-progress page
+
+    .uploading__top,
+    .uploading__item-top{
+        color: #fff;
+    }
 
     //
     ///

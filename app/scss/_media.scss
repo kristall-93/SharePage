@@ -170,6 +170,9 @@
 }
 
 @media (max-width: 1500px) {
+    .upload-progress .upload__box {
+        padding: 130px 50px;
+    }
     .news-latest .gallery__form-wrapper {
         padding: 0 20px;
     }
@@ -219,6 +222,9 @@
 }
 
 @media (max-width: 1400px) {
+    .upload-progress__inner {
+        padding: 79px 50px;
+    }
     .news-single .gallery__get-updated {
         font-size: 39px;
         line-height: 45px;
@@ -249,6 +255,22 @@
 }
 
 @media (max-width: 1300px) {
+    .upload-progress__inner {
+        display: block;
+        padding: 83px 22px;
+    }
+    .upload-progress {
+        .upload__box-wrapper {
+            margin: 0 auto 82px;
+        }
+        .upload__text {
+            text-align: center;
+        }
+    }
+    .uploading-wrapper {
+        margin: 0 auto;
+        min-width: auto;
+    }
     .help {
         &__inner {
             min-height: 288px;
@@ -389,7 +411,7 @@
         .discussions__inner {
             padding-top: 43px;
         }
-        .gallery__bottom {
+        .page-content .gallery__bottom {
             &-wrapper {
                 margin: 0 auto 30px;
             }
@@ -799,13 +821,6 @@
             font-size: 21px;
             line-height: 28px;
         }
-        &__tags-list {
-            // justify-content: start;
-        }
-        // &__tags-link {
-        //     padding: 10px 20px;
-        //     margin-right: 10px;
-        // }
         &__advertisement-inner {
             height: 536px;
             margin: 17px 25px 0;
@@ -1330,7 +1345,7 @@
             width: 153px;
             height: 43px;
             font-size: 13px;
-            line-height: 17px;            
+            line-height: 17px;
             span {
                 margin-right: 8px;
             }
@@ -1427,6 +1442,68 @@
 }
 
 @media (max-width: 1000px) {
+    .choose__inner.upload__inner {
+        padding: 82px 37px;
+    }
+    .upload {
+        &__text.choose__text {
+            font-size: 34px;
+            line-height: 45px;
+            margin-bottom: 20px;
+        }
+        &__box {
+            padding: 115px;
+            &-text {
+                font-size: 26px;
+                line-height: 34px;
+                margin-bottom: 8px;
+            }
+            &-btn {
+                width: 250px;
+                height: 61px;
+                font-size: 21px;
+                line-height: 28px;
+                margin: 0 auto 50px;
+                img {
+                    width: 30px;
+                    height: 24px;
+                }
+            }
+            &-drop-file {
+                font-size: 22px;
+                line-height: 29px;
+                margin-bottom: 8px;
+            }
+            &-limit,
+            &-formats {
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+    }
+    .choose {
+        padding-top: 57px;
+        padding-bottom: 100px;
+        &__inner {
+            padding: 65px 42px;
+        }
+        &__text {
+            font-size: 30px;
+            line-height: 39px;
+            margin-bottom: 45px;
+        }
+        &__box {
+            margin: 0 -13px 30px;
+        }
+        &__item {
+            max-width: 300px;
+            margin: 0 13px;
+            padding: 49px 30px;
+        }
+        &-img {
+            margin-bottom: 22px;
+        }
+    }
     .breaking-news__tags-link {
         padding: 10px 25px;
         margin-right: 12px;
@@ -1778,7 +1855,7 @@
         .discussions {
             padding-bottom: 16px;
         }
-        .gallery__form {
+        .page-content .gallery__form {
             margin: 0 auto;
             height: 26px;
             input {
@@ -2202,7 +2279,7 @@
             line-height: 11px;
             height: 19px;
             margin-bottom: 5px;
-            &.tag--medium{
+            &.tag--medium {
                 padding: 4px 5px;
             }
         }
@@ -2301,6 +2378,53 @@
 }
 
 @media (max-width: 740px) {
+    .uploading__top {
+        font-size: 18px;
+        line-height: 24px;
+        padding-bottom: 13px;
+        margin-bottom: 21px;
+        span {
+            font-size: 10px;
+            line-height: 13px;
+        }
+    }
+    .uploading__item {
+        margin-bottom: 22px;
+        &-check {
+            width: 19px;
+            min-width: 19px;
+            height: 19px;
+            margin-right: 11px;
+            img {
+                height: 6px;
+            }
+        }
+        &-img {
+            width: 51px;
+            height: 51px;
+            margin-right: 9px;
+        }
+        &-top {
+            font-size: 11px;
+            line-height: 15px;
+            img {
+                width: 11px;
+                height: 11px;
+            }
+        }
+        &-size {
+            font-size: 9px;
+            line-height: 11px;
+            margin-bottom: 3px;
+        }
+        &-progressbar {
+            margin-bottom: 2px;
+        }
+        &-percent {
+            font-size: 7px;
+            line-height: 9px;
+        }
+    }
     .support__item {
         padding: 20px;
     }
@@ -2619,6 +2743,73 @@
 }
 
 @media (max-width: 660px) {
+    .upload-progress {
+        .upload__box-wrapper {
+            margin-bottom: 26px;
+        }
+        .upload__box {
+            padding: 65px 22px 56px;
+        }
+    }
+
+    .upload__text.choose__text {
+        font-size: 25px;
+        line-height: 33px;
+        text-align: center;
+    }
+    .choose__inner.upload__inner {
+        padding: 34px 12px;
+    }
+    .upload__box {
+        padding: 65px 25px 56px;
+        &-btn {
+            height: 48px;
+            font-size: 18px;
+            line-height: 24px;
+            margin: 0 auto 9px;
+            img {
+                width: 27px;
+                height: 22px;
+                margin-right: 16px;
+            }
+        }
+    }
+
+    .choose {
+        margin-top: 65px;
+        padding-top: 34px;
+        padding-bottom: 67px;
+        &__inner {
+            padding: 28px 15px 36px;
+        }
+        &__text {
+            margin-left: 5px;
+            font-size: 25px;
+            line-height: 33px;
+            margin-bottom: 0;
+            text-align: left;
+        }
+        &__box {
+            display: block;
+            margin: 0 0 25px;
+        }
+        &__item {
+            margin: 33px 0 0;
+        }
+        &__btns {
+            flex-wrap: wrap;
+        }
+        &__btn {
+            margin: 0 auto;
+            height: 48px;
+            padding: 8px;
+            &-cancel {
+                order: 1;
+                margin-top: 12px;
+            }
+        }
+    }
+
     .help {
         margin-top: 65px;
         &__title {
@@ -3840,7 +4031,7 @@
 }
 
 @media (max-width: 370px) {
-    .breaking-news__tags-link{
+    .breaking-news__tags-link {
         font-size: 6px;
     }
     .gallery-mix__slider {
@@ -3888,7 +4079,6 @@
 // Scale :
 
 @media (min-width: 1300px) and (max-width: 2000px) {
-
     // homepage:
 
     .homepage .container {
@@ -4066,7 +4256,7 @@
     .news.news-single .page-content .container {
         transform-origin: top;
     }
-    .news.news-single {        
+    .news.news-single {
         .news-single__content {
             max-width: 100%;
         }
@@ -4075,10 +4265,10 @@
         .breaking-news {
             margin-bottom: -760px;
         }
-        .discussions{
+        .discussions {
             margin-bottom: -370px;
         }
-        .updates{
+        .updates {
             margin-bottom: -60px;
         }
     }
@@ -4095,12 +4285,29 @@
         transform-origin: top;
     }
     .support {
-        .help__inner{
+        .help__inner {
             min-height: 576px;
         }
-        .support-content{
+        .support-content {
             margin-bottom: -300px;
         }
     }
-    
+
+    // choose-content page,
+    // upload-content page :
+
+    .choose-content .container {
+        padding: 0 70px;
+        transform: scale(0.8);
+        max-width: initial;
+        padding: 0;
+    }
+    .choose-content .page-content .container {
+        transform-origin: top;
+    }
+    .choose-content {
+        .choose {
+            padding-bottom: 0;
+        }
+    }
 }

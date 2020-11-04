@@ -179,6 +179,9 @@ $(document).ready(function () {
     $('.gallery-mix__btn-fullscreen').on('click', function () {
         $('.popup-gallery').addClass('active');
     });
+    $('.news-single .btn-fullscreen').on('click', function () {
+        $('.popup-gallery').addClass('active');
+    });
 
 
     // Отметка "liked" в discussions на news-gallery page:
