@@ -170,6 +170,9 @@
 }
 
 @media (max-width: 1500px) {
+    .rewiew__inner {
+        padding: 65px 50px 65px;
+    }
     .upload-progress .upload__box {
         padding: 130px 50px;
     }
@@ -222,6 +225,15 @@
 }
 
 @media (max-width: 1400px) {
+    .rewiew__details-tag {
+        margin-right: 5px;
+    }
+    .rewiew__details {
+        min-width: 650px;
+    }
+    .rewiew__uploaded {
+        margin-right: 35px;
+    }
     .upload-progress__inner {
         padding: 79px 50px;
     }
@@ -255,6 +267,16 @@
 }
 
 @media (max-width: 1300px) {
+    .rewiew__content-item:first-child,
+    .rewiew__content-item.active-tab {
+        display: block;
+    }
+    .rewiew__uploaded {
+        margin: 0 auto 52px;
+    }
+    .rewiew__details {
+        margin: 0 auto;
+    }
     .upload-progress__inner {
         display: block;
         padding: 83px 22px;
@@ -1442,6 +1464,72 @@
 }
 
 @media (max-width: 1000px) {
+    .rewiew__inner.choose__inner {
+        padding: 44px 37px;
+    }
+    .rewiew-titles {
+        font-size: 34px;
+        line-height: 45px;
+    }
+    .rewiew__uploaded {
+        &-title {
+            margin-bottom: 20px;
+        }
+        &-img {
+            height: 427px;
+        }
+    }
+    .rewiew__tabs-title {
+        margin-top: 21px;
+        margin-bottom: 20px;
+    }
+    .rewiew__tab {
+        width: 90px;
+        height: 90px;
+        margin-right: 19px;
+    }
+    .rewiew__add-new {
+        width: 90px;
+        height: 90px;
+    }
+    .rewiew__details {
+        min-width: auto;
+        &-label {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        &-input {
+            min-height: 59px;
+            padding: 14px 27px;
+            font-size: 22px;
+            line-height: 29px;
+            margin-bottom: 18px;
+            &.rewiew__details-tags {
+                padding: 13px 23px;
+            }
+        }
+        &-tag {
+            font-size: 16px;
+            line-height: 21px;
+            padding: 9px 20px;
+            margin-right: 8px;
+        }
+        &-textarea {
+            height: 233px;
+            padding: 14px 25px;
+            margin-bottom: 30px;
+        }
+        .choose__btn {
+            max-width: 291px;
+            height: 63px;
+            padding: 17px;
+            font-size: 22px;
+            line-height: 29px;
+            &-cancel {
+                margin-right: 20px;
+            }
+        }
+    }
     .choose__inner.upload__inner {
         padding: 82px 37px;
     }
@@ -1526,6 +1614,39 @@
 }
 
 @media (max-width: 850px) {
+    .success {
+        max-width: 706px;
+        &__top {
+            padding: 23px 23px 18px;
+            .logo img{
+                height: 41px;
+            }
+        }
+        .fancybox-button.fancybox-close-small {
+            height: 61px;
+            width: 61px;
+            top: 13px;
+            right: 22px;
+        }
+        &__inner {
+            padding: 67px 90px 95px;
+        }
+        &__title {
+            font-size: 39px;
+            line-height: 52px;
+        }
+        &__text {
+            font-size: 23px;
+            line-height: 30px;
+        }
+        &__btn {
+            max-width: 266px;
+            height: 61px;
+            padding: 17px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
     .news-latest__aside-inner {
         justify-content: space-between;
         padding: 40px 0px 0;
@@ -1985,7 +2106,6 @@
             padding: 13px;
         }
     }
-
     .top-slider__item {
         padding: 62px 11px 18px;
         min-height: 211px;
@@ -2484,6 +2604,73 @@
 }
 
 @media (max-width: 700px) {
+    .rewiew__inner.choose__inner {
+        padding: 50px 5px 43px;
+    }
+    .rewiew-titles {
+        font-size: 25px;
+        line-height: 33px;
+        &.rewiew__details-title {
+            font-size: 38px;
+            line-height: 50px;
+        }
+    }
+    .rewiew__uploaded-title {
+        margin-bottom: 22px;
+    }
+    .rewiew__tabs-title {
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+    .rewiew__tab {
+        width: 78px;
+        height: 78px;
+        margin-right: 11px;
+    }
+    .rewiew__add-new {
+        width: 78px;
+        height: 78px;
+    }
+    .rewiew__uploaded {
+        margin: 0 auto 27px;
+    }
+    .rewiew__details-label {
+        font-size: 22px;
+        line-height: 29px;
+    }
+    .rewiew__details-input {
+        font-size: 15px;
+        line-height: 20px;
+        &.rewiew__details-tags {
+            padding: 17px 23px;
+            // overflow-x: scroll;
+        }
+    }
+    .rewiew__details-textarea {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 20px 25px;
+        margin-bottom: 20px;
+        height: 297px;
+    }
+    .rewiew__details-tag {
+        display: none;
+        font-size: 18px;
+        line-height: 24px;
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            display: block;
+        }
+    }
+    // .rewiew__details {
+    //     .choose__btn {
+    //         margin: 0 auto;
+    //     }
+    //     .choose__btn-cancel {
+    //         margin-top: 12px;
+    //     }
+    // }
     .login__gallery {
         min-width: 100%;
     }
@@ -2743,6 +2930,47 @@
 }
 
 @media (max-width: 660px) {
+    .rewiew__details {
+        .choose__btn {
+            margin: 0 10px;
+        }
+        .choose__btn-cancel {
+            margin-top: 12px;
+        }
+    }
+    .success {
+        max-width: 353px;
+        &__top {
+            padding: 23px 32px 17px;
+            .logo img {
+                margin-left: 0;
+            }
+        }
+        .fancybox-button.fancybox-close-small {
+            height: 37px;
+            width: 37px;
+            top: 26px;
+            right: 18px;
+            background-size: 9px 9px;
+        }
+        &__inner {
+            padding: 21px 32px 46px;
+            text-align: left;
+        }
+        &__title{
+            margin-bottom: 0;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 21px;
+        }
+        &__btn {
+            max-width: 303px;
+            height: 48px;
+            padding: 11px;
+        }
+    }
     .upload-progress {
         .upload__box-wrapper {
             margin-bottom: 26px;
@@ -2751,7 +2979,6 @@
             padding: 65px 22px 56px;
         }
     }
-
     .upload__text.choose__text {
         font-size: 25px;
         line-height: 33px;
@@ -2774,7 +3001,6 @@
             }
         }
     }
-
     .choose {
         margin-top: 65px;
         padding-top: 34px;
@@ -3832,6 +4058,9 @@
 }
 
 @media (max-width: 530px) {
+    .rewiew__uploaded-img {
+        height: 238px;
+    }
     .gallery {
         .slider-item__reporter {
             height: 35px;
@@ -4019,6 +4248,11 @@
 }
 
 @media (max-width: 373px) {
+    .rewiew__details-input {
+        &.rewiew__details-tags {
+            overflow-x: scroll;
+        }
+    }
     .breaking-news__inner {
         grid-column-gap: 7px;
     }
@@ -4027,6 +4261,11 @@
     }
     .breaking-news__item--getupdated {
         padding: 23px 16px 23px 6px;
+    }
+    .rewiew__tab,
+    .rewiew__add-new {
+        width: 65px;
+        height: 65px;
     }
 }
 

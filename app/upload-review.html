@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="upload-progress choose-content login--on">
+<body class="upload-rewiew choose-content login--on">
     <!-- class="dark" -->
     <!-- class="login--on" -->
     <!-- choose-content -->
@@ -113,122 +113,195 @@
 
             <div class="page-content">
 
-                <section class="upload choose">
+                <section class="rewiew choose">
                     <div class="container">
-                        <div class="upload-progress__inner choose__inner">
+                        <div class="rewiew__inner choose__inner">
+                            <div class="rewiew__tab-content">
 
-                            <div class="upload__box-wrapper">
-                                <p class="upload__text choose__text">
-                                    Share content
-                                </p>
-                                <div class="upload__box">
-                                    <p class="upload__box-text">
-                                        Drag and Drop files here <span>or</span>
-                                    </p>
-                                    <a class="upload__box-btn" href="#">
-                                        <img src="images/icon-upload-cloud.svg" alt="#">
-                                        <span>Add files</span>
-                                    </a>
-                                    <p class="upload__box-drop-file">
-                                        Drag and Drop files here
-                                    </p>
-                                    <p class="upload__box-limit">
-                                        Upload limit: 60 MB
-                                    </p>
-                                    <p class="upload__box-formats">
-                                        PNG, JPG, JPEG, GIF, TIF, PDF, EPS
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="uploading-wrapper">
-                                <div class="uploading__top">
-                                    Uploading: <span>3 files added</span>
-                                </div>
-                                <div class="uploading__list">
-
-                                    <div class="uploading__item uploading__item--check-ok uploading__item--completed">
-                                        <div class="uploading__item-check">
-                                            <img class="check-ok" src="images/icon-check-white.svg" alt="#">
-                                            <img class="check-no" src="images/icon-cross-white.svg" alt="#">
+                                <div class="rewiew__content-item active-tab" id="1">
+                                    <div class="rewiew__uploaded">
+                                        <div class="rewiew__uploaded-title rewiew-titles">
+                                            Uploaded
                                         </div>
-                                        <img class="uploading__item-img" src="images/upload-img-1.jpg" alt="#">
-                                        <div class="uploading__item-box">
-                                            <div class="uploading__item-top">
-                                                <p>ashton-kutcher-vacation-beach.png</p>
-                                                <a class="uploading__item-cancel" href="#">
-                                                    <img src="images/icon-x-circle.svg" alt="#">
-                                                </a>
+                                        <div class="rewiew__uploaded-img" style="background-image: url(images/review-uploaded-2.jpg);"></div>
+                                        <h5 class="rewiew__tabs-title rewiew-titles">
+                                            Select Image
+                                        </h5>
+
+                                        <div class="rewiew__tabs">
+                                            <div class="rewiew__tab active" data-id="1">
+                                                <img src="images/upload-img-2.jpg" alt="#">
                                             </div>
-                                            <p class="uploading__item-size">1.2mb</p>
-                                            <div class="uploading__item-progressbar">
-                                                <div class="uploading__item-progress-level"></div>
+                                            <div class="rewiew__tab" data-id="2">
+                                                <img src="images/upload-img-1.jpg" alt="#">
                                             </div>
-                                            <p class="uploading__item-percent">
-                                                100% Completed
-                                            </p>
-                                        </div>
+                                            <div class="rewiew__tab" data-id="3">
+                                                <img src="images/upload-img-3.jpg" alt="#">
+                                            </div>
+                                            <a class="rewiew__add-new" href="#">
+                                                <img src="images/icon-add.svg" alt="#">
+                                            </a>
+                                        </div>    
+
                                     </div>
-
-                                    <div class="uploading__item uploading__item--check-no">
-                                        <div class="uploading__item-check">
-                                            <img class="check-ok" src="images/icon-check-white.svg" alt="#">
-                                            <img class="check-no" src="images/icon-cross-white.svg" alt="#">
+                                    <form class="rewiew__details">
+                                        <div class="rewiew__details-title rewiew-titles">
+                                            Image Details
                                         </div>
-                                        <img class="uploading__item-img" src="images/upload-img-2.jpg" alt="#">
-                                        <div class="uploading__item-box">
-                                            <div class="uploading__item-top">
-                                                <p>selena-gomez-gym.jpg</p>
-                                                <a class="uploading__item-cancel" href="#">
-                                                    <img src="images/icon-x-circle.svg" alt="#">
-                                                </a>
-                                            </div>
-                                            <p class="uploading__item-size">67mb</p>
-                                            <div class="uploading__item-progressbar">
-                                                <div class="uploading__item-progress-level"></div>
-                                            </div>
-                                            <p class="uploading__item-percent">
-                                                Error: File too big.
-                                            </p>
+                                        <p class="rewiew__details-label">
+                                            Display Title
+                                        </p>
+                                        <input class="rewiew__details-input" type="text" value="Selena Gomez visits local NYC gym">
+                                        <p class="rewiew__details-label">
+                                            Tags <span>(Press enter to separate tags)</span> 
+                                        </p>
+                                        <div class="rewiew__details-tags rewiew__details-input">
+                                            <span class="rewiew__details-tag">Celebrity</span>
+                                            <span class="rewiew__details-tag">Gym</span>
+                                            <span class="rewiew__details-tag">Music</span>
+                                            <span class="rewiew__details-tag">Selena</span>
+                                            <span class="rewiew__details-tag">Gomez</span>
                                         </div>
-                                    </div>
-
-                                    <div class="uploading__item">
-                                        <div class="uploading__item-check">
-                                            <img class="check-ok" src="images/icon-check-white.svg" alt="#">
-                                            <img class="check-no" src="images/icon-cross-white.svg" alt="#">
+                                        <p class="rewiew__details-label">
+                                            Description
+                                        </p>
+                                        <textarea class="rewiew__details-textarea">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd…
+                                        </textarea>
+                                        <div class="choose__btns">
+                                            <a class="choose__btn-cancel choose__btn" href="#">
+                                                Cancel
+                                            </a>
+                                            <a class="choose__btn-next choose__btn" data-fancybox data-src="#success"
+                                            href="javascript:;">
+                                                Submit
+                                            </a>
                                         </div>
-                                        <img class="uploading__item-img" src="images/upload-img-3.jpg" alt="#">
-                                        <div class="uploading__item-box">
-                                            <div class="uploading__item-top">
-                                                <p>jenifer-lopez-bikini-image-2020.png</p>
-                                                <a class="uploading__item-cancel" href="#">
-                                                    <img src="images/icon-x-circle.svg" alt="#">
-                                                </a>
-                                            </div>
-                                            <p class="uploading__item-size">5.6mb</p>
-                                            <div class="uploading__item-progressbar">
-                                                <div class="uploading__item-progress-level"></div>
-                                            </div>
-                                            <p class="uploading__item-percent">
-                                                76% Completed
-                                            </p>
-                                        </div>
-                                    </div>
-
+                                    </form> 
                                 </div>
 
-                                <div class="choose__btns">
-                                    <a class="choose__btn-cancel choose__btn" href="#">
-                                        Cancel
-                                    </a>
-                                    <a class="choose__btn-next choose__btn" href="#">
-                                        Next
-                                    </a>
+                                <div class="rewiew__content-item" id="2">
+                                    <div class="rewiew__uploaded">
+                                        <div class="rewiew__uploaded-title rewiew-titles">
+                                            Uploaded
+                                        </div>
+                                        <div class="rewiew__uploaded-img" style="background-image: url(images/review-uploaded-1.jpg);"></div>
+                                        <h5 class="rewiew__tabs-title rewiew-titles">
+                                            Select Image
+                                        </h5>
+
+                                        <div class="rewiew__tabs">
+                                            <div class="rewiew__tab active" data-id="1">
+                                                <img src="images/upload-img-2.jpg" alt="#">
+                                            </div>
+                                            <div class="rewiew__tab" data-id="2">
+                                                <img src="images/upload-img-1.jpg" alt="#">
+                                            </div>
+                                            <div class="rewiew__tab" data-id="3">
+                                                <img src="images/upload-img-3.jpg" alt="#">
+                                            </div>
+                                            <a class="rewiew__add-new" href="#">
+                                                <img src="images/icon-add.svg" alt="#">
+                                            </a>
+                                        </div>    
+
+                                    </div>
+                                    <form class="rewiew__details">
+                                        <div class="rewiew__details-title rewiew-titles">
+                                            Image Details
+                                        </div>
+                                        <p class="rewiew__details-label">
+                                            Display Title
+                                        </p>
+                                        <input class="rewiew__details-input" type="text" value="Ashton Kutcher plays volleyball on beach">
+                                        <p class="rewiew__details-label">
+                                            Tags <span>(Press enter to separate tags)</span> 
+                                        </p>
+                                        <div class="rewiew__details-tags rewiew__details-input">
+                                            <span class="rewiew__details-tag">Ashton</span>
+                                            <span class="rewiew__details-tag">Kutcher</span>
+                                            <span class="rewiew__details-tag">Volleyball</span>
+                                            <span class="rewiew__details-tag">Movies</span>
+                                            <span class="rewiew__details-tag">Hollywood</span>
+                                        </div>
+                                        <p class="rewiew__details-label">
+                                            Description
+                                        </p>
+                                        <textarea class="rewiew__details-textarea">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects…
+                                        </textarea>
+                                        <div class="choose__btns">
+                                            <a class="choose__btn-cancel choose__btn" href="#">
+                                                Cancel
+                                            </a>
+                                            <a class="choose__btn-next choose__btn" data-fancybox data-src="#success"
+                                            href="javascript:;">
+                                                Submit
+                                            </a>
+                                        </div>
+                                    </form> 
                                 </div>
 
-                            </div>
+                                <div class="rewiew__content-item" id="3">
+                                    <div class="rewiew__uploaded">
+                                        <div class="rewiew__uploaded-title rewiew-titles">
+                                            Uploaded
+                                        </div>
+                                        <div class="rewiew__uploaded-img" style="background-image: url(images/upload-img-3.jpg);"></div>
+                                        <h5 class="rewiew__tabs-title rewiew-titles">
+                                            Select Image
+                                        </h5>
 
+                                        <div class="rewiew__tabs">
+                                            <div class="rewiew__tab active" data-id="1">
+                                                <img src="images/upload-img-2.jpg" alt="#">
+                                            </div>
+                                            <div class="rewiew__tab" data-id="2">
+                                                <img src="images/upload-img-1.jpg" alt="#">
+                                            </div>
+                                            <div class="rewiew__tab" data-id="3">
+                                                <img src="images/upload-img-3.jpg" alt="#">
+                                            </div>
+                                            <a class="rewiew__add-new" href="#">
+                                                <img src="images/icon-add.svg" alt="#">
+                                            </a>
+                                        </div>    
+
+                                    </div>
+                                    <form class="rewiew__details">
+                                        <div class="rewiew__details-title rewiew-titles">
+                                            Image Details
+                                        </div>
+                                        <p class="rewiew__details-label">
+                                            Display Title
+                                        </p>
+                                        <input class="rewiew__details-input" type="text" value="Selena Gomez visits local NYC gym">
+                                        <p class="rewiew__details-label">
+                                            Tags <span>(Press enter to separate tags)</span> 
+                                        </p>
+                                        <div class="rewiew__details-tags rewiew__details-input">
+                                            <span class="rewiew__details-tag">Celebrity</span>
+                                            <span class="rewiew__details-tag">Gym</span>
+                                            <span class="rewiew__details-tag">Music</span>
+                                            <span class="rewiew__details-tag">Selena</span>
+                                            <span class="rewiew__details-tag">Gomez</span>
+                                        </div>
+                                        <p class="rewiew__details-label">
+                                            Description
+                                        </p>
+                                        <textarea class="rewiew__details-textarea">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd…
+                                        </textarea>
+                                        <div class="choose__btns">
+                                            <a class="choose__btn-cancel choose__btn" href="#">
+                                                Cancel
+                                            </a>
+                                            <a class="choose__btn-next choose__btn" data-fancybox data-src="#success"
+                                            href="javascript:;">
+                                                Submit
+                                            </a>
+                                        </div>
+                                    </form> 
+                                </div>
+
+                            </div>  
 
                         </div>
                     </div>
@@ -535,369 +608,23 @@
         </div>
     </div>
 
-    <div class="popup-gallery" id="popup-gallery">
-        <div class="popup-gallery__inner">
-
-            <div class="popup__slider-main" id="slider-main">
-
-                <div class="slider-main__item" style="background-image: url(images/slider-popup-1.jpg);"
-                    id="slider-main__item">
-                    <div class="slider-main__line">
-                        <div class="slider-main__left">
-                            <p class="slider-main__uploaded-by">
-                                Uploaded By: Ashton T.
-                            </p>
-                            <div class="slider-main__left-line">
-                                <span class="slider-main__number" id="slider-main__number">1/34</span>
-                                <span class="slider-main__fans">
-                                    <span>Fans Share: </span>
-                                    Kate Upton's Body Down To..
-                                </span>
-                            </div>
-                        </div>
-                        <div class="slider-main__right">
-                            <a class="slider-main__dislike slider-main__btn" href="#">
-                                <img src="images/icon-dislike.svg" alt="#">
-                                <span>I Hate This</span>
-                                <span class="slider-main__like-count">54</span>
-                            </a>
-                            <a class="slider-main__like slider-main__btn" href="#">
-                                <img src="images/icon-like.svg" alt="#">
-                                <span>I Love This</span>
-                                <span class="slider-main__like-count">123</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-main__item" style="background-image: url(images/slider-popup-2.jpg);">
-                    <div class="slider-main__line">
-                        <div class="slider-main__left">
-                            <p class="slider-main__uploaded-by">
-                                Uploaded By: Ashton T.
-                            </p>
-                            <div class="slider-main__left-line">
-                                <span class="slider-main__number">2/34</span>
-                                <span class="slider-main__fans">
-                                    <span>Fans Share: </span>
-                                    Kate Upton's Body Down To..
-                                </span>
-                            </div>
-                        </div>
-                        <div class="slider-main__right">
-                            <a class="slider-main__dislike slider-main__btn" href="#">
-                                <img src="images/icon-dislike.svg" alt="#">
-                                <span>I Hate This</span>
-                                <span class="slider-main__like-count">54</span>
-                            </a>
-                            <a class="slider-main__like slider-main__btn" href="#">
-                                <img src="images/icon-like.svg" alt="#">
-                                <span>I Love This</span>
-                                <span class="slider-main__like-count">123</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-main__item" style="background-image: url(images/slider-popup-3.jpg);">
-                    <div class="slider-main__line">
-                        <div class="slider-main__left">
-                            <p class="slider-main__uploaded-by">
-                                Uploaded By: Ashton T.
-                            </p>
-                            <div class="slider-main__left-line">
-                                <span class="slider-main__number">3/34</span>
-                                <span class="slider-main__fans">
-                                    <span>Fans Share: </span>
-                                    Kate Upton's Body Down To..
-                                </span>
-                            </div>
-                        </div>
-                        <div class="slider-main__right">
-                            <a class="slider-main__dislike slider-main__btn" href="#">
-                                <img src="images/icon-dislike.svg" alt="#">
-                                <span>I Hate This</span>
-                                <span class="slider-main__like-count">54</span>
-                            </a>
-                            <a class="slider-main__like slider-main__btn" href="#">
-                                <img src="images/icon-like.svg" alt="#">
-                                <span>I Love This</span>
-                                <span class="slider-main__like-count">123</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-main__item" style="background-image: url(images/slider-popup-4.jpg);">
-                    <div class="slider-main__line">
-                        <div class="slider-main__left">
-                            <p class="slider-main__uploaded-by">
-                                Uploaded By: Ashton T.
-                            </p>
-                            <div class="slider-main__left-line">
-                                <span class="slider-main__number">4/34</span>
-                                <span class="slider-main__fans">
-                                    <span>Fans Share: </span>
-                                    Kate Upton's Body Down To..
-                                </span>
-                            </div>
-                        </div>
-                        <div class="slider-main__right">
-                            <a class="slider-main__dislike slider-main__btn" href="#">
-                                <img src="images/icon-dislike.svg" alt="#">
-                                <span>I Hate This</span>
-                                <span class="slider-main__like-count">54</span>
-                            </a>
-                            <a class="slider-main__like slider-main__btn" href="#">
-                                <img src="images/icon-like.svg" alt="#">
-                                <span>I Love This</span>
-                                <span class="slider-main__like-count">123</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-main__item" style="background-image: url(images/slider-popup-5.jpg);">
-                    <div class="slider-main__line">
-                        <div class="slider-main__left">
-                            <p class="slider-main__uploaded-by">
-                                Uploaded By: Ashton T.
-                            </p>
-                            <div class="slider-main__left-line">
-                                <span class="slider-main__number">5/34</span>
-                                <span class="slider-main__fans">
-                                    <span>Fans Share: </span>
-                                    Kate Upton's Body Down To..
-                                </span>
-                            </div>
-                        </div>
-                        <div class="slider-main__right">
-                            <a class="slider-main__dislike slider-main__btn" href="#">
-                                <img src="images/icon-dislike.svg" alt="#">
-                                <span>I Hate This</span>
-                                <span class="slider-main__like-count">54</span>
-                            </a>
-                            <a class="slider-main__like slider-main__btn" href="#">
-                                <img src="images/icon-like.svg" alt="#">
-                                <span>I Love This</span>
-                                <span class="slider-main__like-count">123</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-main__item" style="background-image: url(images/slider-popup-6.jpg);">
-                    <div class="slider-main__line">
-                        <div class="slider-main__left">
-                            <p class="slider-main__uploaded-by">
-                                Uploaded By: Ashton T.
-                            </p>
-                            <div class="slider-main__left-line">
-                                <span class="slider-main__number">6/34</span>
-                                <span class="slider-main__fans">
-                                    <span>Fans Share: </span>
-                                    Kate Upton's Body Down To..
-                                </span>
-                            </div>
-                        </div>
-                        <div class="slider-main__right">
-                            <a class="slider-main__dislike slider-main__btn" href="#">
-                                <img src="images/icon-dislike.svg" alt="#">
-                                <span>I Hate This</span>
-                                <span class="slider-main__like-count">54</span>
-                            </a>
-                            <a class="slider-main__like slider-main__btn" href="#">
-                                <img src="images/icon-like.svg" alt="#">
-                                <span>I Love This</span>
-                                <span class="slider-main__like-count">123</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-main__item" style="background-image: url(images/slider-popup-7.jpg);">
-                    <div class="slider-main__line">
-                        <div class="slider-main__left">
-                            <p class="slider-main__uploaded-by">
-                                Uploaded By: Ashton T.
-                            </p>
-                            <div class="slider-main__left-line">
-                                <span class="slider-main__number">7/34</span>
-                                <span class="slider-main__fans">
-                                    <span>Fans Share: </span>
-                                    Kate Upton's Body Down To..
-                                </span>
-                            </div>
-                        </div>
-                        <div class="slider-main__right">
-                            <a class="slider-main__dislike slider-main__btn" href="#">
-                                <img src="images/icon-dislike.svg" alt="#">
-                                <span>I Hate This</span>
-                                <span class="slider-main__like-count">54</span>
-                            </a>
-                            <a class="slider-main__like slider-main__btn" href="#">
-                                <img src="images/icon-like.svg" alt="#">
-                                <span>I Love This</span>
-                                <span class="slider-main__like-count">123</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-main__item" style="background-image: url(images/slider-popup-8.jpg);">
-                    <div class="slider-main__line">
-                        <div class="slider-main__left">
-                            <p class="slider-main__uploaded-by">
-                                Uploaded By: Ashton T.
-                            </p>
-                            <div class="slider-main__left-line">
-                                <span class="slider-main__number">8/34</span>
-                                <span class="slider-main__fans">
-                                    <span>Fans Share: </span>
-                                    Kate Upton's Body Down To..
-                                </span>
-                            </div>
-                        </div>
-                        <div class="slider-main__right">
-                            <a class="slider-main__dislike slider-main__btn" href="#">
-                                <img src="images/icon-dislike.svg" alt="#">
-                                <span>I Hate This</span>
-                                <span class="slider-main__like-count">54</span>
-                            </a>
-                            <a class="slider-main__like slider-main__btn" href="#">
-                                <img src="images/icon-like.svg" alt="#">
-                                <span>I Love This</span>
-                                <span class="slider-main__like-count">123</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-main__item" style="background-image: url(images/slider-popup-9.jpg);">
-                    <div class="slider-main__line">
-                        <div class="slider-main__left">
-                            <p class="slider-main__uploaded-by">
-                                Uploaded By: Ashton T.
-                            </p>
-                            <div class="slider-main__left-line">
-                                <span class="slider-main__number">9/34</span>
-                                <span class="slider-main__fans">
-                                    <span>Fans Share: </span>
-                                    Kate Upton's Body Down To..
-                                </span>
-                            </div>
-                        </div>
-                        <div class="slider-main__right">
-                            <a class="slider-main__dislike slider-main__btn" href="#">
-                                <img src="images/icon-dislike.svg" alt="#">
-                                <span>I Hate This</span>
-                                <span class="slider-main__like-count">54</span>
-                            </a>
-                            <a class="slider-main__like slider-main__btn" href="#">
-                                <img src="images/icon-like.svg" alt="#">
-                                <span>I Love This</span>
-                                <span class="slider-main__like-count">123</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-main__item" style="background-image: url(images/slider-popup-10.jpg);">
-                    <div class="slider-main__line">
-                        <div class="slider-main__left">
-                            <p class="slider-main__uploaded-by">
-                                Uploaded By: Ashton T.
-                            </p>
-                            <div class="slider-main__left-line">
-                                <span class="slider-main__number">10/34</span>
-                                <span class="slider-main__fans">
-                                    <span>Fans Share: </span>
-                                    Kate Upton's Body Down To..
-                                </span>
-                            </div>
-                        </div>
-                        <div class="slider-main__right">
-                            <a class="slider-main__dislike slider-main__btn" href="#">
-                                <img src="images/icon-dislike.svg" alt="#">
-                                <span>I Hate This</span>
-                                <span class="slider-main__like-count">54</span>
-                            </a>
-                            <a class="slider-main__like slider-main__btn" href="#">
-                                <img src="images/icon-like.svg" alt="#">
-                                <span>I Love This</span>
-                                <span class="slider-main__like-count">123</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-main__item" style="background-image: url(images/slider-popup-11.jpg);">
-                    <div class="slider-main__line">
-                        <div class="slider-main__left">
-                            <p class="slider-main__uploaded-by">
-                                Uploaded By: Ashton T.
-                            </p>
-                            <div class="slider-main__left-line">
-                                <span class="slider-main__number">11/34</span>
-                                <span class="slider-main__fans">
-                                    <span>Fans Share: </span>
-                                    Kate Upton's Body Down To..
-                                </span>
-                            </div>
-                        </div>
-                        <div class="slider-main__right">
-                            <a class="slider-main__dislike slider-main__btn" href="#">
-                                <img src="images/icon-dislike.svg" alt="#">
-                                <span>I Hate This</span>
-                                <span class="slider-main__like-count">54</span>
-                            </a>
-                            <a class="slider-main__like slider-main__btn" href="#">
-                                <img src="images/icon-like.svg" alt="#">
-                                <span>I Love This</span>
-                                <span class="slider-main__like-count">123</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="popup__slider-nav">
-                <div class="slider-nav__item" style="background-image: url(images/slider-popup-1.jpg);">
-                </div>
-                <div class="slider-nav__item" style="background-image: url(images/slider-popup-2.jpg);">
-                </div>
-                <div class="slider-nav__item" style="background-image: url(images/slider-popup-3.jpg);">
-                </div>
-                <div class="slider-nav__item" style="background-image: url(images/slider-popup-4.jpg);">
-                </div>
-                <div class="slider-nav__item" style="background-image: url(images/slider-popup-5.jpg);">
-                </div>
-                <div class="slider-nav__item" style="background-image: url(images/slider-popup-6.jpg);">
-                </div>
-                <div class="slider-nav__item" style="background-image: url(images/slider-popup-7.jpg);">
-                </div>
-                <div class="slider-nav__item" style="background-image: url(images/slider-popup-8.jpg);">
-                </div>
-                <div class="slider-nav__item" style="background-image: url(images/slider-popup-9.jpg);">
-                </div>
-                <div class="slider-nav__item" style="background-image: url(images/slider-popup-10.jpg);">
-                </div>
-                <div class="slider-nav__item" style="background-image: url(images/slider-popup-11.jpg);">
-                </div>
-            </div>
-
-            <div class="gallery__bottom">
-                <div class="gallery__bottom-line">
-                    <span class="gallery__get-updated">
-                        GET<span>UPDATED</span>
-                    </span>
-                    <form class="gallery__form">
-                        <input type="text" placeholder="Enter E-mail address for Kate Upton updates" required>
-                        <button type="submit">Submit</button>
-                    </form>
-                    <a class="gallery__reseive" href="#">
-                        Receive E-mail Alerts When Fans Share Content
-                    </a>
-                </div>
-                <div class="gallery__bottom-bg gallery__bottom-bg--right">
-                    <img src="images/gallery-bottom-bg.svg" alt="#">
-                </div>
-                <div class="gallery__bottom-bg gallery__bottom-bg--left">
-                    <img src="images/gallery-bottom-bg.svg" alt="#">
-                </div>
-            </div>
-
+    <div class="success" id="success">
+        <div class="success__top">
+            <a class="logo" href="#">
+                <img src="images/logo.svg" alt="#">
+            </a>
         </div>
+        <div class="success__inner">
+            <h5 class="success__title">
+                Success!
+            </h5>
+            <p class="success__text">
+                You've successfully shared your content. <br>
+                Thank you for your contribution and being an active <br>
+                member of our community.
+            </p>
+            <a class="success__btn" href="#">Share More Content</a>
+        </div>       
     </div>
 
 

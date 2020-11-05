@@ -434,13 +434,39 @@
         color: #fff;
     }
 
-    // start upload-progress page
+    // start upload-progress page,
+    // upload-rewiew page
 
     .uploading__top,
-    .uploading__item-top{
+    .uploading__item-top,
+    .rewiew-titles {
         color: #fff;
     }
-
-    //
-    ///
+    .rewiew__details-input,
+    .rewiew__details-textarea{
+        background-color: #49484E;
+        border: none;
+        color: #fff;
+    }
+    .rewiew__details-tag{
+        background-color: #5B5A5F;
+        color: #fff;
+    }
+    
+    .success {
+        background-color: #323137;
+        &__title{
+            color: #fff;
+        }
+        &__text{
+            color: $grey;
+        }
+        .fancybox-button.fancybox-close-small{
+            background-color: #49484E;
+            background-image: url(../images/popup-close-white.svg);
+        }
+        &__top {
+            border-bottom: 1px solid rgba($color: #E6E9EE, $alpha: 0.1);
+        }
+    }
 }

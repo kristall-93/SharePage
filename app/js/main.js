@@ -183,6 +183,18 @@ $(document).ready(function () {
         $('.popup-gallery').addClass('active');
     });
 
+    // переключение вкладок на upload-rewiew page :
+
+    $('.rewiew__tab-content .rewiew__tab').on('click', function (event) {
+        var id = $(this).attr('data-id');
+        $('.rewiew__tab-content').find('.rewiew__content-item').removeClass('active-tab').hide();
+        $('.rewiew__tab-content .rewiew__tabs').find('.rewiew__tab').removeClass('active');
+        $('.rewiew__tab-content .rewiew__tabs').find('[data-id='+id+']').addClass('active');       
+        // $(this).addClass('active');
+        $('#' + id).addClass('active-tab').fadeIn();
+        return false;
+    });
+
 
     // Отметка "liked" в discussions на news-gallery page:
     // $('.discussions__box-like').on('click', function () {
