@@ -195,6 +195,23 @@ $(document).ready(function () {
         return false;
     });
 
+    // Отметка добавить в закладки на subpage-india page :
+
+    $('.subpage__item-bookmark').on('click', function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        }
+        else {
+            $(this).addClass('active');
+        }
+    });
+
+    // Появление copied-notification на subpage-india page :
+
+    $('.share__copy').on('click', function () {
+        $('.copied-notification').fadeIn();
+        setTimeout(() => { $('.copied-notification').fadeOut(); }, 2000);
+    });
 
     // Отметка "liked" в discussions на news-gallery page:
     // $('.discussions__box-like').on('click', function () {
@@ -203,10 +220,7 @@ $(document).ready(function () {
     // Снятие отметки "liked" в discussions на news-gallery page:
     // $('.discussions__box-you-liked').on('click', function () {
     //     $('.discussions__item').removeClass('discussions__item--liked');
-    // });
-
-
-    
+    // });    
 
 
 

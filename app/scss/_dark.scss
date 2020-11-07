@@ -439,34 +439,129 @@
 
     .uploading__top,
     .uploading__item-top,
-    .rewiew-titles {
+    .rewiew-titles,
+    .rewiew__details-label {
         color: #fff;
     }
     .rewiew__details-input,
-    .rewiew__details-textarea{
-        background-color: #49484E;
+    .rewiew__details-textarea {
+        background-color: #49484e;
         border: none;
         color: #fff;
     }
-    .rewiew__details-tag{
-        background-color: #5B5A5F;
+    .rewiew__details-tag {
+        background-color: #5b5a5f;
         color: #fff;
     }
-    
+
+    // popup success
     .success {
+        // display: none;
         background-color: #323137;
-        &__title{
+        &__title {
             color: #fff;
         }
-        &__text{
+        &__text {
             color: $grey;
         }
-        .fancybox-button.fancybox-close-small{
-            background-color: #49484E;
+        .fancybox-button.fancybox-close-small {
+            background-color: #49484e;
             background-image: url(../images/popup-close-white.svg);
         }
         &__top {
-            border-bottom: 1px solid rgba($color: #E6E9EE, $alpha: 0.1);
+            border-bottom: 1px solid rgba($color: #e6e9ee, $alpha: 0.1);
+        }
+    }
+
+    // start moderation-approval page
+
+    &.moderation-approval {
+        background-color: #201f24;
+        color: #fff;
+    }
+    .moderation__item {
+        background-color: #323137;
+        box-shadow: none;
+    }
+    .requests-list__item,
+    .requests-list__select .jq-selectbox__select,
+    .requests-list__select .jq-selectbox__dropdown,
+    .requests-list__select .jq-selectbox__dropdown li,
+    .requests-list__select .jq-selectbox__dropdown li.selected {
+        background-color: #49484e;
+        border: none;
+        color: #fff;
+    }
+    .requests-list__select .jq-selectbox__select-text {
+        color: #fff;
+    }
+    .requests-list__select .jq-selectbox__trigger-arrow {
+        background-image: url(../images/icon-arrow-down-white.svg);
+    }
+
+    // start subpage-india page
+
+    &.subpage-india {
+        background-color: #201f24;
+    }
+    .subpage-top__img{
+        border: 10px solid #201f24;
+        box-shadow: none;
+    }
+    .subpage-top__logo{
+        border: 8px solid #201f24;
+        box-shadow: none;
+    }
+    .subpage-top__text,
+    .subpage__item-name,
+    .subpage__item-title,
+    .subpage__item--aside .subpage__item-text,
+    .subpage__item-indicator span{
+        color: #fff;
+    }
+    .subpage__item--info{
+        background-color: #323137;
+        box-shadow: none;
+    }
+    .subpage__item--advertisement{
+        box-shadow: none;
+    }
+    .subpage__item-info-img{
+        background-color: #fff;
+        box-shadow: none;
+    }
+    .subpage__item-share-link{
+        img{
+            content: url(../images/icon-share-white.svg);
+        }
+    }
+    .subpage__item-bookmark{
+        img{
+            content: url(../images/icon-bookmark-white.svg);
+        }
+        &.active {
+            img {
+                content: url(../images/icon-bookmark-fill.svg);
+            }
+        }
+    }
+    .subpage__item-list{
+        color: $grey;
+    }
+    .subpage__item-like-box img{
+        border: 3px solid #323137;
+        box-shadow: none;
+    }
+    .share-popup{
+        background-color: #201F24;
+    }
+    .share__copy{
+        background-color: #323137;
+        color: rgba(#fff, 0.45);
+    }
+    .share__copy-btn{
+        img{
+            content: url(../images/icon-copy-white.svg);
         }
     }
 }
