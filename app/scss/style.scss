@@ -4331,11 +4331,15 @@
         // grid-template-columns: repeat(4, 1fr);
         grid-template-columns: 21% 21% 21% 28%;
         grid-gap: 40px;
-        padding-bottom: 42px;
+        padding-bottom: 59px;
     }
     &__item {
         border-radius: 18px;
         box-shadow: 0 22px 51px rgba($color: #b1bdda, $alpha: 0.16);
+        .latest__item-title{
+            height: 131px;
+            overflow: hidden;
+        }
         &--info {
             background-color: #fff;
         }
@@ -4345,6 +4349,9 @@
         }
         &--aside {
             // max-width: 522px;
+            .subpage__item-top{
+                padding: 26px 15px 26px 0;
+            }
             .subpage__item-inner,
             .subpage__item-date-wrapper {
                 margin: 0 21px;
@@ -4355,12 +4362,13 @@
                 color: $black;
                 margin-top: 17px;
                 height: 29px;
-                margin-bottom: 32px;
+                margin-bottom: 8px;
             }
             .subpage__item-indicator {
                 text-align: left;
                 margin-right: 33px;
-                margin-bottom: 30px;
+                margin-top: 24px;
+                margin-bottom: 26px;
                 &:last-child {
                     margin-right: 0;
                 }
@@ -4380,9 +4388,9 @@
         &.latest__item.latest__item--popular {
             width: 100%;
             min-height: auto;
-            height: 551px;
+            min-height: 551px;
             .latest__item-author-img {
-                height: 66px;
+                width: 66px;
                 height: 66px;
             }
             &.subpage__item--popular-aside {
@@ -4572,6 +4580,7 @@
         }
     }
     &__btn-more {
+        grid-column: span 3;
         max-width: 324px;
         width: 100%;
         height: 67px;
@@ -4581,8 +4590,7 @@
         padding: 19px;
         text-align: center;
         font-weight: 500;
-        margin-right: 45px;
-        margin: 0 auto 59px;
+        margin: 0 auto;
         display: block;
     }
 }
