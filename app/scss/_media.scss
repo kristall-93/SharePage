@@ -3481,6 +3481,9 @@
 }
 
 @media (max-width: 660px) {
+    .subpage-top{
+        margin-top: 65px;
+    }
     .success.share-popup {
         max-width: 354px;
         padding: 66px 28px;
@@ -4994,7 +4997,7 @@
 
     .homepage .container {
         padding: 0 70px;
-        transform: scale(0.8);
+        transform: scale(0.7);
         max-width: initial;
         padding: 0;
     }
@@ -5002,28 +5005,28 @@
         transform-origin: top;
     }
     .homepage .top--homepage {
-        margin-bottom: -125px;
+        margin-bottom: -205px;
     }
     .homepage .recommended {
-        margin-bottom: -90px;
+        margin-bottom: -137px;
     }
     .homepage .adventisment {
-        margin-bottom: -35px;
+        margin-bottom: -48px;
     }
     .homepage .gallery {
-        margin-bottom: -160px;
+        margin-bottom: -238px;
     }
     .homepage .latest {
-        margin-bottom: -245px;
+        margin-bottom: -371px;
     }
     .homepage .adventisment.adventisment-centered {
-        margin-bottom: -18px;
+        margin-bottom: -34px;
     }
     .homepage .join {
-        margin-bottom: -140px;
+        margin-bottom: -217px;
     }
     .homepage .breaking {
-        margin-bottom: -275px;
+        margin-bottom: -408px;
     }
     .top__news {
         justify-content: center;
@@ -5047,7 +5050,7 @@
 
     .login-page .container-full {
         padding: 0 70px;
-        transform: scale(0.8);
+        transform: scale(0.7);
         max-width: initial;
         padding: 0;
     }
@@ -5057,17 +5060,19 @@
     .login-page .login-content {
         // min-height: 898px;
         height: 100vh;
+        min-height: auto;
     }
     .login__gallery {
-        height: 125vh;
-        min-height: 1120px;
+        // height: 125vh;
+        height: 142vh;
+        // min-height: 1120px;
     }
 
     // user-profile page :
 
     .user-profile .container {
         padding: 0 70px;
-        transform: scale(0.8);
+        transform: scale(0.7);
         max-width: initial;
         padding: 0;
     }
@@ -5076,13 +5081,16 @@
     }
     .user-profile {
         margin-bottom: -120px;
+        .profile {
+            margin-bottom: 0;
+        }
     }
 
     // search-results page :
 
     .search-results .container {
         padding: 0 70px;
-        transform: scale(0.8);
+        transform: scale(0.7);
         max-width: initial;
         padding: 0;
     }
@@ -5090,14 +5098,17 @@
         transform-origin: top;
     }
     .results__inner {
-        height: calc(100vh);
+        height: calc(114vh);
+    }
+    .results {
+        height: 87vh;
     }
 
     // news page :
 
     .news .container {
         padding: 0 70px;
-        transform: scale(0.8);
+        transform: scale(0.7);
         max-width: initial;
         padding: 0;
     }
@@ -5109,10 +5120,10 @@
     }
     .news {
         .breaking-news {
-            margin-bottom: -877px;
+            margin-bottom: -1180px;
         }
         .search-categories {
-            margin-bottom: -150px;
+            margin-bottom: -250px;
         }
     }
 
@@ -5120,7 +5131,7 @@
 
     .news-gallery .container {
         padding: 0 70px;
-        transform: scale(0.8);
+        transform: scale(0.7);
         max-width: initial;
         padding: 0;
     }
@@ -5137,22 +5148,22 @@
     }
     .news-gallery {
         .gallery-mix {
-            margin-bottom: -125px;
+            margin-bottom: -196px;
         }
         .adventisment {
-            margin-bottom: -38px;
+            margin-bottom: -63px;
         }
         .photo {
-            margin-bottom: -200px;
+            margin-bottom: -303px;
         }
         .discussions {
-            margin-bottom: -480px;
+            margin-bottom: -725px;
         }
         .news-latest {
-            margin-bottom: -380px;
+            margin-bottom: -575px;
         }
         .top--news-gallery {
-            margin-bottom: -70px;
+            margin-bottom: -110px;
         }
     }
 
@@ -5160,7 +5171,7 @@
 
     .news.news-single .container {
         padding: 0 70px;
-        transform: scale(0.8);
+        transform: scale(0.7);
         max-width: initial;
         padding: 0;
     }
@@ -5174,13 +5185,13 @@
     }
     .news.news-single {
         .breaking-news {
-            margin-bottom: -760px;
+            margin-bottom: -980px;
         }
         .discussions {
-            margin-bottom: -370px;
+            margin-bottom: -550px;
         }
         .updates {
-            margin-bottom: -60px;
+            margin-bottom: -87px;
         }
     }
 
@@ -5188,7 +5199,7 @@
 
     .support .container {
         padding: 0 70px;
-        transform: scale(0.8);
+        transform: scale(0.7);
         max-width: initial;
         padding: 0;
     }
@@ -5197,19 +5208,21 @@
     }
     .support {
         .help__inner {
-            min-height: 576px;
+            min-height: 504px;
         }
         .support-content {
-            margin-bottom: -300px;
+            margin-bottom: -450px;
         }
     }
 
     // choose-content page,
-    // upload-content page :
+    // upload-content page,
+    // upload-progress page,
+    // upload-rewiew page :
 
     .choose-content .container {
         padding: 0 70px;
-        transform: scale(0.8);
+        transform: scale(0.7);
         max-width: initial;
         padding: 0;
     }
@@ -5226,7 +5239,7 @@
 
     .moderation-approval .container {
         padding: 0 70px;
-        transform: scale(0.8);
+        transform: scale(0.7);
         max-width: initial;
         padding: 0;
     }
@@ -5255,7 +5268,7 @@
     .subpage-india .container,
     .subpage-india .container-subpage {
         padding: 0 70px;
-        transform: scale(0.8);
+        transform: scale(0.7);
         max-width: initial;
         padding: 0;
     }
@@ -5263,8 +5276,11 @@
         transform-origin: top;
     }
     .subpage-india {
+        .subpage-top{
+            margin-bottom: 150px;
+        }
         .subpage-content{
-            margin-bottom: -700px;
+            margin-bottom: -1100px;
         }        
     }
     

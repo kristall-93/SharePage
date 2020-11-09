@@ -142,7 +142,7 @@ $(document).ready(function () {
 
     // Стилизация элементов форм :
     
-    $('.agree-line__check-btn, .results__select, .discussions__select, .requests-list__select').styler();
+    $('.agree-line__check-btn, .results__select, .discussions__select, .requests-list__select, .premium__radiobtn').styler();
 
     // Изменение текста заголовка на signup-page :
 
