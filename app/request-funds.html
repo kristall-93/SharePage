@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="premium-page login--on">
+<body class="request-funds login--on">
     <!-- class="dark" -->
     <!-- class="login--on" -->
 
@@ -113,139 +113,285 @@
 
             <div class="page-content">
 
-                <section class="premium">
+                <section class="funds">
                     <div class="container">
-                        <h1 class="premium__title">
-                            Start your Premium right now!
-                        </h1>
-                        <p class="premium__text">
-                            We won't charge your for the first month! Your payment will be on <span>September 30,
-                                2020!</span>
-                        </p>
-                        <form class="premium__inner">
+                        <div class="funds__inner">
 
-                            <div class="premium__col">
-                                <h6 class="premium__col-title">
-                                    Payment Method
-                                </h6>
-                                <div class="premium__item">
-                                    <div class="premium__line premium__line--border premium__line--first">
-                                        <input class="premium__radiobtn" type="radio" name="pay">
-                                        <img class="paypal-img" src="images/paypal-img.svg" alt="#">
-                                    </div>
-                                    <div class="premium__line">
-                                        <input class="premium__radiobtn" type="radio" name="pay" checked>
-                                        <p class="premium__radiolabel">Credit or debit card.</p>
-                                        <div class="premium__cards">
-                                            <img src="images/card-1.svg" alt="#">
-                                            <img src="images/card-2.svg" alt="#">
-                                            <img src="images/card-3.svg" alt="#">
-                                            <img src="images/card-4.svg" alt="#">
-                                        </div>
-                                    </div>
-                                    <div class="premium__line--text">
-                                        <p class="premium__label">Card Number</p>
-                                        <div class="premium__input-wrapper">
-                                            <input class="premium__input" type="text" placeholder=" " required>
-                                            <label class="premium__input-placeholder">0000 0000 0000 0000</label>
-                                            <img class="premium__input-icon" src="images/icon-card.svg" alt="#">
-                                        </div>
-                                    </div>
-                                    <div class="premium__line--double">
-                                        <div class="premium__line--text">
-                                            <p class="premium__label">Expiry Date</p>
-                                            <div class="premium__input-wrapper">
-                                                <input class="premium__input" type="text" placeholder=" " required>
-                                                <label class="premium__input-placeholder">MM/YY</label>
-                                                <img class="premium__input-icon" src="images/icon-calendar.svg" alt="#">
+                            <div class="funds__col funds__col--small">
+                                <h5 class="funds__title">
+                                    Currencies
+                                </h5>
+                                <ul class="funds__list">
+
+                                    <li class="funds__list-item">
+                                        <div class="funds__list-box">
+                                            <div class="funds__list-box-top">
+                                                <img class="funds__list-box-flag" src="images/flag-1.svg" alt="#">
+                                                <span class="funds__list-box-currency">USD</span>
+                                                <div class="funds__list-box-percent funds__list-box-percent--down">
+                                                    <span>-2,5%</span>
+                                                    <img class="percent-down" src="images/arrow-down-red.svg" alt="#">
+                                                    <img class="percent-top" src="images/arrow-top-green.svg" alt="#">
+                                                </div>
+                                            </div>
+                                            <div class="funds__list-box-bottom">
+                                                10.653,90
                                             </div>
                                         </div>
-                                        <div class="premium__line--text">
-                                            <p class="premium__label">CVC/CCV</p>
-                                            <div class="premium__input-wrapper">
-                                                <input class="premium__input" type="text" placeholder=" " required>
-                                                <label class="premium__input-placeholder">
-                                                    <span></span>
-                                                    <span></span>
-                                                    <span></span>
-                                                </label>
-                                                <img class="premium__input-icon" src="images/icon-lock.svg" alt="#">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a class="premium__link-secure" href="#">
-                                        <img src="images/icon-lock-green.svg" alt="#">
-                                        <span>Your transaction is secured with SSL encryption.</span>
-                                    </a>
-
-                                </div>
-                            </div>
-
-                            <div class="premium__col">
-                                <h6 class="premium__col-title">
-                                    Summary Overview
-                                </h6>
-                                <div class="premium__item">
-
-                                    <div class="premium__line premium__line--border premium__line--box">
-                                        <div class="premium__line-left">
-                                            <a class="premium__link-billed" href="#">
-                                                <span>Premium (Billed annually)</span>
-                                                <img src="images/icon-arrow-down-black.svg" alt="#">
-                                            </a>
-                                            <a class="premium__link-sale" href="#">
-                                                Save 20% off a discount on monthly basis!
-                                            </a>
-                                        </div>
-                                        <div class="premium__line-right">$19.99/m</div>
-                                    </div>
-
-                                    <div class="premium__line--border">
-                                        <div class="premium__line-item premium__line-item-first">
-                                            <p class="premium__line-text">
-                                                Referral bonuses
-                                            </p>
-                                            <p class="premium__line-price">-$1.99</p>
-                                        </div>
-                                        <div class="premium__line-item">
-                                            <p class="premium__line-text">
-                                                VAT
-                                                <span>?</span>
-                                            </p>
-                                            <p class="premium__line-price">+20%</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="premium__line premium__line--border premium__line--box">
-                                        <div class="premium__line-left">
-                                            <p class="premium__line-text">
-                                                Today you pay (USD)
-                                            </p>
-                                            <p class="premium__line-text premium__line-text-ligth">
-                                                After 30 free days: $19.99/m
-                                            </p>
-                                        </div>
-                                        <div class="premium__line-right">$0</div>
-                                    </div>
-
-                                    <div class="premium__line premium__line--box">
-                                        <p class="premium__line-text">
-                                            Have a promo code?
+                                        <p class="funds__list-number">
+                                            USD13****24812
                                         </p>
-                                        <div class="premium__input-wrapper">
-                                            <input class="premium__input premium__input-code" type="text"
-                                                placeholder=" ">
-                                            <label class="premium__input-placeholder">Promo</label>
-                                            <img class="premium__input-icon" src="images/icon-barcode.svg" alt="#">
-                                        </div>
-                                    </div>
+                                    </li>
 
-                                    <button class="premium__check-btn" type="submit">Checkout</button>
+                                    <li class="funds__list-item">
+                                        <div class="funds__list-box">
+                                            <div class="funds__list-box-top">
+                                                <img class="funds__list-box-flag" src="images/flag-2.svg" alt="#">
+                                                <span class="funds__list-box-currency">EURO</span>
+                                                <div class="funds__list-box-percent funds__list-box-percent--top">
+                                                    <span>+5,3%</span>
+                                                    <img class="percent-down" src="images/arrow-down-red.svg" alt="#">
+                                                    <img class="percent-top" src="images/arrow-top-green.svg" alt="#">
+                                                </div>
+                                            </div>
+                                            <div class="funds__list-box-bottom">
+                                                9.056,19
+                                            </div>
+                                        </div>
+                                        <p class="funds__list-number">
+                                            EURO11****27521
+                                        </p>
+                                    </li>
+
+                                    <li class="funds__list-item">
+                                        <div class="funds__list-box">
+                                            <div class="funds__list-box-top">
+                                                <img class="funds__list-box-flag" src="images/flag-3.svg" alt="#">
+                                                <span class="funds__list-box-currency">RSD</span>
+                                                <div class="funds__list-box-percent funds__list-box-percent--down">
+                                                    <span>-7,8%</span>
+                                                    <img class="percent-down" src="images/arrow-down-red.svg" alt="#">
+                                                    <img class="percent-top" src="images/arrow-top-green.svg" alt="#">
+                                                </div>
+                                            </div>
+                                            <div class="funds__list-box-bottom">
+                                                1.064.431,15
+                                            </div>
+                                        </div>
+                                        <p class="funds__list-number">
+                                            RSD15****92851
+                                        </p>
+                                    </li>
+
+                                    <li class="funds__list-item">
+                                        <div class="funds__list-box">
+                                            <div class="funds__list-box-top">
+                                                <img class="funds__list-box-flag" src="images/flag-4.svg" alt="#">
+                                                <span class="funds__list-box-currency">YEN</span>
+                                                <div class="funds__list-box-percent funds__list-box-percent--down">
+                                                    <span>-1,5%</span>
+                                                    <img class="percent-down" src="images/arrow-down-red.svg" alt="#">
+                                                    <img class="percent-top" src="images/arrow-top-green.svg" alt="#">
+                                                </div>
+                                            </div>
+                                            <div class="funds__list-box-bottom">
+                                                1.128.485,54
+                                            </div>
+                                        </div>
+                                        <p class="funds__list-number">
+                                            YEN13****24812
+                                        </p>
+                                    </li>
+
+                                    <li class="funds__list-item">
+                                        <div class="funds__list-box">
+                                            <div class="funds__list-box-top">
+                                                <img class="funds__list-box-flag" src="images/flag-5.svg" alt="#">
+                                                <span class="funds__list-box-currency">THB</span>
+                                                <div class="funds__list-box-percent funds__list-box-percent--top">
+                                                    <span>2,5%</span>
+                                                    <img class="percent-down" src="images/arrow-down-red.svg" alt="#">
+                                                    <img class="percent-top" src="images/arrow-top-green.svg" alt="#">
+                                                </div>
+                                            </div>
+                                            <div class="funds__list-box-bottom">
+                                                332.333,44
+                                            </div>
+                                        </div>
+                                        <p class="funds__list-number">
+                                            TBH13****25312
+                                        </p>
+                                    </li>
+
+                                    <li class="funds__list-item funds__list-item-add">
+                                        <a class="funds__list-add" href="#">
+                                            <img src="images/icon-plus-circle.svg" alt="#">
+                                            <span>Add New Currency</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="funds__col funds__col--wide">
+                                <div class="funds__item">
+                                    <h5 class="funds__item-title">
+                                        Withdraw Request
+                                    </h5>
+                                    <form>
+                                        <h6 class="funds__item-title funds__item-title-small">
+                                            Amount
+                                        </h6>
+                                        <div class="funds__item-line">
+                                            <input class="funds__item-input" type="text" value="1.22512" required>
+                                            <div class="funds__item-bitcoin">
+                                                <img src="images/bitcoin.svg" alt="#">
+                                                <span>Bitcoin</span>
+                                            </div>
+                                        </div>
+                                        <h6 class="funds__item-title funds__item-title-small">
+                                            Amount
+                                        </h6>
+                                        <div class="funds__pay-list">
+                                            <label class="funds__pay-item active">
+                                                <input class="premium__radiobtn" type="radio" name="pay-way" checked>
+                                                <div class="funds__pay-item-label">
+                                                    <p>Bank Transfer</p>
+                                                    <span>2-3 Business Days</span>
+                                                </div>
+                                            </label>
+                                            <label class="funds__pay-item">
+                                                <input class="premium__radiobtn" type="radio" name="pay-way">
+                                                <div class="funds__pay-item-label">
+                                                    <p>Payoneer Card</p>
+                                                    <span>Instant Payout</span>
+                                                </div>
+                                            </label>
+                                            <label class="funds__pay-item">
+                                                <input class="premium__radiobtn" type="radio" name="pay-way">
+                                                <div class="funds__pay-item-label">
+                                                    <p>MasterCard / Visa Card</p>
+                                                    <span>Instant Payout</span>
+                                                </div>
+                                            </label>
+                                            <label class="funds__pay-item">
+                                                <input class="premium__radiobtn" type="radio" name="pay-way">
+                                                <div class="funds__pay-item-label">
+                                                    <p>Credit / Debit Card</p>
+                                                    <span>5-6 Business Days</span>
+                                                </div>
+                                            </label>
+
+                                        </div>
+
+                                        <button class="funds__pay-btn funds__btn" type="submit">Continue</button>
+
+                                    </form>
 
                                 </div>
                             </div>
 
-                        </form>
+                            <div class="funds__col funds__col--wide">
+
+                                <div class="funds__item funds__item--card">
+                                    <form>
+                                        <div class="funds__item-top">
+                                            <h6 class="funds__item-title funds__item-title-small">
+                                                Card Details
+                                            </h6>
+                                            <a href="#">
+                                                <img src="images/icon-plus-circle.svg" alt="#">
+                                            </a>
+                                        </div>
+                                        <img class="card-img" src="images/card.jpg" alt="#">
+                                        <h6 class="funds__item-title funds__item-title-small">
+                                            Amount
+                                        </h6>
+                                        <div class="funds__item-line">
+                                            <input class="funds__item-input" type="text" value="1.22512" required>
+                                            <div class="funds__item-bitcoin">
+                                                <img src="images/bitcoin.svg" alt="#">
+                                                <span>Bitcoin</span>
+                                            </div>
+                                        </div>
+
+                                        <button class="funds__pay-btn funds__btn" type="submit">Request Funds</button>
+
+                                    </form>
+
+                                </div>
+
+                                <div class="funds__item funds__item--transactions">
+                                    <div class="funds__item-top transactions__top">
+                                        <h6 class="funds__item-title funds__item-title-small">
+                                            Recent Transactions
+                                        </h6>
+                                        <h6 class="funds__item-title funds__item-title-small">
+                                            View All
+                                        </h6>
+                                    </div>
+                                    <ul class="transactions__list">
+                                        <li class="transactions__item">
+                                            <div class="transactions__item-left">
+                                                <span>2.2512 BITCOIN</span>
+                                                EUR12***21512
+                                            </div>
+                                            <span class="transactions__item-right">
+                                                01.16.2020
+                                            </span>
+                                        </li>
+                                        <li class="transactions__item">
+                                            <div class="transactions__item-left">
+                                                <span>2.2512 BITCOIN</span>
+                                                EUR12***21512
+                                            </div>
+                                            <span class="transactions__item-right">
+                                                01.16.2020
+                                            </span>
+                                        </li>
+                                        <li class="transactions__item">
+                                            <div class="transactions__item-left">
+                                                <span>2.2512 BITCOIN</span>
+                                                EUR12***21512
+                                            </div>
+                                            <span class="transactions__item-right">
+                                                01.16.2020
+                                            </span>
+                                        </li>
+                                        <li class="transactions__item">
+                                            <div class="transactions__item-left">
+                                                <span>2.2512 BITCOIN</span>
+                                                EUR12***21512
+                                            </div>
+                                            <span class="transactions__item-right">
+                                                01.16.2020
+                                            </span>
+                                        </li>
+                                        <li class="transactions__item">
+                                            <div class="transactions__item-left">
+                                                <span>2.2512 BITCOIN</span>
+                                                EUR12***21512
+                                            </div>
+                                            <span class="transactions__item-right">
+                                                01.16.2020
+                                            </span>
+                                        </li>
+                                        <li class="transactions__item">
+                                            <div class="transactions__item-left">
+                                                <span>2.2512 BITCOIN</span>
+                                                EUR12***21512
+                                            </div>
+                                            <span class="transactions__item-right">
+                                                01.16.2020
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
                 </section>
 

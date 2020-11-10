@@ -504,11 +504,11 @@
     &.subpage-india {
         background-color: #201f24;
     }
-    .subpage-top__img{
+    .subpage-top__img {
         border: 10px solid #201f24;
         box-shadow: none;
     }
-    .subpage-top__logo{
+    .subpage-top__logo {
         border: 8px solid #201f24;
         box-shadow: none;
     }
@@ -517,27 +517,27 @@
     .subpage__item-title,
     .subpage__item--aside .subpage__item-text,
     .subpage__item-indicator span,
-    .share__social-link{
+    .share__social-link {
         color: #fff;
     }
-    .subpage__item--info{
+    .subpage__item--info {
         background-color: #323137;
         box-shadow: none;
     }
-    .subpage__item--advertisement{
+    .subpage__item--advertisement {
         box-shadow: none;
     }
-    .subpage__item-info-img{
+    .subpage__item-info-img {
         background-color: #fff;
         box-shadow: none;
     }
-    .subpage__item-share-link{
-        img{
+    .subpage__item-share-link {
+        img {
             content: url(../images/icon-share-white.svg);
         }
     }
-    .subpage__item-bookmark{
-        img{
+    .subpage__item-bookmark {
+        img {
             content: url(../images/icon-bookmark-white.svg);
         }
         &.active {
@@ -546,65 +546,120 @@
             }
         }
     }
-    .subpage__item-list{
+    .subpage__item-list {
         color: $grey;
     }
-    .subpage__item-like-box img{
+    .subpage__item-like-box img {
         border: 3px solid #323137;
         box-shadow: none;
     }
-    .share-popup{
-        background-color: #201F24;
+    .share-popup {
+        background-color: #201f24;
     }
-    .share__copy{
+    .share__copy {
         background-color: #323137;
         color: rgba(#fff, 0.45);
     }
-    .share__copy-btn{
-        img{
+    .share__copy-btn {
+        img {
             content: url(../images/icon-copy-white.svg);
         }
     }
 
-// start premium-page
+    // start premium-page
 
-&.premium-page{
-    background-color: #201F24;
-}
-.premium__title,
-.premium__col-title,
-.premium__radiolabel,
-.premium__label,
-.premium__link-billed,
-.premium__line-right,
-.premium__line-item,
-.premium__line-text{
-    color: #fff;
-}
-.premium__line-text-ligth {
-    color: #aaa;
-}
-.premium__text{
-    color: $grey;
-}
-.premium__item{
-    background-color: #323137;
-    box-shadow: none;
-}
-.premium__radiobtn{
-    background: #323137;
-    border: 2px solid #49484E;
-}
-.premium__input-wrapper{
-background-color: #49484E;
-}
-.premium__input{
-    box-shadow: none;
-border: none;
-}
-.premium__line--border {
-    padding: 23px 49px;
-    border-bottom: 1px solid rgba(#e6e9ee, 0.1);
-}
+    &.premium-page {
+        background-color: #201f24;
+    }
+    .premium__title,
+    .premium__col-title,
+    .premium__radiolabel,
+    .premium__label,
+    .premium__link-billed,
+    .premium__line-right,
+    .premium__line-item,
+    .premium__line-text {
+        color: #fff;
+    }
+    .premium__line-text-ligth {
+        color: #aaa;
+    }
+    .premium__text {
+        color: $grey;
+    }
+    .premium__item {
+        background-color: #323137;
+        box-shadow: none;
+    }
+    .premium__radiobtn {
+        background: #323137;
+        border: 2px solid #49484e;
+    }
+    .premium__input-wrapper {
+        background-color: #49484e;
+    }
+    .premium__input {
+        box-shadow: none;
+        border: none;
+    }
+    .premium__line--border {
+        border-bottom: 1px solid rgba(#e6e9ee, 0.1);
+    }
+    .premium__link-billed {
+        img {
+            content: url(../images/icon-arrow-down-white.svg);
+        }
+    }
 
+    // start request-funds
+
+    &.request-funds {
+        background-color: #201F24;
+        .premium__radiobtn {
+            background: transparent;
+            border: 2px solid #9DA1A4;
+        }
+    }
+    .funds__title,
+    .funds__list-box-bottom,
+    .funds__list-box-currency,
+    .funds__list-add,
+    .funds__item-title,
+    .funds__pay-item-label p,
+    .funds__item-input, 
+    .funds__item-bitcoin,
+    .transactions__item-right{
+        color: #fff;
+    }
+    .funds__list-item,
+    .funds__item{
+        background-color: #323137;
+        box-shadow: none;
+    }
+    .funds__list-add img{
+        content: url(../images/icon-plus-circle-white.svg);
+    }
+    .funds__list-item.funds__list-item-add {
+        background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke:rgb(48,108,21); stroke-width: 2; stroke-dasharray: 6 6'/></svg>");
+    }
+    .funds__item-input,
+    .funds__item-bitcoin{
+        background-color: #49484E;
+        border: none;
+        box-shadow: none;
+    }
+    .funds__pay-item,
+    .funds__pay-item:hover, 
+    .funds__pay-item.active{
+        background-color: #49484E;
+    }
+    .transactions__item-left{
+        color: $grey;
+    }
+    .funds__pay-item{
+        border: 1px solid transparent;        
+    }
+    .funds__pay-item:hover, .funds__pay-item.active {
+        border: 1px solid #55A630;
+    }
 }

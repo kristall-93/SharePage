@@ -213,15 +213,11 @@ $(document).ready(function () {
         setTimeout(() => { $('.copied-notification').fadeOut(); }, 2000);
     });
 
-    // Отметка "liked" в discussions на news-gallery page:
-    // $('.discussions__box-like').on('click', function () {
-    //     $('.discussions__item').addClass('discussions__item--liked');
-    // });
-    // Снятие отметки "liked" в discussions на news-gallery page:
-    // $('.discussions__box-you-liked').on('click', function () {
-    //     $('.discussions__item').removeClass('discussions__item--liked');
-    // });    
+    // переключение premium__radiobtn :
 
-
+    $('.funds__pay-item').on('click', function (event) {
+            $('.funds__pay-item').removeClass('active');
+            $(this).addClass('active');
+    });
 
 });

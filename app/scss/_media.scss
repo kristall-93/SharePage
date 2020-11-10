@@ -270,6 +270,9 @@
 }
 
 @media (max-width: 1400px) {
+    .funds__list-item{
+        padding: 29px 20px;
+    }
     .subpage__item-inner {
         padding: 0 20px 39px;
     }
@@ -318,6 +321,34 @@
 }
 
 @media (max-width: 1300px) {
+    .funds__inner{
+        display: block;
+    }
+    .funds__col{
+        margin: 0 auto 33px;
+        width: 100%;
+        max-width: 707px;
+    }
+    .premium {
+        &__title {
+            font-size: 49px;
+            line-height: 67px;
+            margin-bottom: 11px;
+        }
+        &__text {
+            max-width: 505px;
+            margin: 0 auto 56px;
+        }
+        &__inner {
+            display: block;
+            margin-bottom: 58px;
+        }
+        &__col {
+            max-width: 707px;
+            width: 100%;
+            margin: 0 auto 28px;
+        }
+    }
     .share-popup {
         max-width: 707px;
         padding: 57px;
@@ -3481,7 +3512,212 @@
 }
 
 @media (max-width: 660px) {
-    .subpage-top{
+    .funds {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    .funds__title{
+        margin-bottom: 7px;
+        font-size: 17px;
+        line-height: 23px;
+    }
+    .funds__list-item {
+        padding: 17px;
+        margin-bottom: 6px;
+    }
+    .funds__list-item.funds__list-item-add{
+        height: 70px;
+    }
+    .funds__list-box-flag{
+        width: 15px;
+        height: 11px;
+        margin-right: 6px;
+    }
+    .funds__list-box-top{
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .funds__list-box-currency{
+        margin-right: 7px;
+    }
+    .funds__list-box-percent img{
+        width: 6px;
+        height: 3px;
+        margin-left: 3px;
+    }
+    .funds__list-box-bottom{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .funds__list-number{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .funds__list-add{
+        font-size: 11px;
+            line-height: 15px;
+        img{
+            width: 16px;
+            height: 16px;
+            margin-right: 6px;            
+        }
+    }
+    .funds__col {
+        margin: 0 auto 17px;
+    }
+    .funds__item{
+        padding: 13px 17px;
+    }
+    .funds__item-title{
+        margin-bottom: 17px;
+        &.funds__item-title-small{
+margin-bottom: 7px;
+        }
+    }
+    .funds__item-input{
+        height: 32px;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 8px 19px;
+    }
+    .funds__item-bitcoin{
+        height: 32px;
+        width: 64px;
+        min-width: auto;
+        font-size: 9px;
+        line-height: 11px;
+        img{
+            height: 12px;
+            width: 12px;
+            margin-right: 3px;
+        }
+    }
+    .funds__item-line{
+        margin-bottom: 11px;
+    }
+    .funds__item-title{
+        font-size: 9px;
+        line-height: 11px;
+    }
+    .funds__pay-item{
+        padding: 17px 20px;
+        border-radius: 10px;
+    }
+    .funds .premium__radiobtn {
+        width: 14px;
+        height: 14px;
+        min-width: auto;
+        &.checked{
+            background-color: $green;
+        }
+        .jq-radio__div{
+            display: none;
+        }
+    }
+    .funds__pay-item-label p {
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .funds__pay-item-label span {
+        font-size: 8px;
+        line-height: 10px;
+        display: block;
+    }
+    .funds__btn {
+        font-size: 13px;
+        line-height: 18px;
+        height: 33px;
+        margin-top: 0;
+    }
+    .funds__item-top{
+        img{
+            width: 12px;
+            height: 12px;
+        }
+    }
+    .card-img{
+        max-width: 264px;
+        margin-bottom: 5px;
+    }
+    .transactions__item{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .transactions__item+.transactions__item {
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+    .premium {
+        margin-top: 83px;
+        &__title {
+            font-size: 25px;
+            line-height: 33px;
+            margin-bottom: 7px;
+        }
+        &__text {
+            font-size: 11px;
+            line-height: 15px;
+            max-width: 222px;
+            margin: 0 auto 18px;
+        }
+        &__line {
+            flex-wrap: wrap;
+            padding: 13px 7px;
+            &--text {
+                padding: 0 7px;
+                margin-top: 10px;
+            }
+            &--double {
+                display: block;
+                margin-top: 10px;
+                margin-bottom: 15px;
+                .premium__line--text {
+                    margin-top: 20px;
+                    &:nth-child(1) {
+                        max-width: 304px;
+                    }
+                    &:nth-child(2) {
+                        max-width: 258px;
+                    }
+                }
+            }
+            &--border {
+                padding: 23px 7px;
+                border-bottom: 1px solid #e6e9ee;
+            }
+            &--box {
+                &:nth-child(1) {
+                    display: block;
+                }
+                .premium__input-wrapper {
+                    max-width: 172px;
+                }
+            }
+        }
+        &__cards {
+            width: 100%;
+            margin-left: 47px;
+            margin-top: 11px;
+        }
+        &__input-code {
+            height: 43px;
+            & + .premium__input-placeholder {
+                font-size: 17px;
+                line-height: 33px;
+                left: 63px;
+                & + .premium__input-icon {
+                    width: 19px;
+                    height: 14px;
+                    left: 30px;
+                }
+            }
+        }
+        &__check-btn {
+            max-width: 97%;
+            height: 52px;
+        }
+    }
+    .subpage-top {
         margin-top: 65px;
     }
     .success.share-popup {
@@ -4935,6 +5171,13 @@
 }
 
 @media (max-width: 370px) {
+    .premium__cards {
+        margin-left: 0;
+        text-align: center;
+    }
+    .premium__input-placeholder {
+        font-size: 17px;
+    }
     .subpage__item.latest__item.latest__item--popular {
         padding: 34px 15px 28px;
         min-height: 466px;
@@ -5276,12 +5519,50 @@
         transform-origin: top;
     }
     .subpage-india {
-        .subpage-top{
+        .subpage-top {
             margin-bottom: 150px;
         }
-        .subpage-content{
+        .subpage-content {
             margin-bottom: -1100px;
-        }        
+        }
     }
-    
+
+    // start premium-page
+
+    .premium-page .container {
+        padding: 0 70px;
+        transform: scale(0.7);
+        max-width: initial;
+        padding: 0;
+    }
+    .premium-page .page-content .container-subpage {
+        transform-origin: top;
+    }
+    .premium-page {
+        .premium__item {
+            min-height: 520px;
+        }
+        .premium__inner{
+            margin-bottom: 0;
+        }
+    }
+ 
+    // start request-funds page
+
+    .request-funds .container {
+        padding: 0 70px;
+        transform: scale(0.7);
+        max-width: initial;
+        padding: 0;
+    }
+    .request-funds .page-content .container-subpage {
+        transform-origin: top;
+    }
+    .request-funds {
+        .funds {
+            margin-top: 56px;
+            margin-bottom: -53px;
+        }
+    }
+
 }
