@@ -547,6 +547,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        $(window).resize(function () {
+            if ($(window).width() < 660) {
+                document.getElementById("signup__title").textContent = 'Create your free account';
+            }
+            else {
+                document.getElementById("signup__title").textContent = 'Create new account for free';
+            }
+        });
+    </script>
+
 </body>
 
 </html>

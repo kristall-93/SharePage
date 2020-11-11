@@ -145,15 +145,16 @@ $(document).ready(function () {
     $('.agree-line__check-btn, .results__select, .discussions__select, .requests-list__select, .premium__radiobtn').styler();
 
     // Изменение текста заголовка на signup-page :
+    // (перенесен внутрь html кода signup-page , так как вызывал ошибку в консоли на других страницах проекта)
 
-    $(window).resize(function() {
-        if ( $(window).width() < 660 ) {
-            document.getElementById("signup__title").textContent = 'Create your free account';
-        }
-        else {
-            document.getElementById("signup__title").textContent = 'Create new account for free';
-        }
-    });
+    // $(window).resize(function() {
+    //     if ( $(window).width() < 660 ) {
+    //         document.getElementById("signup__title").textContent = 'Create your free account';
+    //     }
+    //     else {
+    //         document.getElementById("signup__title").textContent = 'Create new account for free';
+    //     }
+    // });
 
     // Слайдер на news page в breaking-news__item--main: 
 
