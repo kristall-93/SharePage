@@ -1253,14 +1253,14 @@
     .news .search-categories {
         display: none;
     }
-    .news {
-        .menu__list {
-            &::-webkit-scrollbar {
-                width: 0px;
-                height: 0px;
-            }
-        }
-    }
+    // .news {
+    //     .menu__list {
+    //         &::-webkit-scrollbar {
+    //             width: 0px;
+    //             height: 0px;
+    //         }
+    //     }
+    // }
     .results {
         margin-top: 164px;
         &__title {
@@ -1582,9 +1582,10 @@
 
 @media (max-width: 1220px) {
     .menu__list {
-        padding: 0 25px;
+        // padding: 0 25px;
         overflow-x: auto;
-        margin: 0 -25px 7px;
+        // margin: 0 -25px 7px;
+        margin-bottom: 7px;
         li + li {
             margin-left: 75px;
         }

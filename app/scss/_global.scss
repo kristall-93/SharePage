@@ -333,9 +333,6 @@ body {
     background-color: $green;
 }
 
-// .header__menu-dropdown {
-//     // display: none;
-// }
 body.login--on {
     .user-menu__box {
         display: flex;
@@ -367,8 +364,6 @@ body.login--on {
     &__dropdown {
         display: none;
         position: absolute;
-        // right: -24px;
-        // top: 97px;
         right: -64px;
         top: 77px;
         width: 334px;
@@ -473,10 +468,6 @@ body.login--on {
     }
 }
 
-// .menu__dropdown{
-
-// }
-
 // end header
 
 // start top
@@ -496,11 +487,21 @@ body.login--on {
         align-items: center;
         justify-content: space-between;
         padding: 0 20px;
+        overflow-x: scroll;
         li {
             display: inline-block;
         }
         li + li {
             margin-left: 75px;
+        }
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #458e26;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #55A630;
         }
     }
 }

@@ -1296,7 +1296,6 @@
 }
 .login-content {
     min-height: 898px;
-    // height: 100vh;
 }
 
 .login {
@@ -1780,14 +1779,10 @@
         border-right: none;
         border-left: none;
     }
-    // &__select {
-
-    // }
     &__inner {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        // height: 815px;
         height: calc(100vh - 265px);
         overflow-y: scroll;
         scrollbar-width: 50px;
@@ -3321,7 +3316,6 @@
         background-color: rgba($color: #e6e9ee, $alpha: 0.57);
     }
     .breaking-news__tags-title {
-        // border-bottom: 1px solid #e6e9ee;
         border-bottom: 1px solid rgba(230, 233, 238, 0.23);
     }
     &__content {
@@ -3656,11 +3650,7 @@
         margin: 0 auto;
         background-color: #f8fbff;
         border-radius: 15px;
-        // border: 2px dashed #e6e9ee;
-        background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke:rgb(230,233,238); stroke-width: 3; stroke-dasharray: 12 12'/></svg>");
-        // border-style: solid;
-        // border-width: 2px;
-        // border-image: url('borderImageURL') 2 fill repeat;
+        background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke:rgb(230,233,238); stroke-width: 3; stroke-dasharray: 12 12'/></svg>");        
         padding: 130px;
         &-text {
             font-size: 30px;
@@ -3855,10 +3845,6 @@
 
 // start upload-rewiew page
 
-// .upload-rewiew{
-
-// }
-
 .rewiew {
     &__inner {
         padding: 65px 72px 65px 88px;
@@ -3868,8 +3854,6 @@
         font-size: 38px;
         line-height: 50px;
     }
-    // &__tab-content {
-    // }
     &__content-item {
         display: none;
         justify-content: space-between;
@@ -3970,7 +3954,6 @@
                 display: flex;
                 align-items: center;
                 padding: 12px 27px;
-                // overflow-x: scroll;
             }
         }
         &-tag {
@@ -3981,7 +3964,6 @@
             border-radius: 23px;
             background-color: #e6e9ee;
             margin-right: 13px;
-            // cursor: pointer;
         }
         &-textarea {
             width: 100%;
@@ -4052,10 +4034,6 @@
         width: 66px;
         border-radius: 50%;
         background-color: #f1f3fb;
-        // position: absolute;
-        // z-index: 1000000;
-        // top: -42px;
-        // right: -49px;
         top: 15px;
         right: 24px;
         &:hover {
@@ -4066,8 +4044,6 @@
 
 // start moderation-approval page
 
-// .moderation-approval {
-// }
 .moderation {
     margin-top: 133px;
     padding-top: 40px;
@@ -4184,8 +4160,6 @@
                 border-radius: 50%;
                 margin-right: 8px;
             }
-            // &-box {
-            // }
             &-name {
                 font-family: "Segoe UI-SemiBold", sans-serif;
                 font-weight: 600;
@@ -4324,7 +4298,6 @@
     }
     &__inner {
         display: grid;
-        // grid-template-columns: repeat(4, 1fr);
         grid-template-columns: 21% 21% 21% 28%;
         grid-gap: 40px;
         padding-bottom: 59px;
@@ -4341,10 +4314,8 @@
         }
         &--long {
             grid-column: span 3;
-            // max-width: 1266px;
         }
         &--aside {
-            // max-width: 522px;
             .subpage__item-top {
                 padding: 26px 15px 26px 0;
             }
@@ -4841,8 +4812,6 @@
         border: none;
         margin: 0 auto;
         display: block;
-        // margin-bottom: 21px;
-        // margin-top: 10px;
         &:hover {
             opacity: 0.7;
         }
@@ -4924,15 +4893,10 @@
     }
     &__col {
         &--small {
-            // margin-right: 30px;
             width: 31%;
         }
         &--wide {
-            // max-width: 520px;
             width: 32%;
-            // & + & {
-            //     margin-left: 30px;
-            // }
         }
     }
     &__title {
@@ -5131,8 +5095,6 @@
     &__top {
         margin-bottom: 30px;
     }
-    &__list {
-    }
     &__item {
         display: flex;
         align-items: center;
@@ -5157,7 +5119,7 @@
     }
 }
 
-//
+
 // start dark color mode:
 
 @import "_dark";
